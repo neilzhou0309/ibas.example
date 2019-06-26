@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": false,
+    "removeComments": false,
+    "target": "es6",
+    "preserveConstEnums": true,
+    "declaration": false,
+    "sourceMap": true,
+    "outFile": "./index.js"
+  },
+  "include": [
+    "../3rdparty/ibas/index.d.ts"
+  ],
+  "files": [
+    "./index.ts"
+  ]
+}

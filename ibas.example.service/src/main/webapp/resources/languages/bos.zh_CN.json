@@ -1,0 +1,27 @@
+[
+    {
+        "bo_example": "例子",
+        "bo_example_code": "编码",
+        "bo_example_name": "名称",
+        "bo_example_docentry": "凭证编号",
+        "bo_example_objectcode": "类型",
+        "bo_example_series": "编号系列",
+        "bo_example_loginst": "实例号（版本）",
+        "bo_example_datasource": "数据源",
+        "bo_example_createdate": "创建日期",
+        "bo_example_createtime": "创建时间",
+        "bo_example_updatedate": "修改日期",
+        "bo_example_updatetime": "修改时间",
+        "bo_example_createusersign": "创建用户",
+        "bo_example_updateusersign": "修改用户",
+        "bo_example_createactionid": "创建动作标识",
+        "bo_example_updateactionid": "更新动作标识",
+        "bo_example_dataowner": "数据所有者",
+        "bo_example_teammembers": "团队成员",
+        "bo_example_organization": "数据所属组织",
+        "bo_example_activated": "已激活的",
+        "bo_example_remarks": "备注",
+        "bo_example_closing_delimiter": "----结束----"
+    },
+    {}
+]
