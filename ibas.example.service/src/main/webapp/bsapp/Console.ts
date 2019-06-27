@@ -7,6 +7,9 @@
  */
 /// <reference path="../borep/index.ts" />
 /// <reference path="./example/index.ts" />
+/// <reference path="./byd/index.ts" />
+/// <reference path="./translation/index.ts" />
+/// <reference path="./datastructrue/index.ts" />
 namespace example {
     export namespace app {
         /** 属性-导航 */
@@ -27,10 +30,13 @@ namespace example {
             /** 初始化 */
             protected registers(): void {
                 // 注册功能
-                this.register(new ExampleFunc());
+                this.register(new BydODataFunc());
+                this.register(new DataStructrueFunc());
+                this.register(new TranslationFunc());
+                this.register(new ExampleFunc);
                 // 注册服务应用
-                this.register(new ExampleChooseServiceMapping());
-                this.register(new ExampleLinkServiceMapping());
+                // this.register(new ExampleChooseServiceMapping());
+                // this.register(new ExampleLinkServiceMapping());
                 // 注册常驻应用
 
             }

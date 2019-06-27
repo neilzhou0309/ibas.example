@@ -7,6 +7,9 @@
  */
 /// <reference path="../../index.d.ts" />
 /// <reference path="./example/index.ts" />
+/// <reference path="./byd/index.ts" />
+/// <reference path="./translation/index.ts" />
+/// <reference path="./datastructrue/index.ts" />
 namespace example {
     export namespace ui {
         /** 视图导航 */
@@ -29,6 +32,15 @@ namespace example {
                         break;
                     case app.ExampleEditApp.APPLICATION_ID:
                         view = new c.ExampleEditView();
+                        break;
+                    case app.BydODataApp.APPLICATION_ID:
+                        view = new c.BydODataView();
+                        break;
+                    case app.TranslationApp.APPLICATION_ID:
+                        view = new c.TranslationView();
+                        break;
+                    case app.DataStructrueApp.APPLICATION_ID:
+                        view = new c.DataStructrueView();
                         break;
                     default:
                         break;

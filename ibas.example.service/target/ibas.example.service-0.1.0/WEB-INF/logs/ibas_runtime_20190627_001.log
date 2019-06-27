@@ -1,0 +1,2302 @@
+[INFO] [2019-06-27 15:51:05.724] [http-nio-8081-exec-20(167)]
+daemon: register task id [5021257025694960673], name [write message to file].
+[INFO] [2019-06-27 15:51:05.711] [http-nio-8081-exec-20(167)]
+config: read file's data [D:\ibasCloud\ibas.example\ibas.example.service\target\ibas.example.service-0.1.0\WEB-INF\app.xml].
+[DEBUG] [2019-06-27 15:51:05.726] [http-nio-8081-exec-20(167)]
+i18n: read file's data [jar:file:/D:/ibasCloud/ibas.example/ibas.example.service/target/ibas.example.service-0.1.0/WEB-INF/lib/bobas.businessobjectscommon-0.1.2.jar!/i18n/].
+[DEBUG] [2019-06-27 15:51:05.901] [http-nio-8081-exec-20(167)]
+i18n: read file's data [jar:file:/D:/ibasCloud/ibas.example/ibas.example.service/target/ibas.example.service-0.1.0/WEB-INF/lib/ibas.initialfantasy-0.1.0.jar!/i18n/].
+[DEBUG] [2019-06-27 15:51:05.901] [http-nio-8081-exec-20(167)]
+i18n: use folder [D:\ibasCloud\ibas.example\ibas.example.service\target\ibas.example.service-0.1.0\resources\i18n].
+[WARN] [2019-06-27 15:51:05.927] [http-nio-8081-exec-20(167)]
+configurable factory: not configured [BizRulesWay], using defalut [BusinessRulesManager].
+[DEBUG] [2019-06-27 15:51:51.642] [http-nio-8081-exec-25(172)]
+configurable factory: combined class name [org.colorcoding.ibas.bobas.configuration.initial.ConfigurationManager].
+[INFO] [2019-06-27 15:51:51.646] [http-nio-8081-exec-26(173)]
+daemon: register task id [9045229054513893926], name [organization cleanner].
+[DEBUG] [2019-06-27 15:51:51.646] [http-nio-8081-exec-26(173)]
+configurable factory: combined class name [org.colorcoding.ibas.bobas.organization.initial.OrganizationManager].
+[INFO] [2019-06-27 15:51:51.660] [http-nio-8081-exec-26(173)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-06-27 15:51:51.660] [http-nio-8081-exec-26(173)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.organization.User] in master repository.
+[INFO] [2019-06-27 15:51:51.670] [http-nio-8081-exec-26(173)]
+daemon: register task id [7910243971454702063], name [ownership cleanner].
+[DEBUG] [2019-06-27 15:51:51.670] [http-nio-8081-exec-26(173)]
+configurable factory: combined class name [org.colorcoding.ibas.bobas.ownership.initial.OwnershipJudger].
+[DEBUG] [2019-06-27 15:51:51.673] [http-nio-8081-exec-26(173)]
+configurable factory: combined class name [org.colorcoding.ibas.bobas.db.mssql.DbAdapter].
+[INFO] [2019-06-27 15:51:51.679] [http-nio-8081-exec-26(173)]
+db adapter: created db adapter [mssql].
+[INFO] [2019-06-27 15:51:51.771] [http-nio-8081-exec-26(173)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-06-27 15:51:51.789] [http-nio-8081-exec-26(173)]
+sql: SELECT * FROM "AVA_SYS_USER" WHERE "Activated" = N'Y'
+[INFO] [2019-06-27 15:51:51.857] [http-nio-8081-exec-26(173)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.organization.User] [1] times, result [5] filtering [0].
+[DEBUG] [2019-06-27 15:51:51.859] [http-nio-8081-exec-26(173)]
+configurable factory: combined class name [org.colorcoding.ibas.bobas.configuration.initial.ConfigurationManager].
+[INFO] [2019-06-27 15:51:51.859] [http-nio-8081-exec-26(173)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-06-27 15:51:51.859] [http-nio-8081-exec-26(173)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-06-27 15:51:51.868] [http-nio-8081-exec-26(173)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-06-27 15:51:51.868] [http-nio-8081-exec-26(173)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'c2b31c06-20d8-44a2-bb34-17f47ed01859'
+[INFO] [2019-06-27 15:51:51.870] [http-nio-8081-exec-26(173)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [1] filtering [0].
+[INFO] [2019-06-27 15:51:51.871] [http-nio-8081-exec-26(173)]
+daemon: register task id [5159363796566056770], name [configuration updater].
+[INFO] [2019-06-27 15:51:51.871] [http-nio-8081-exec-25(172)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-06-27 15:51:51.871] [http-nio-8081-exec-26(173)]
+repository: changed user [{user: 1|admin}].
+[INFO] [2019-06-27 15:51:51.871] [http-nio-8081-exec-25(172)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-06-27 15:51:51.871] [http-nio-8081-exec-26(173)]
+repository: fetching [org.colorcoding.ibas.example.bo.example.Example] in master repository.
+[INFO] [2019-06-27 15:51:51.880] [http-nio-8081-exec-25(172)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[INFO] [2019-06-27 15:51:51.880] [http-nio-8081-exec-26(173)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-06-27 15:51:51.880] [http-nio-8081-exec-25(172)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'89081a60-a1a4-4023-8d2a-6311ef323586'
+[DEBUG] [2019-06-27 15:51:51.880] [http-nio-8081-exec-26(173)]
+sql: SELECT TOP 30 * FROM "AVA_EX_EXLE" ORDER BY "DocEntry" DESC
+[INFO] [2019-06-27 15:51:51.883] [http-nio-8081-exec-25(172)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [0] filtering [0].
+[INFO] [2019-06-27 15:51:51.883] [http-nio-8081-exec-25(172)]
+daemon: register task id [7160032666232498329], name [configuration updater].
+[INFO] [2019-06-27 15:51:51.885] [http-nio-8081-exec-26(173)]
+repository: fetch [org.colorcoding.ibas.example.bo.example.Example] [1] times, result [0] filtering [0].
+[ERROR] [2019-06-27 15:51:55.329] [http-nio-8081-exec-25(172)]
+org.colorcoding.ibas.bobas.repository.InvalidTokenException: 用户口令不匹配。
+	at org.colorcoding.ibas.bobas.repository.FileRepositoryService.setCurrentUser(FileRepositoryService.java:79)
+	at org.colorcoding.ibas.bobas.repository.FileRepositoryService.fetch(FileRepositoryService.java:98)
+	at org.colorcoding.ibas.example.service.rest.FileService.resource(FileService.java:93)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:124)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:167)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$VoidOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:159)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:79)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:469)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:391)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:80)
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:253)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:232)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:679)
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:392)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:365)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:318)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.filters.CorsFilter.handleNonCORS(CorsFilter.java:436)
+	at org.apache.catalina.filters.CorsFilter.doFilter(CorsFilter.java:177)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:521)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1096)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:674)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+[ERROR] [2019-06-27 15:52:03.129] [http-nio-8081-exec-27(174)]
+org.colorcoding.ibas.bobas.repository.InvalidTokenException: 用户口令不匹配。
+	at org.colorcoding.ibas.bobas.repository.FileRepositoryService.setCurrentUser(FileRepositoryService.java:79)
+	at org.colorcoding.ibas.bobas.repository.FileRepositoryService.fetch(FileRepositoryService.java:98)
+	at org.colorcoding.ibas.example.service.rest.FileService.resource(FileService.java:93)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:124)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:167)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$VoidOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:159)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:79)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:469)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:391)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:80)
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:253)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:232)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:679)
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:392)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:365)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:318)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.filters.CorsFilter.handleNonCORS(CorsFilter.java:436)
+	at org.apache.catalina.filters.CorsFilter.doFilter(CorsFilter.java:177)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:521)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1096)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:674)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+[ERROR] [2019-06-27 15:52:10.804] [http-nio-8081-exec-28(175)]
+org.colorcoding.ibas.bobas.repository.InvalidTokenException: 用户口令不匹配。
+	at org.colorcoding.ibas.bobas.repository.FileRepositoryService.setCurrentUser(FileRepositoryService.java:79)
+	at org.colorcoding.ibas.bobas.repository.FileRepositoryService.fetch(FileRepositoryService.java:98)
+	at org.colorcoding.ibas.example.service.rest.FileService.resource(FileService.java:93)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:124)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:167)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$VoidOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:159)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:79)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:469)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:391)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:80)
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:253)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:232)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:679)
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:392)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:365)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:318)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.filters.CorsFilter.handleNonCORS(CorsFilter.java:436)
+	at org.apache.catalina.filters.CorsFilter.doFilter(CorsFilter.java:177)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:521)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1096)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:674)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+[INFO] [2019-06-27 15:52:41.315] [http-nio-8081-exec-24(171)]
+repository: changed user [{user: 1|admin}].
+[INFO] [2019-06-27 15:52:41.365] [http-nio-8081-exec-24(171)]
+repository: writed file [khsalesorder.xml|D:\ibasCloud\ibas.example\ibas.example.service\target\ibas.example.service-0.1.0\WEB-INF\data\example_files\49b2c816-ebbd-421c-829a-2594611c9c4f.xml].
+[ERROR] [2019-06-27 15:52:55.833] [http-nio-8081-exec-34(203)]
+org.colorcoding.ibas.bobas.repository.InvalidTokenException: 用户口令不匹配。
+	at org.colorcoding.ibas.bobas.repository.FileRepositoryService.setCurrentUser(FileRepositoryService.java:79)
+	at org.colorcoding.ibas.bobas.repository.FileRepositoryService.fetch(FileRepositoryService.java:98)
+	at org.colorcoding.ibas.example.service.rest.FileService.resource(FileService.java:93)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:124)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:167)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$VoidOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:159)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:79)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:469)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:391)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:80)
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:253)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:232)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:679)
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:392)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:365)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:318)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.filters.CorsFilter.handleSimpleCORS(CorsFilter.java:301)
+	at org.apache.catalina.filters.CorsFilter.doFilter(CorsFilter.java:165)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:521)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1096)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:674)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+[ERROR] [2019-06-27 15:54:08.269] [http-nio-8081-exec-32(200)]
+org.colorcoding.ibas.bobas.repository.InvalidTokenException: 用户口令不匹配。
+	at org.colorcoding.ibas.bobas.repository.FileRepositoryService.setCurrentUser(FileRepositoryService.java:79)
+	at org.colorcoding.ibas.bobas.repository.FileRepositoryService.fetch(FileRepositoryService.java:98)
+	at org.colorcoding.ibas.example.service.rest.FileService.resource(FileService.java:93)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:124)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:167)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$VoidOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:159)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:79)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:469)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:391)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:80)
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:253)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:232)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:679)
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:392)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:365)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:318)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.filters.CorsFilter.handleNonCORS(CorsFilter.java:436)
+	at org.apache.catalina.filters.CorsFilter.doFilter(CorsFilter.java:177)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:521)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1096)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:674)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+[ERROR] [2019-06-27 15:54:09.692] [http-nio-8081-exec-31(197)]
+org.colorcoding.ibas.bobas.repository.InvalidTokenException: 用户口令不匹配。
+	at org.colorcoding.ibas.bobas.repository.FileRepositoryService.setCurrentUser(FileRepositoryService.java:79)
+	at org.colorcoding.ibas.bobas.repository.FileRepositoryService.fetch(FileRepositoryService.java:98)
+	at org.colorcoding.ibas.example.service.rest.FileService.resource(FileService.java:93)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:124)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:167)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$VoidOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:159)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:79)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:469)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:391)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:80)
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:253)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:232)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:679)
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:392)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:365)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:318)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.filters.CorsFilter.handleNonCORS(CorsFilter.java:436)
+	at org.apache.catalina.filters.CorsFilter.doFilter(CorsFilter.java:177)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:521)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1096)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:674)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+[ERROR] [2019-06-27 15:54:09.973] [http-nio-8081-exec-35(204)]
+org.colorcoding.ibas.bobas.repository.InvalidTokenException: 用户口令不匹配。
+	at org.colorcoding.ibas.bobas.repository.FileRepositoryService.setCurrentUser(FileRepositoryService.java:79)
+	at org.colorcoding.ibas.bobas.repository.FileRepositoryService.fetch(FileRepositoryService.java:98)
+	at org.colorcoding.ibas.example.service.rest.FileService.resource(FileService.java:93)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:124)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:167)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$VoidOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:159)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:79)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:469)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:391)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:80)
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:253)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:232)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:679)
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:392)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:365)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:318)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.filters.CorsFilter.handleNonCORS(CorsFilter.java:436)
+	at org.apache.catalina.filters.CorsFilter.doFilter(CorsFilter.java:177)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:521)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1096)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:674)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+[ERROR] [2019-06-27 15:54:10.164] [http-nio-8081-exec-33(202)]
+org.colorcoding.ibas.bobas.repository.InvalidTokenException: 用户口令不匹配。
+	at org.colorcoding.ibas.bobas.repository.FileRepositoryService.setCurrentUser(FileRepositoryService.java:79)
+	at org.colorcoding.ibas.bobas.repository.FileRepositoryService.fetch(FileRepositoryService.java:98)
+	at org.colorcoding.ibas.example.service.rest.FileService.resource(FileService.java:93)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:124)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:167)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$VoidOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:159)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:79)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:469)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:391)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:80)
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:253)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:232)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:679)
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:392)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:365)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:318)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.filters.CorsFilter.handleNonCORS(CorsFilter.java:436)
+	at org.apache.catalina.filters.CorsFilter.doFilter(CorsFilter.java:177)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:521)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1096)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:674)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+[ERROR] [2019-06-27 15:54:10.355] [http-nio-8081-exec-36(205)]
+org.colorcoding.ibas.bobas.repository.InvalidTokenException: 用户口令不匹配。
+	at org.colorcoding.ibas.bobas.repository.FileRepositoryService.setCurrentUser(FileRepositoryService.java:79)
+	at org.colorcoding.ibas.bobas.repository.FileRepositoryService.fetch(FileRepositoryService.java:98)
+	at org.colorcoding.ibas.example.service.rest.FileService.resource(FileService.java:93)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:124)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:167)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$VoidOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:159)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:79)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:469)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:391)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:80)
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:253)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:232)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:679)
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:392)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:365)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:318)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.filters.CorsFilter.handleNonCORS(CorsFilter.java:436)
+	at org.apache.catalina.filters.CorsFilter.doFilter(CorsFilter.java:177)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:521)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1096)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:674)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+[ERROR] [2019-06-27 15:54:10.531] [http-nio-8081-exec-37(206)]
+org.colorcoding.ibas.bobas.repository.InvalidTokenException: 用户口令不匹配。
+	at org.colorcoding.ibas.bobas.repository.FileRepositoryService.setCurrentUser(FileRepositoryService.java:79)
+	at org.colorcoding.ibas.bobas.repository.FileRepositoryService.fetch(FileRepositoryService.java:98)
+	at org.colorcoding.ibas.example.service.rest.FileService.resource(FileService.java:93)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:124)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:167)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$VoidOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:159)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:79)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:469)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:391)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:80)
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:253)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:232)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:679)
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:392)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:365)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:318)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.filters.CorsFilter.handleNonCORS(CorsFilter.java:436)
+	at org.apache.catalina.filters.CorsFilter.doFilter(CorsFilter.java:177)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:521)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1096)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:674)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+[ERROR] [2019-06-27 15:54:10.715] [http-nio-8081-exec-38(207)]
+org.colorcoding.ibas.bobas.repository.InvalidTokenException: 用户口令不匹配。
+	at org.colorcoding.ibas.bobas.repository.FileRepositoryService.setCurrentUser(FileRepositoryService.java:79)
+	at org.colorcoding.ibas.bobas.repository.FileRepositoryService.fetch(FileRepositoryService.java:98)
+	at org.colorcoding.ibas.example.service.rest.FileService.resource(FileService.java:93)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:124)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:167)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$VoidOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:159)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:79)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:469)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:391)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:80)
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:253)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:232)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:679)
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:392)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:365)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:318)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.filters.CorsFilter.handleNonCORS(CorsFilter.java:436)
+	at org.apache.catalina.filters.CorsFilter.doFilter(CorsFilter.java:177)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:521)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1096)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:674)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+[ERROR] [2019-06-27 15:54:10.899] [http-nio-8081-exec-39(208)]
+org.colorcoding.ibas.bobas.repository.InvalidTokenException: 用户口令不匹配。
+	at org.colorcoding.ibas.bobas.repository.FileRepositoryService.setCurrentUser(FileRepositoryService.java:79)
+	at org.colorcoding.ibas.bobas.repository.FileRepositoryService.fetch(FileRepositoryService.java:98)
+	at org.colorcoding.ibas.example.service.rest.FileService.resource(FileService.java:93)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:124)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:167)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$VoidOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:159)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:79)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:469)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:391)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:80)
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:253)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:232)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:679)
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:392)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:365)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:318)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.filters.CorsFilter.handleNonCORS(CorsFilter.java:436)
+	at org.apache.catalina.filters.CorsFilter.doFilter(CorsFilter.java:177)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:521)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1096)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:674)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+[ERROR] [2019-06-27 15:54:11.128] [http-nio-8081-exec-40(209)]
+org.colorcoding.ibas.bobas.repository.InvalidTokenException: 用户口令不匹配。
+	at org.colorcoding.ibas.bobas.repository.FileRepositoryService.setCurrentUser(FileRepositoryService.java:79)
+	at org.colorcoding.ibas.bobas.repository.FileRepositoryService.fetch(FileRepositoryService.java:98)
+	at org.colorcoding.ibas.example.service.rest.FileService.resource(FileService.java:93)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:124)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:167)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$VoidOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:159)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:79)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:469)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:391)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:80)
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:253)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:232)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:679)
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:392)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:365)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:318)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.filters.CorsFilter.handleNonCORS(CorsFilter.java:436)
+	at org.apache.catalina.filters.CorsFilter.doFilter(CorsFilter.java:177)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:521)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1096)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:674)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+[ERROR] [2019-06-27 15:54:11.308] [http-nio-8081-exec-34(203)]
+org.colorcoding.ibas.bobas.repository.InvalidTokenException: 用户口令不匹配。
+	at org.colorcoding.ibas.bobas.repository.FileRepositoryService.setCurrentUser(FileRepositoryService.java:79)
+	at org.colorcoding.ibas.bobas.repository.FileRepositoryService.fetch(FileRepositoryService.java:98)
+	at org.colorcoding.ibas.example.service.rest.FileService.resource(FileService.java:93)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:124)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:167)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$VoidOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:159)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:79)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:469)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:391)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:80)
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:253)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:232)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:679)
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:392)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:365)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:318)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.filters.CorsFilter.handleNonCORS(CorsFilter.java:436)
+	at org.apache.catalina.filters.CorsFilter.doFilter(CorsFilter.java:177)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:521)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1096)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:674)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+[ERROR] [2019-06-27 15:54:11.484] [http-nio-8081-exec-32(200)]
+org.colorcoding.ibas.bobas.repository.InvalidTokenException: 用户口令不匹配。
+	at org.colorcoding.ibas.bobas.repository.FileRepositoryService.setCurrentUser(FileRepositoryService.java:79)
+	at org.colorcoding.ibas.bobas.repository.FileRepositoryService.fetch(FileRepositoryService.java:98)
+	at org.colorcoding.ibas.example.service.rest.FileService.resource(FileService.java:93)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:124)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:167)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$VoidOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:159)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:79)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:469)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:391)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:80)
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:253)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:232)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:679)
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:392)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:365)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:318)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.filters.CorsFilter.handleNonCORS(CorsFilter.java:436)
+	at org.apache.catalina.filters.CorsFilter.doFilter(CorsFilter.java:177)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:521)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1096)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:674)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+[DEBUG] [2019-06-27 15:54:51.979] [ibas-framework-daemon(199)]
+daemon: begin to run task [5159363796566056770 - configuration updater], 1th running.
+[DEBUG] [2019-06-27 15:54:51.979] [ibas-framework-daemon(199)]
+daemon: begin to run task [7160032666232498329 - configuration updater], 1th running.
+[INFO] [2019-06-27 15:54:51.980] [ibas-task|configuration updater(201)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-06-27 15:54:51.980] [ibas-task|configuration updater(201)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-06-27 15:54:52.014] [ibas-task|configuration updater(201)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-06-27 15:54:52.014] [ibas-task|configuration updater(201)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'c2b31c06-20d8-44a2-bb34-17f47ed01859'
+[INFO] [2019-06-27 15:54:52.021] [ibas-task|configuration updater(201)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [1] filtering [0].
+[DEBUG] [2019-06-27 15:54:52.021] [ibas-task|sleeping(201)]
+daemon: end task [5159363796566056770 - configuration updater] 1th running and for [42] milliseconds.
+[INFO] [2019-06-27 15:54:52.022] [ibas-task|configuration updater(201)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-06-27 15:54:52.022] [ibas-task|configuration updater(201)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-06-27 15:54:52.040] [ibas-task|configuration updater(201)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-06-27 15:54:52.040] [ibas-task|configuration updater(201)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'89081a60-a1a4-4023-8d2a-6311ef323586'
+[INFO] [2019-06-27 15:54:52.042] [ibas-task|configuration updater(201)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [0] filtering [0].
+[DEBUG] [2019-06-27 15:54:52.042] [ibas-task|sleeping(201)]
+daemon: end task [7160032666232498329 - configuration updater] 1th running and for [63] milliseconds.
+[ERROR] [2019-06-27 15:55:12.974] [http-nio-8081-exec-37(206)]
+org.colorcoding.ibas.bobas.repository.InvalidTokenException: 用户口令不匹配。
+	at org.colorcoding.ibas.bobas.repository.FileRepositoryService.setCurrentUser(FileRepositoryService.java:79)
+	at org.colorcoding.ibas.bobas.repository.FileRepositoryService.fetch(FileRepositoryService.java:98)
+	at org.colorcoding.ibas.example.service.rest.FileService.resource(FileService.java:93)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:124)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:167)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$VoidOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:159)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:79)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:469)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:391)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:80)
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:253)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:232)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:679)
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:392)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:365)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:318)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.filters.CorsFilter.handleNonCORS(CorsFilter.java:436)
+	at org.apache.catalina.filters.CorsFilter.doFilter(CorsFilter.java:177)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:521)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1096)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:674)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+[ERROR] [2019-06-27 15:56:07.896] [http-nio-8081-exec-40(209)]
+org.colorcoding.ibas.bobas.repository.InvalidTokenException: 用户口令不匹配。
+	at org.colorcoding.ibas.bobas.repository.FileRepositoryService.setCurrentUser(FileRepositoryService.java:79)
+	at org.colorcoding.ibas.bobas.repository.FileRepositoryService.fetch(FileRepositoryService.java:98)
+	at org.colorcoding.ibas.example.service.rest.FileService.resource(FileService.java:93)
+	at sun.reflect.GeneratedMethodAccessor153.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:124)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:167)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$VoidOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:159)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:79)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:469)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:391)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:80)
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:253)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:232)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:679)
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:392)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:365)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:318)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.filters.CorsFilter.handleNonCORS(CorsFilter.java:436)
+	at org.apache.catalina.filters.CorsFilter.doFilter(CorsFilter.java:177)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:521)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1096)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:674)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+[ERROR] [2019-06-27 15:56:23.042] [http-nio-8081-exec-34(203)]
+org.colorcoding.ibas.bobas.repository.InvalidTokenException: 用户口令不匹配。
+	at org.colorcoding.ibas.bobas.repository.FileRepositoryService.setCurrentUser(FileRepositoryService.java:79)
+	at org.colorcoding.ibas.bobas.repository.FileRepositoryService.fetch(FileRepositoryService.java:98)
+	at org.colorcoding.ibas.example.service.rest.FileService.resource(FileService.java:93)
+	at sun.reflect.GeneratedMethodAccessor153.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:124)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:167)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$VoidOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:159)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:79)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:469)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:391)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:80)
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:253)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:232)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:679)
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:392)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:365)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:318)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.filters.CorsFilter.handleNonCORS(CorsFilter.java:436)
+	at org.apache.catalina.filters.CorsFilter.doFilter(CorsFilter.java:177)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:521)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1096)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:674)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+[ERROR] [2019-06-27 15:57:36.265] [http-nio-8081-exec-32(200)]
+org.colorcoding.ibas.bobas.repository.InvalidTokenException: 用户口令不匹配。
+	at org.colorcoding.ibas.bobas.repository.FileRepositoryService.setCurrentUser(FileRepositoryService.java:79)
+	at org.colorcoding.ibas.bobas.repository.FileRepositoryService.fetch(FileRepositoryService.java:98)
+	at org.colorcoding.ibas.example.service.rest.FileService.resource(FileService.java:93)
+	at sun.reflect.GeneratedMethodAccessor153.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:124)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:167)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$VoidOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:159)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:79)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:469)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:391)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:80)
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:253)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:232)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:679)
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:392)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:365)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:318)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.filters.CorsFilter.handleNonCORS(CorsFilter.java:436)
+	at org.apache.catalina.filters.CorsFilter.doFilter(CorsFilter.java:177)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:521)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1096)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:674)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+[DEBUG] [2019-06-27 15:58:01.436] [ibas-framework-daemon(199)]
+daemon: begin to run task [5159363796566056770 - configuration updater], 2th running.
+[DEBUG] [2019-06-27 15:58:01.436] [ibas-framework-daemon(199)]
+daemon: begin to run task [7160032666232498329 - configuration updater], 2th running.
+[INFO] [2019-06-27 15:58:01.436] [ibas-task|configuration updater(201)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-06-27 15:58:01.436] [ibas-task|configuration updater(201)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-06-27 15:58:01.449] [ibas-task|configuration updater(201)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-06-27 15:58:01.449] [ibas-task|configuration updater(201)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'c2b31c06-20d8-44a2-bb34-17f47ed01859'
+[INFO] [2019-06-27 15:58:01.450] [ibas-task|configuration updater(201)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [1] filtering [0].
+[DEBUG] [2019-06-27 15:58:01.450] [ibas-task|sleeping(201)]
+daemon: end task [5159363796566056770 - configuration updater] 2th running and for [14] milliseconds.
+[INFO] [2019-06-27 15:58:01.451] [ibas-task|configuration updater(201)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-06-27 15:58:01.451] [ibas-task|configuration updater(201)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-06-27 15:58:01.459] [ibas-task|configuration updater(201)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-06-27 15:58:01.460] [ibas-task|configuration updater(201)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'89081a60-a1a4-4023-8d2a-6311ef323586'
+[INFO] [2019-06-27 15:58:01.462] [ibas-task|configuration updater(201)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [0] filtering [0].
+[DEBUG] [2019-06-27 15:58:01.462] [ibas-task|sleeping(201)]
+daemon: end task [7160032666232498329 - configuration updater] 2th running and for [26] milliseconds.
+[ERROR] [2019-06-27 16:00:48.272] [http-nio-8081-exec-35(204)]
+org.colorcoding.ibas.bobas.repository.InvalidTokenException: 用户口令不匹配。
+	at org.colorcoding.ibas.bobas.repository.FileRepositoryService.setCurrentUser(FileRepositoryService.java:79)
+	at org.colorcoding.ibas.bobas.repository.FileRepositoryService.fetch(FileRepositoryService.java:98)
+	at org.colorcoding.ibas.example.service.rest.FileService.resource(FileService.java:93)
+	at sun.reflect.GeneratedMethodAccessor153.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:124)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:167)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$VoidOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:159)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:79)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:469)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:391)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:80)
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:253)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:232)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:679)
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:392)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:365)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:318)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.filters.CorsFilter.handleNonCORS(CorsFilter.java:436)
+	at org.apache.catalina.filters.CorsFilter.doFilter(CorsFilter.java:177)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:521)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1096)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:674)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+[ERROR] [2019-06-27 16:00:58.165] [http-nio-8081-exec-37(206)]
+org.colorcoding.ibas.bobas.repository.InvalidTokenException: 用户口令不匹配。
+	at org.colorcoding.ibas.bobas.repository.FileRepositoryService.setCurrentUser(FileRepositoryService.java:79)
+	at org.colorcoding.ibas.bobas.repository.FileRepositoryService.fetch(FileRepositoryService.java:98)
+	at org.colorcoding.ibas.example.service.rest.FileService.resource(FileService.java:93)
+	at sun.reflect.GeneratedMethodAccessor153.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:124)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:167)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$VoidOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:159)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:79)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:469)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:391)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:80)
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:253)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:232)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:679)
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:392)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:365)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:318)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.filters.CorsFilter.handleNonCORS(CorsFilter.java:436)
+	at org.apache.catalina.filters.CorsFilter.doFilter(CorsFilter.java:177)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:521)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1096)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:674)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+[DEBUG] [2019-06-27 16:01:04.275] [ibas-framework-daemon(199)]
+daemon: begin to run task [5159363796566056770 - configuration updater], 3th running.
+[DEBUG] [2019-06-27 16:01:04.275] [ibas-framework-daemon(199)]
+daemon: begin to run task [7160032666232498329 - configuration updater], 3th running.
+[INFO] [2019-06-27 16:01:04.275] [ibas-task|configuration updater(201)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-06-27 16:01:04.276] [ibas-task|configuration updater(201)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[ERROR] [2019-06-27 16:03:18.356] [ibas-task|configuration updater(201)]
+java.lang.RuntimeException: org.colorcoding.ibas.bobas.db.DbException: com.microsoft.sqlserver.jdbc.SQLServerException: 驱动程序无法通过使用安全套接字层(SSL)加密与 SQL Server 建立安全连接。错误:“Connection reset by peer: socket write error ClientConnectionId:8f273cda-df1f-4346-8c2d-b8cce854c073”。
+	at org.colorcoding.ibas.bobas.configuration.initial.ConfigurationManager.update(ConfigurationManager.java:84)
+	at org.colorcoding.ibas.bobas.configuration.initial.ConfigurationManager$1.run(ConfigurationManager.java:59)
+	at org.colorcoding.ibas.bobas.core.DaemonTaskWrapping.run(DaemonTaskWrapping.java:231)
+	at org.colorcoding.ibas.bobas.core.Daemon$2.run(Daemon.java:232)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.colorcoding.ibas.bobas.db.DbException: com.microsoft.sqlserver.jdbc.SQLServerException: 驱动程序无法通过使用安全套接字层(SSL)加密与 SQL Server 建立安全连接。错误:“Connection reset by peer: socket write error ClientConnectionId:8f273cda-df1f-4346-8c2d-b8cce854c073”。
+	at org.colorcoding.ibas.bobas.db.mssql.DbAdapter.createConnection(DbAdapter.java:21)
+	at org.colorcoding.ibas.bobas.db.DbAdapter.createDbConnection(DbAdapter.java:42)
+	at org.colorcoding.ibas.bobas.db.DbAdapter.createDbConnection(DbAdapter.java:35)
+	at org.colorcoding.ibas.bobas.repository.BORepository4DbReadonly.getDbConnection(BORepository4DbReadonly.java:90)
+	at org.colorcoding.ibas.bobas.repository.BORepository4DbReadonly.openDbConnection(BORepository4DbReadonly.java:156)
+	at org.colorcoding.ibas.bobas.repository.BORepository4DbReadonly.myFetchEx(BORepository4DbReadonly.java:377)
+	at org.colorcoding.ibas.bobas.repository.BORepository4DbReadonly.fetchEx(BORepository4DbReadonly.java:245)
+	at org.colorcoding.ibas.bobas.repository.BORepositoryService.fetch(BORepositoryService.java:237)
+	at org.colorcoding.ibas.bobas.repository.BORepositoryServiceApplication.fetch(BORepositoryServiceApplication.java:211)
+	at org.colorcoding.ibas.bobas.repository.BORepositoryServiceApplication.fetch(BORepositoryServiceApplication.java:34)
+	at org.colorcoding.ibas.bobas.repository.BORepositorySmartService.fetch(BORepositorySmartService.java:125)
+	at org.colorcoding.ibas.bobas.repository.BORepositoryService.fetch(BORepositoryService.java:259)
+	at org.colorcoding.ibas.initialfantasy.repository.BORepositoryInitialFantasy.fetchApplicationConfig(BORepositoryInitialFantasy.java:52)
+	at org.colorcoding.ibas.initialfantasy.repository.BORepositoryInitialFantasy.fetchApplicationConfig(BORepositoryInitialFantasy.java:62)
+	at org.colorcoding.ibas.bobas.configuration.initial.ConfigurationManager.update(ConfigurationManager.java:46)
+	... 6 more
+Caused by: com.microsoft.sqlserver.jdbc.SQLServerException: 驱动程序无法通过使用安全套接字层(SSL)加密与 SQL Server 建立安全连接。错误:“Connection reset by peer: socket write error ClientConnectionId:8f273cda-df1f-4346-8c2d-b8cce854c073”。
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.terminate(SQLServerConnection.java:2892)
+	at com.microsoft.sqlserver.jdbc.TDSChannel.enableSSL(IOBuffer.java:1881)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectHelper(SQLServerConnection.java:2452)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.login(SQLServerConnection.java:2103)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectInternal(SQLServerConnection.java:1950)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connect(SQLServerConnection.java:1162)
+	at com.microsoft.sqlserver.jdbc.SQLServerDriver.connect(SQLServerDriver.java:735)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at org.colorcoding.ibas.bobas.db.mssql.DbAdapter.createConnection(DbAdapter.java:18)
+	... 20 more
+Caused by: java.io.IOException: Connection reset by peer: socket write error ClientConnectionId:8f273cda-df1f-4346-8c2d-b8cce854c073
+	at com.microsoft.sqlserver.jdbc.TDSChannel$SSLHandshakeInputStream.ensureSSLPayload(IOBuffer.java:780)
+	at com.microsoft.sqlserver.jdbc.TDSChannel$SSLHandshakeInputStream.readInternal(IOBuffer.java:840)
+	at com.microsoft.sqlserver.jdbc.TDSChannel$SSLHandshakeInputStream.read(IOBuffer.java:833)
+	at com.microsoft.sqlserver.jdbc.TDSChannel$ProxyInputStream.readInternal(IOBuffer.java:1003)
+	at com.microsoft.sqlserver.jdbc.TDSChannel$ProxyInputStream.read(IOBuffer.java:993)
+	at sun.security.ssl.InputRecord.readFully(InputRecord.java:465)
+	at sun.security.ssl.InputRecord.read(InputRecord.java:503)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:973)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1375)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1403)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1387)
+	at com.microsoft.sqlserver.jdbc.TDSChannel.enableSSL(IOBuffer.java:1799)
+	... 28 more
+
+[DEBUG] [2019-06-27 16:05:23.106] [ibas-task|sleeping(201)]
+daemon: end task [5159363796566056770 - configuration updater] 3th running and for [258830] milliseconds.
+[INFO] [2019-06-27 16:05:23.106] [ibas-task|configuration updater(201)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-06-27 16:05:23.106] [ibas-task|configuration updater(201)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[DEBUG] [2019-06-27 16:10:22.825] [ibas-framework-daemon(199)]
+daemon: begin to run task [5159363796566056770 - configuration updater], 4th running.
+[ERROR] [2019-06-27 16:10:22.827] [http-nio-8081-exec-38(207)]
+org.colorcoding.ibas.bobas.repository.InvalidTokenException: 用户口令不匹配。
+	at org.colorcoding.ibas.bobas.repository.FileRepositoryService.setCurrentUser(FileRepositoryService.java:79)
+	at org.colorcoding.ibas.bobas.repository.FileRepositoryService.fetch(FileRepositoryService.java:98)
+	at org.colorcoding.ibas.example.service.rest.FileService.resource(FileService.java:93)
+	at sun.reflect.GeneratedMethodAccessor153.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:124)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:167)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$VoidOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:159)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:79)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:469)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:391)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:80)
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:253)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:232)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:679)
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:392)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:365)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:318)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.filters.CorsFilter.handleNonCORS(CorsFilter.java:436)
+	at org.apache.catalina.filters.CorsFilter.doFilter(CorsFilter.java:177)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:521)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1096)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:674)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+[ERROR] [2019-06-27 16:10:22.840] [http-nio-8081-exec-31(197)]
+org.colorcoding.ibas.bobas.repository.InvalidTokenException: 用户口令不匹配。
+	at org.colorcoding.ibas.bobas.repository.FileRepositoryService.setCurrentUser(FileRepositoryService.java:79)
+	at org.colorcoding.ibas.bobas.repository.FileRepositoryService.fetch(FileRepositoryService.java:98)
+	at org.colorcoding.ibas.example.service.rest.FileService.resource(FileService.java:93)
+	at sun.reflect.GeneratedMethodAccessor153.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:124)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:167)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$VoidOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:159)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:79)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:469)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:391)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:80)
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:253)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:232)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:679)
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:392)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:365)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:318)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.filters.CorsFilter.handleNonCORS(CorsFilter.java:436)
+	at org.apache.catalina.filters.CorsFilter.doFilter(CorsFilter.java:177)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:521)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1096)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:674)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+[ERROR] [2019-06-27 16:10:22.833] [http-nio-8081-exec-32(200)]
+org.colorcoding.ibas.bobas.repository.InvalidTokenException: 用户口令不匹配。
+	at org.colorcoding.ibas.bobas.repository.FileRepositoryService.setCurrentUser(FileRepositoryService.java:79)
+	at org.colorcoding.ibas.bobas.repository.FileRepositoryService.fetch(FileRepositoryService.java:98)
+	at org.colorcoding.ibas.example.service.rest.FileService.resource(FileService.java:93)
+	at sun.reflect.GeneratedMethodAccessor153.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:124)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:167)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$VoidOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:159)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:79)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:469)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:391)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:80)
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:253)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:232)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:679)
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:392)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:365)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:318)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.filters.CorsFilter.handleNonCORS(CorsFilter.java:436)
+	at org.apache.catalina.filters.CorsFilter.doFilter(CorsFilter.java:177)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:521)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1096)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:674)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+[ERROR] [2019-06-27 16:10:22.833] [http-nio-8081-exec-40(209)]
+org.colorcoding.ibas.bobas.repository.InvalidTokenException: 用户口令不匹配。
+	at org.colorcoding.ibas.bobas.repository.FileRepositoryService.setCurrentUser(FileRepositoryService.java:79)
+	at org.colorcoding.ibas.bobas.repository.FileRepositoryService.fetch(FileRepositoryService.java:98)
+	at org.colorcoding.ibas.example.service.rest.FileService.resource(FileService.java:93)
+	at sun.reflect.GeneratedMethodAccessor153.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:124)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:167)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$VoidOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:159)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:79)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:469)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:391)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:80)
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:253)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:232)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:679)
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:392)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:365)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:318)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.filters.CorsFilter.handleNonCORS(CorsFilter.java:436)
+	at org.apache.catalina.filters.CorsFilter.doFilter(CorsFilter.java:177)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:521)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1096)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:674)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+[ERROR] [2019-06-27 16:10:22.831] [http-nio-8081-exec-34(203)]
+org.colorcoding.ibas.bobas.repository.InvalidTokenException: 用户口令不匹配。
+	at org.colorcoding.ibas.bobas.repository.FileRepositoryService.setCurrentUser(FileRepositoryService.java:79)
+	at org.colorcoding.ibas.bobas.repository.FileRepositoryService.fetch(FileRepositoryService.java:98)
+	at org.colorcoding.ibas.example.service.rest.FileService.resource(FileService.java:93)
+	at sun.reflect.GeneratedMethodAccessor153.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:124)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:167)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$VoidOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:159)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:79)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:469)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:391)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:80)
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:253)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:232)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:679)
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:392)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:365)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:318)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.filters.CorsFilter.handleNonCORS(CorsFilter.java:436)
+	at org.apache.catalina.filters.CorsFilter.doFilter(CorsFilter.java:177)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:521)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1096)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:674)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+[ERROR] [2019-06-27 16:10:22.830] [ibas-task|configuration updater(201)]
+java.lang.RuntimeException: org.colorcoding.ibas.bobas.db.DbException: com.microsoft.sqlserver.jdbc.SQLServerException: 驱动程序无法通过使用安全套接字层(SSL)加密与 SQL Server 建立安全连接。错误:“Connection reset ClientConnectionId:4b22feac-6d9e-4d8b-af0b-16859cbdacdf”。
+	at org.colorcoding.ibas.bobas.configuration.initial.ConfigurationManager.update(ConfigurationManager.java:84)
+	at org.colorcoding.ibas.bobas.configuration.initial.ConfigurationManager$1.run(ConfigurationManager.java:59)
+	at org.colorcoding.ibas.bobas.core.DaemonTaskWrapping.run(DaemonTaskWrapping.java:231)
+	at org.colorcoding.ibas.bobas.core.Daemon$2.run(Daemon.java:232)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.colorcoding.ibas.bobas.db.DbException: com.microsoft.sqlserver.jdbc.SQLServerException: 驱动程序无法通过使用安全套接字层(SSL)加密与 SQL Server 建立安全连接。错误:“Connection reset ClientConnectionId:4b22feac-6d9e-4d8b-af0b-16859cbdacdf”。
+	at org.colorcoding.ibas.bobas.db.mssql.DbAdapter.createConnection(DbAdapter.java:21)
+	at org.colorcoding.ibas.bobas.db.DbAdapter.createDbConnection(DbAdapter.java:42)
+	at org.colorcoding.ibas.bobas.db.DbAdapter.createDbConnection(DbAdapter.java:35)
+	at org.colorcoding.ibas.bobas.repository.BORepository4DbReadonly.getDbConnection(BORepository4DbReadonly.java:90)
+	at org.colorcoding.ibas.bobas.repository.BORepository4DbReadonly.openDbConnection(BORepository4DbReadonly.java:156)
+	at org.colorcoding.ibas.bobas.repository.BORepository4DbReadonly.myFetchEx(BORepository4DbReadonly.java:377)
+	at org.colorcoding.ibas.bobas.repository.BORepository4DbReadonly.fetchEx(BORepository4DbReadonly.java:245)
+	at org.colorcoding.ibas.bobas.repository.BORepositoryService.fetch(BORepositoryService.java:237)
+	at org.colorcoding.ibas.bobas.repository.BORepositoryServiceApplication.fetch(BORepositoryServiceApplication.java:211)
+	at org.colorcoding.ibas.bobas.repository.BORepositoryServiceApplication.fetch(BORepositoryServiceApplication.java:34)
+	at org.colorcoding.ibas.bobas.repository.BORepositorySmartService.fetch(BORepositorySmartService.java:125)
+	at org.colorcoding.ibas.bobas.repository.BORepositoryService.fetch(BORepositoryService.java:259)
+	at org.colorcoding.ibas.initialfantasy.repository.BORepositoryInitialFantasy.fetchApplicationConfig(BORepositoryInitialFantasy.java:52)
+	at org.colorcoding.ibas.initialfantasy.repository.BORepositoryInitialFantasy.fetchApplicationConfig(BORepositoryInitialFantasy.java:62)
+	at org.colorcoding.ibas.bobas.configuration.initial.ConfigurationManager.update(ConfigurationManager.java:46)
+	... 6 more
+Caused by: com.microsoft.sqlserver.jdbc.SQLServerException: 驱动程序无法通过使用安全套接字层(SSL)加密与 SQL Server 建立安全连接。错误:“Connection reset ClientConnectionId:4b22feac-6d9e-4d8b-af0b-16859cbdacdf”。
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.terminate(SQLServerConnection.java:2892)
+	at com.microsoft.sqlserver.jdbc.TDSChannel.enableSSL(IOBuffer.java:1881)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectHelper(SQLServerConnection.java:2452)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.login(SQLServerConnection.java:2103)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connectInternal(SQLServerConnection.java:1950)
+	at com.microsoft.sqlserver.jdbc.SQLServerConnection.connect(SQLServerConnection.java:1162)
+	at com.microsoft.sqlserver.jdbc.SQLServerDriver.connect(SQLServerDriver.java:735)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at org.colorcoding.ibas.bobas.db.mssql.DbAdapter.createConnection(DbAdapter.java:18)
+	... 20 more
+Caused by: java.io.IOException: Connection reset ClientConnectionId:4b22feac-6d9e-4d8b-af0b-16859cbdacdf
+	at com.microsoft.sqlserver.jdbc.TDSChannel$SSLHandshakeInputStream.ensureSSLPayload(IOBuffer.java:790)
+	at com.microsoft.sqlserver.jdbc.TDSChannel$SSLHandshakeInputStream.readInternal(IOBuffer.java:840)
+	at com.microsoft.sqlserver.jdbc.TDSChannel$SSLHandshakeInputStream.read(IOBuffer.java:833)
+	at com.microsoft.sqlserver.jdbc.TDSChannel$ProxyInputStream.readInternal(IOBuffer.java:1003)
+	at com.microsoft.sqlserver.jdbc.TDSChannel$ProxyInputStream.read(IOBuffer.java:993)
+	at sun.security.ssl.InputRecord.readFully(InputRecord.java:465)
+	at sun.security.ssl.InputRecord.read(InputRecord.java:503)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:973)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1375)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1403)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1387)
+	at com.microsoft.sqlserver.jdbc.TDSChannel.enableSSL(IOBuffer.java:1799)
+	... 28 more
+
+[DEBUG] [2019-06-27 16:10:22.880] [ibas-task|sleeping(201)]
+daemon: end task [7160032666232498329 - configuration updater] 3th running and for [558605] milliseconds.
+[INFO] [2019-06-27 16:10:22.881] [ibas-task|configuration updater(201)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-06-27 16:10:22.881] [ibas-task|configuration updater(201)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-06-27 16:10:22.889] [ibas-task|configuration updater(201)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-06-27 16:10:22.890] [ibas-task|configuration updater(201)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'c2b31c06-20d8-44a2-bb34-17f47ed01859'
+[INFO] [2019-06-27 16:10:22.890] [ibas-task|configuration updater(201)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [1] filtering [0].
+[DEBUG] [2019-06-27 16:10:22.891] [ibas-task|sleeping(201)]
+daemon: end task [5159363796566056770 - configuration updater] 4th running and for [66] milliseconds.
+[INFO] [2019-06-27 16:12:29.567] [http-nio-8081-exec-6(118)]
+daemon: register task id [6052254415798310651], name [write message to file].
+[INFO] [2019-06-27 16:12:29.555] [http-nio-8081-exec-6(118)]
+config: read file's data [D:\ibasCloud\ibas.example\ibas.example.service\target\ibas.example.service-0.1.0\WEB-INF\app.xml].
+[DEBUG] [2019-06-27 16:12:29.568] [http-nio-8081-exec-6(118)]
+configurable factory: combined class name [org.colorcoding.ibas.bobas.configuration.initial.ConfigurationManager].
+[INFO] [2019-06-27 16:12:29.600] [http-nio-8081-exec-6(118)]
+daemon: register task id [5549227830940866135], name [organization cleanner].
+[DEBUG] [2019-06-27 16:12:29.600] [http-nio-8081-exec-6(118)]
+configurable factory: combined class name [org.colorcoding.ibas.bobas.organization.initial.OrganizationManager].
+[INFO] [2019-06-27 16:12:29.610] [http-nio-8081-exec-6(118)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-06-27 16:12:29.611] [http-nio-8081-exec-6(118)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.organization.User] in master repository.
+[DEBUG] [2019-06-27 16:12:29.623] [http-nio-8081-exec-6(118)]
+i18n: read file's data [jar:file:/D:/ibasCloud/ibas.example/ibas.example.service/target/ibas.example.service-0.1.0/WEB-INF/lib/bobas.businessobjectscommon-0.1.2.jar!/i18n/].
+[DEBUG] [2019-06-27 16:12:29.624] [http-nio-8081-exec-6(118)]
+i18n: read file's data [jar:file:/D:/ibasCloud/ibas.example/ibas.example.service/target/ibas.example.service-0.1.0/WEB-INF/lib/ibas.initialfantasy-0.1.0.jar!/i18n/].
+[DEBUG] [2019-06-27 16:12:29.625] [http-nio-8081-exec-6(118)]
+i18n: use folder [D:\ibasCloud\ibas.example\ibas.example.service\target\ibas.example.service-0.1.0\resources\i18n].
+[INFO] [2019-06-27 16:12:29.628] [http-nio-8081-exec-6(118)]
+daemon: register task id [5499328319920826253], name [ownership cleanner].
+[DEBUG] [2019-06-27 16:12:29.628] [http-nio-8081-exec-6(118)]
+configurable factory: combined class name [org.colorcoding.ibas.bobas.ownership.initial.OwnershipJudger].
+[DEBUG] [2019-06-27 16:12:29.631] [http-nio-8081-exec-6(118)]
+configurable factory: combined class name [org.colorcoding.ibas.bobas.db.mssql.DbAdapter].
+[INFO] [2019-06-27 16:12:29.636] [http-nio-8081-exec-6(118)]
+db adapter: created db adapter [mssql].
+[INFO] [2019-06-27 16:12:29.816] [http-nio-8081-exec-6(118)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-06-27 16:12:29.840] [http-nio-8081-exec-6(118)]
+sql: SELECT * FROM "AVA_SYS_USER" WHERE "Activated" = N'Y'
+[WARN] [2019-06-27 16:12:29.925] [http-nio-8081-exec-6(118)]
+configurable factory: not configured [BizRulesWay], using defalut [BusinessRulesManager].
+[INFO] [2019-06-27 16:12:29.958] [http-nio-8081-exec-6(118)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.organization.User] [1] times, result [5] filtering [0].
+[DEBUG] [2019-06-27 16:12:29.960] [http-nio-8081-exec-6(118)]
+configurable factory: combined class name [org.colorcoding.ibas.bobas.configuration.initial.ConfigurationManager].
+[INFO] [2019-06-27 16:12:29.960] [http-nio-8081-exec-6(118)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-06-27 16:12:29.960] [http-nio-8081-exec-6(118)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-06-27 16:12:29.974] [http-nio-8081-exec-6(118)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-06-27 16:12:29.974] [http-nio-8081-exec-6(118)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'c2b31c06-20d8-44a2-bb34-17f47ed01859'
+[INFO] [2019-06-27 16:12:29.977] [http-nio-8081-exec-6(118)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [1] filtering [0].
+[INFO] [2019-06-27 16:12:29.978] [http-nio-8081-exec-6(118)]
+daemon: register task id [8712716017023052386], name [configuration updater].
+[INFO] [2019-06-27 16:12:29.978] [http-nio-8081-exec-6(118)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-06-27 16:12:29.979] [http-nio-8081-exec-6(118)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-06-27 16:12:29.988] [http-nio-8081-exec-6(118)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-06-27 16:12:29.988] [http-nio-8081-exec-6(118)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'89081a60-a1a4-4023-8d2a-6311ef323586'
+[INFO] [2019-06-27 16:12:29.991] [http-nio-8081-exec-6(118)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [0] filtering [0].
+[INFO] [2019-06-27 16:12:29.991] [http-nio-8081-exec-6(118)]
+daemon: register task id [7508800107513432498], name [configuration updater].
+[DEBUG] [2019-06-27 16:16:27.026] [ibas-framework-daemon(119)]
+daemon: begin to run task [8712716017023052386 - configuration updater], 1th running.
+[DEBUG] [2019-06-27 16:16:27.026] [ibas-framework-daemon(119)]
+daemon: begin to run task [7508800107513432498 - configuration updater], 1th running.
+[INFO] [2019-06-27 16:16:27.027] [ibas-task|configuration updater(120)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-06-27 16:16:27.027] [ibas-task|configuration updater(120)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-06-27 16:16:27.043] [ibas-task|configuration updater(120)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-06-27 16:16:27.043] [ibas-task|configuration updater(120)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'c2b31c06-20d8-44a2-bb34-17f47ed01859'
+[INFO] [2019-06-27 16:16:27.046] [ibas-task|configuration updater(120)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [1] filtering [0].
+[DEBUG] [2019-06-27 16:16:27.047] [ibas-task|sleeping(120)]
+daemon: end task [8712716017023052386 - configuration updater] 1th running and for [21] milliseconds.
+[INFO] [2019-06-27 16:16:27.047] [ibas-task|configuration updater(120)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-06-27 16:16:27.047] [ibas-task|configuration updater(120)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-06-27 16:16:27.059] [ibas-task|configuration updater(120)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-06-27 16:16:27.060] [ibas-task|configuration updater(120)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'89081a60-a1a4-4023-8d2a-6311ef323586'
+[INFO] [2019-06-27 16:16:27.061] [ibas-task|configuration updater(120)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [0] filtering [0].
+[DEBUG] [2019-06-27 16:16:27.061] [ibas-task|sleeping(120)]
+daemon: end task [7508800107513432498 - configuration updater] 1th running and for [35] milliseconds.
+[INFO] [2019-06-27 16:16:27.094] [http-nio-8081-exec-2(114)]
+repository: changed user [{user: 1|admin}].
+[INFO] [2019-06-27 16:16:27.110] [http-nio-8081-exec-2(114)]
+repository: writed file [metadata.xml|D:\ibasCloud\ibas.example\ibas.example.service\target\ibas.example.service-0.1.0\WEB-INF\data\example_files\7690cd06-1ae3-4e32-b2bc-bd9a6045f501.xml].
+[DEBUG] [2019-06-27 16:19:27.406] [ibas-framework-daemon(119)]
+daemon: begin to run task [8712716017023052386 - configuration updater], 2th running.
+[DEBUG] [2019-06-27 16:19:27.407] [ibas-framework-daemon(119)]
+daemon: begin to run task [7508800107513432498 - configuration updater], 2th running.
+[INFO] [2019-06-27 16:19:27.407] [ibas-task|configuration updater(120)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-06-27 16:19:27.407] [ibas-task|configuration updater(120)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-06-27 16:19:27.431] [ibas-task|configuration updater(120)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-06-27 16:19:27.432] [ibas-task|configuration updater(120)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'c2b31c06-20d8-44a2-bb34-17f47ed01859'
+[INFO] [2019-06-27 16:19:27.435] [ibas-task|configuration updater(120)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [1] filtering [0].
+[DEBUG] [2019-06-27 16:19:27.435] [ibas-task|sleeping(120)]
+daemon: end task [8712716017023052386 - configuration updater] 2th running and for [29] milliseconds.
+[INFO] [2019-06-27 16:19:27.435] [ibas-task|configuration updater(120)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-06-27 16:19:27.436] [ibas-task|configuration updater(120)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-06-27 16:19:27.446] [ibas-task|configuration updater(120)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-06-27 16:19:27.446] [ibas-task|configuration updater(120)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'89081a60-a1a4-4023-8d2a-6311ef323586'
+[INFO] [2019-06-27 16:19:27.448] [ibas-task|configuration updater(120)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [0] filtering [0].
+[DEBUG] [2019-06-27 16:19:27.448] [ibas-task|sleeping(120)]
+daemon: end task [7508800107513432498 - configuration updater] 2th running and for [41] milliseconds.
+[DEBUG] [2019-06-27 16:22:27.566] [ibas-framework-daemon(119)]
+daemon: begin to run task [8712716017023052386 - configuration updater], 3th running.
+[DEBUG] [2019-06-27 16:22:27.567] [ibas-framework-daemon(119)]
+daemon: begin to run task [7508800107513432498 - configuration updater], 3th running.
+[INFO] [2019-06-27 16:22:27.567] [ibas-task|configuration updater(120)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-06-27 16:22:27.568] [ibas-task|configuration updater(120)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-06-27 16:22:27.616] [ibas-task|configuration updater(120)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-06-27 16:22:27.617] [ibas-task|configuration updater(120)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'c2b31c06-20d8-44a2-bb34-17f47ed01859'
+[INFO] [2019-06-27 16:22:27.623] [ibas-task|configuration updater(120)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [1] filtering [0].
+[DEBUG] [2019-06-27 16:22:27.623] [ibas-task|sleeping(120)]
+daemon: end task [8712716017023052386 - configuration updater] 3th running and for [57] milliseconds.
+[INFO] [2019-06-27 16:22:27.623] [ibas-task|configuration updater(120)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-06-27 16:22:27.623] [ibas-task|configuration updater(120)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-06-27 16:22:27.643] [ibas-task|configuration updater(120)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-06-27 16:22:27.644] [ibas-task|configuration updater(120)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'89081a60-a1a4-4023-8d2a-6311ef323586'
+[INFO] [2019-06-27 16:22:27.647] [ibas-task|configuration updater(120)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [0] filtering [0].
+[DEBUG] [2019-06-27 16:22:27.647] [ibas-task|sleeping(120)]
+daemon: end task [7508800107513432498 - configuration updater] 3th running and for [80] milliseconds.
+[INFO] [2019-06-27 16:23:27.196] [http-nio-8081-exec-4(116)]
+repository: changed user [{user: 1|admin}].
+[INFO] [2019-06-27 16:23:27.223] [http-nio-8081-exec-4(116)]
+repository: writed file [khsalesorder.xml|D:\ibasCloud\ibas.example\ibas.example.service\target\ibas.example.service-0.1.0\WEB-INF\data\example_files\7b63d6e3-6400-48b8-9be0-4e395251ddcb.xml].
+[INFO] [2019-06-27 16:23:47.357] [http-nio-8081-exec-6(118)]
+repository: changed user [{user: 1|admin}].
+[INFO] [2019-06-27 16:23:47.360] [http-nio-8081-exec-5(117)]
+repository: changed user [{user: 1|admin}].
+[INFO] [2019-06-27 16:23:47.379] [http-nio-8081-exec-6(118)]
+repository: writed file [metadata.xml|D:\ibasCloud\ibas.example\ibas.example.service\target\ibas.example.service-0.1.0\WEB-INF\data\example_files\f558cdeb-577d-4b9a-a889-9a3059de4f79.xml].
+[INFO] [2019-06-27 16:23:47.387] [http-nio-8081-exec-5(117)]
+repository: writed file [khsalesorder.xml|D:\ibasCloud\ibas.example\ibas.example.service\target\ibas.example.service-0.1.0\WEB-INF\data\example_files\f94d7da0-441f-4058-a851-3feaa1e79f03.xml].
+[DEBUG] [2019-06-27 16:25:27.742] [ibas-framework-daemon(119)]
+daemon: begin to run task [8712716017023052386 - configuration updater], 4th running.
+[DEBUG] [2019-06-27 16:25:27.742] [ibas-framework-daemon(119)]
+daemon: begin to run task [7508800107513432498 - configuration updater], 4th running.
+[INFO] [2019-06-27 16:25:27.742] [ibas-task|configuration updater(120)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-06-27 16:25:27.742] [ibas-task|configuration updater(120)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-06-27 16:25:27.753] [ibas-task|configuration updater(120)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-06-27 16:25:27.754] [ibas-task|configuration updater(120)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'c2b31c06-20d8-44a2-bb34-17f47ed01859'
+[INFO] [2019-06-27 16:25:27.756] [ibas-task|configuration updater(120)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [1] filtering [0].
+[DEBUG] [2019-06-27 16:25:27.756] [ibas-task|sleeping(120)]
+daemon: end task [8712716017023052386 - configuration updater] 4th running and for [14] milliseconds.
+[INFO] [2019-06-27 16:25:27.756] [ibas-task|configuration updater(120)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-06-27 16:25:27.756] [ibas-task|configuration updater(120)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-06-27 16:25:27.765] [ibas-task|configuration updater(120)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-06-27 16:25:27.766] [ibas-task|configuration updater(120)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'89081a60-a1a4-4023-8d2a-6311ef323586'
+[INFO] [2019-06-27 16:25:27.768] [ibas-task|configuration updater(120)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [0] filtering [0].
+[DEBUG] [2019-06-27 16:25:27.768] [ibas-task|sleeping(120)]
+daemon: end task [7508800107513432498 - configuration updater] 4th running and for [26] milliseconds.
+[INFO] [2019-06-27 16:26:16.708] [http-nio-8081-exec-2(114)]
+repository: changed user [{user: 1|admin}].
+[INFO] [2019-06-27 16:26:16.718] [http-nio-8081-exec-2(114)]
+repository: writed file [metadata.xml|D:\ibasCloud\ibas.example\ibas.example.service\target\ibas.example.service-0.1.0\WEB-INF\data\example_files\292b9e51-b6c3-41c6-9db5-bf17a1142ea6.xml].
+[INFO] [2019-06-27 16:27:03.352] [http-nio-8081-exec-4(116)]
+repository: changed user [{user: 1|admin}].
+[INFO] [2019-06-27 16:27:03.374] [http-nio-8081-exec-4(116)]
+repository: writed file [khsalesorder.xml|D:\ibasCloud\ibas.example\ibas.example.service\target\ibas.example.service-0.1.0\WEB-INF\data\example_files\835786e9-c003-4d3d-ac98-8b5e41edff8b.xml].
+[INFO] [2019-06-27 16:27:40.540] [http-nio-8081-exec-1(113)]
+repository: changed user [{user: 1|admin}].
+[INFO] [2019-06-27 16:27:40.549] [http-nio-8081-exec-1(113)]
+repository: writed file [metadata.xml|D:\ibasCloud\ibas.example\ibas.example.service\target\ibas.example.service-0.1.0\WEB-INF\data\example_files\456da551-4d8a-4654-aafb-555bdaa0bcd1.xml].
+[DEBUG] [2019-06-27 16:29:13.231] [ibas-framework-daemon(119)]
+daemon: begin to run task [8712716017023052386 - configuration updater], 5th running.
+[DEBUG] [2019-06-27 16:29:13.231] [ibas-framework-daemon(119)]
+daemon: begin to run task [7508800107513432498 - configuration updater], 5th running.
+[INFO] [2019-06-27 16:29:13.232] [ibas-task|configuration updater(120)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-06-27 16:29:13.232] [ibas-task|configuration updater(120)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-06-27 16:29:13.252] [ibas-task|configuration updater(120)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-06-27 16:29:13.252] [ibas-task|configuration updater(120)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'c2b31c06-20d8-44a2-bb34-17f47ed01859'
+[INFO] [2019-06-27 16:29:13.253] [ibas-task|configuration updater(120)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [1] filtering [0].
+[DEBUG] [2019-06-27 16:29:13.253] [ibas-task|sleeping(120)]
+daemon: end task [8712716017023052386 - configuration updater] 5th running and for [23] milliseconds.
+[INFO] [2019-06-27 16:29:13.254] [ibas-task|configuration updater(120)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-06-27 16:29:13.254] [ibas-task|configuration updater(120)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-06-27 16:29:13.263] [ibas-task|configuration updater(120)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-06-27 16:29:13.264] [ibas-task|configuration updater(120)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'89081a60-a1a4-4023-8d2a-6311ef323586'
+[INFO] [2019-06-27 16:29:13.265] [ibas-task|configuration updater(120)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [0] filtering [0].
+[DEBUG] [2019-06-27 16:29:13.265] [ibas-task|sleeping(120)]
+daemon: end task [7508800107513432498 - configuration updater] 5th running and for [34] milliseconds.
+[INFO] [2019-06-27 16:29:56.256] [http-nio-8081-exec-9(123)]
+repository: changed user [{user: 1|admin}].
+[INFO] [2019-06-27 16:29:56.264] [http-nio-8081-exec-9(123)]
+repository: writed file [metadata.xml|D:\ibasCloud\ibas.example\ibas.example.service\target\ibas.example.service-0.1.0\WEB-INF\data\example_files\53cf6be1-6fdf-4de3-87d1-0bf1e1344d62.xml].
+[DEBUG] [2019-06-27 16:32:13.403] [ibas-framework-daemon(119)]
+daemon: begin to run task [8712716017023052386 - configuration updater], 6th running.
+[DEBUG] [2019-06-27 16:32:13.403] [ibas-framework-daemon(119)]
+daemon: begin to run task [7508800107513432498 - configuration updater], 6th running.
+[INFO] [2019-06-27 16:32:13.403] [ibas-task|configuration updater(120)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-06-27 16:32:13.403] [ibas-task|configuration updater(120)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-06-27 16:32:13.414] [ibas-task|configuration updater(120)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-06-27 16:32:13.414] [ibas-task|configuration updater(120)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'c2b31c06-20d8-44a2-bb34-17f47ed01859'
+[INFO] [2019-06-27 16:32:13.416] [ibas-task|configuration updater(120)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [1] filtering [0].
+[DEBUG] [2019-06-27 16:32:13.416] [ibas-task|sleeping(120)]
+daemon: end task [8712716017023052386 - configuration updater] 6th running and for [13] milliseconds.
+[INFO] [2019-06-27 16:32:13.416] [ibas-task|configuration updater(120)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-06-27 16:32:13.416] [ibas-task|configuration updater(120)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-06-27 16:32:13.426] [ibas-task|configuration updater(120)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-06-27 16:32:13.427] [ibas-task|configuration updater(120)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'89081a60-a1a4-4023-8d2a-6311ef323586'
+[INFO] [2019-06-27 16:32:13.428] [ibas-task|configuration updater(120)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [0] filtering [0].
+[DEBUG] [2019-06-27 16:32:13.428] [ibas-task|sleeping(120)]
+daemon: end task [7508800107513432498 - configuration updater] 6th running and for [25] milliseconds.
+[DEBUG] [2019-06-27 16:35:13.564] [ibas-framework-daemon(119)]
+daemon: begin to run task [8712716017023052386 - configuration updater], 7th running.
+[DEBUG] [2019-06-27 16:35:13.564] [ibas-framework-daemon(119)]
+daemon: begin to run task [7508800107513432498 - configuration updater], 7th running.
+[INFO] [2019-06-27 16:35:13.564] [ibas-task|configuration updater(120)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-06-27 16:35:13.564] [ibas-task|configuration updater(120)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-06-27 16:35:13.576] [ibas-task|configuration updater(120)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-06-27 16:35:13.576] [ibas-task|configuration updater(120)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'c2b31c06-20d8-44a2-bb34-17f47ed01859'
+[INFO] [2019-06-27 16:35:13.578] [ibas-task|configuration updater(120)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [1] filtering [0].
+[DEBUG] [2019-06-27 16:35:13.578] [ibas-task|sleeping(120)]
+daemon: end task [8712716017023052386 - configuration updater] 7th running and for [14] milliseconds.
+[INFO] [2019-06-27 16:35:13.578] [ibas-task|configuration updater(120)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-06-27 16:35:13.579] [ibas-task|configuration updater(120)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-06-27 16:35:13.587] [ibas-task|configuration updater(120)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-06-27 16:35:13.587] [ibas-task|configuration updater(120)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'89081a60-a1a4-4023-8d2a-6311ef323586'
+[INFO] [2019-06-27 16:35:13.588] [ibas-task|configuration updater(120)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [0] filtering [0].
+[DEBUG] [2019-06-27 16:35:13.588] [ibas-task|sleeping(120)]
+daemon: end task [7508800107513432498 - configuration updater] 7th running and for [24] milliseconds.
+[DEBUG] [2019-06-27 16:38:13.730] [ibas-framework-daemon(119)]
+daemon: begin to run task [8712716017023052386 - configuration updater], 8th running.
+[DEBUG] [2019-06-27 16:38:13.730] [ibas-framework-daemon(119)]
+daemon: begin to run task [7508800107513432498 - configuration updater], 8th running.
+[INFO] [2019-06-27 16:38:13.730] [ibas-task|configuration updater(120)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-06-27 16:38:13.730] [ibas-task|configuration updater(120)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-06-27 16:38:13.740] [ibas-task|configuration updater(120)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-06-27 16:38:13.740] [ibas-task|configuration updater(120)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'c2b31c06-20d8-44a2-bb34-17f47ed01859'
+[INFO] [2019-06-27 16:38:13.743] [ibas-task|configuration updater(120)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [1] filtering [0].
+[DEBUG] [2019-06-27 16:38:13.743] [ibas-task|sleeping(120)]
+daemon: end task [8712716017023052386 - configuration updater] 8th running and for [13] milliseconds.
+[INFO] [2019-06-27 16:38:13.743] [ibas-task|configuration updater(120)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-06-27 16:38:13.743] [ibas-task|configuration updater(120)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-06-27 16:38:13.751] [ibas-task|configuration updater(120)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-06-27 16:38:13.751] [ibas-task|configuration updater(120)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'89081a60-a1a4-4023-8d2a-6311ef323586'
+[INFO] [2019-06-27 16:38:13.752] [ibas-task|configuration updater(120)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [0] filtering [0].
+[DEBUG] [2019-06-27 16:38:13.752] [ibas-task|sleeping(120)]
+daemon: end task [7508800107513432498 - configuration updater] 8th running and for [22] milliseconds.
+[DEBUG] [2019-06-27 16:41:13.896] [ibas-framework-daemon(119)]
+daemon: begin to run task [8712716017023052386 - configuration updater], 9th running.
+[DEBUG] [2019-06-27 16:41:13.897] [ibas-framework-daemon(119)]
+daemon: begin to run task [7508800107513432498 - configuration updater], 9th running.
+[INFO] [2019-06-27 16:41:13.897] [ibas-task|configuration updater(120)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-06-27 16:41:13.897] [ibas-task|configuration updater(120)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-06-27 16:41:13.916] [ibas-task|configuration updater(120)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-06-27 16:41:13.916] [ibas-task|configuration updater(120)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'c2b31c06-20d8-44a2-bb34-17f47ed01859'
+[INFO] [2019-06-27 16:41:13.918] [ibas-task|configuration updater(120)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [1] filtering [0].
+[DEBUG] [2019-06-27 16:41:13.919] [ibas-task|sleeping(120)]
+daemon: end task [8712716017023052386 - configuration updater] 9th running and for [23] milliseconds.
+[INFO] [2019-06-27 16:41:13.919] [ibas-task|configuration updater(120)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-06-27 16:41:13.919] [ibas-task|configuration updater(120)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-06-27 16:41:13.928] [ibas-task|configuration updater(120)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-06-27 16:41:13.928] [ibas-task|configuration updater(120)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'89081a60-a1a4-4023-8d2a-6311ef323586'
+[INFO] [2019-06-27 16:41:13.930] [ibas-task|configuration updater(120)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [0] filtering [0].
+[DEBUG] [2019-06-27 16:41:13.930] [ibas-task|sleeping(120)]
+daemon: end task [7508800107513432498 - configuration updater] 9th running and for [33] milliseconds.
+[DEBUG] [2019-06-27 16:44:14.053] [ibas-framework-daemon(119)]
+daemon: begin to run task [8712716017023052386 - configuration updater], 10th running.
+[DEBUG] [2019-06-27 16:44:14.053] [ibas-framework-daemon(119)]
+daemon: begin to run task [7508800107513432498 - configuration updater], 10th running.
+[INFO] [2019-06-27 16:44:14.053] [ibas-task|configuration updater(120)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-06-27 16:44:14.053] [ibas-task|configuration updater(120)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-06-27 16:44:14.074] [ibas-task|configuration updater(120)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-06-27 16:44:14.074] [ibas-task|configuration updater(120)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'c2b31c06-20d8-44a2-bb34-17f47ed01859'
+[INFO] [2019-06-27 16:44:14.075] [ibas-task|configuration updater(120)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [1] filtering [0].
+[DEBUG] [2019-06-27 16:44:14.075] [ibas-task|sleeping(120)]
+daemon: end task [8712716017023052386 - configuration updater] 10th running and for [22] milliseconds.
+[INFO] [2019-06-27 16:44:14.075] [ibas-task|configuration updater(120)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-06-27 16:44:14.075] [ibas-task|configuration updater(120)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-06-27 16:44:14.083] [ibas-task|configuration updater(120)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-06-27 16:44:14.083] [ibas-task|configuration updater(120)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'89081a60-a1a4-4023-8d2a-6311ef323586'
+[INFO] [2019-06-27 16:44:14.085] [ibas-task|configuration updater(120)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [0] filtering [0].
+[DEBUG] [2019-06-27 16:44:14.085] [ibas-task|sleeping(120)]
+daemon: end task [7508800107513432498 - configuration updater] 10th running and for [32] milliseconds.
+[DEBUG] [2019-06-27 16:47:14.222] [ibas-framework-daemon(119)]
+daemon: begin to run task [8712716017023052386 - configuration updater], 11th running.
+[DEBUG] [2019-06-27 16:47:14.223] [ibas-framework-daemon(119)]
+daemon: begin to run task [7508800107513432498 - configuration updater], 11th running.
+[INFO] [2019-06-27 16:47:14.223] [ibas-task|configuration updater(120)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-06-27 16:47:14.223] [ibas-task|configuration updater(120)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-06-27 16:47:14.235] [ibas-task|configuration updater(120)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-06-27 16:47:14.235] [ibas-task|configuration updater(120)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'c2b31c06-20d8-44a2-bb34-17f47ed01859'
+[INFO] [2019-06-27 16:47:14.236] [ibas-task|configuration updater(120)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [1] filtering [0].
+[DEBUG] [2019-06-27 16:47:14.236] [ibas-task|sleeping(120)]
+daemon: end task [8712716017023052386 - configuration updater] 11th running and for [14] milliseconds.
+[INFO] [2019-06-27 16:47:14.236] [ibas-task|configuration updater(120)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-06-27 16:47:14.236] [ibas-task|configuration updater(120)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-06-27 16:47:14.245] [ibas-task|configuration updater(120)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-06-27 16:47:14.246] [ibas-task|configuration updater(120)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'89081a60-a1a4-4023-8d2a-6311ef323586'
+[INFO] [2019-06-27 16:47:14.247] [ibas-task|configuration updater(120)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [0] filtering [0].
+[DEBUG] [2019-06-27 16:47:14.247] [ibas-task|sleeping(120)]
+daemon: end task [7508800107513432498 - configuration updater] 11th running and for [24] milliseconds.
+[DEBUG] [2019-06-27 16:50:14.392] [ibas-framework-daemon(119)]
+daemon: begin to run task [8712716017023052386 - configuration updater], 12th running.
+[DEBUG] [2019-06-27 16:50:14.392] [ibas-framework-daemon(119)]
+daemon: begin to run task [7508800107513432498 - configuration updater], 12th running.
+[INFO] [2019-06-27 16:50:14.392] [ibas-task|configuration updater(120)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-06-27 16:50:14.392] [ibas-task|configuration updater(120)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-06-27 16:50:14.417] [ibas-task|configuration updater(120)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-06-27 16:50:14.417] [ibas-task|configuration updater(120)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'c2b31c06-20d8-44a2-bb34-17f47ed01859'
+[INFO] [2019-06-27 16:50:14.420] [ibas-task|configuration updater(120)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [1] filtering [0].
+[DEBUG] [2019-06-27 16:50:14.420] [ibas-task|sleeping(120)]
+daemon: end task [8712716017023052386 - configuration updater] 12th running and for [28] milliseconds.
+[INFO] [2019-06-27 16:50:14.420] [ibas-task|configuration updater(120)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-06-27 16:50:14.420] [ibas-task|configuration updater(120)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-06-27 16:50:14.430] [ibas-task|configuration updater(120)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-06-27 16:50:14.430] [ibas-task|configuration updater(120)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'89081a60-a1a4-4023-8d2a-6311ef323586'
+[INFO] [2019-06-27 16:50:14.432] [ibas-task|configuration updater(120)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [0] filtering [0].
+[DEBUG] [2019-06-27 16:50:14.432] [ibas-task|sleeping(120)]
+daemon: end task [7508800107513432498 - configuration updater] 12th running and for [40] milliseconds.
+[INFO] [2019-06-27 16:51:29.081] [http-nio-8081-exec-5(117)]
+repository: changed user [{user: 1|admin}].
+[INFO] [2019-06-27 16:51:29.091] [http-nio-8081-exec-5(117)]
+repository: writed file [metadata.xml|D:\ibasCloud\ibas.example\ibas.example.service\target\ibas.example.service-0.1.0\WEB-INF\data\example_files\c90e799c-7f1b-4ed0-a7ee-97add23ef3ed.xml].
+[DEBUG] [2019-06-27 16:53:14.557] [ibas-framework-daemon(119)]
+daemon: begin to run task [8712716017023052386 - configuration updater], 13th running.
+[DEBUG] [2019-06-27 16:53:14.558] [ibas-framework-daemon(119)]
+daemon: begin to run task [7508800107513432498 - configuration updater], 13th running.
+[INFO] [2019-06-27 16:53:14.558] [ibas-task|configuration updater(120)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-06-27 16:53:14.558] [ibas-task|configuration updater(120)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-06-27 16:53:14.582] [ibas-task|configuration updater(120)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-06-27 16:53:14.582] [ibas-task|configuration updater(120)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'c2b31c06-20d8-44a2-bb34-17f47ed01859'
+[INFO] [2019-06-27 16:53:14.588] [ibas-task|configuration updater(120)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [1] filtering [0].
+[DEBUG] [2019-06-27 16:53:14.589] [ibas-task|sleeping(120)]
+daemon: end task [8712716017023052386 - configuration updater] 13th running and for [32] milliseconds.
+[INFO] [2019-06-27 16:53:14.589] [ibas-task|configuration updater(120)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-06-27 16:53:14.589] [ibas-task|configuration updater(120)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-06-27 16:53:14.602] [ibas-task|configuration updater(120)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-06-27 16:53:14.602] [ibas-task|configuration updater(120)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'89081a60-a1a4-4023-8d2a-6311ef323586'
+[INFO] [2019-06-27 16:53:14.604] [ibas-task|configuration updater(120)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [0] filtering [0].
+[DEBUG] [2019-06-27 16:53:14.604] [ibas-task|sleeping(120)]
+daemon: end task [7508800107513432498 - configuration updater] 13th running and for [46] milliseconds.
+[INFO] [2019-06-27 16:54:08.500] [http-nio-8081-exec-6(118)]
+repository: changed user [{user: 1|admin}].
+[INFO] [2019-06-27 16:54:08.513] [http-nio-8081-exec-6(118)]
+repository: writed file [metadata.xml|D:\ibasCloud\ibas.example\ibas.example.service\target\ibas.example.service-0.1.0\WEB-INF\data\example_files\7794adbe-72e9-4c0a-931f-ba81097beaea.xml].
+[DEBUG] [2019-06-27 16:56:14.729] [ibas-framework-daemon(119)]
+daemon: begin to run task [8712716017023052386 - configuration updater], 14th running.
+[DEBUG] [2019-06-27 16:56:14.729] [ibas-framework-daemon(119)]
+daemon: begin to run task [7508800107513432498 - configuration updater], 14th running.
+[INFO] [2019-06-27 16:56:14.729] [ibas-task|configuration updater(120)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-06-27 16:56:14.730] [ibas-task|configuration updater(120)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-06-27 16:56:14.753] [ibas-task|configuration updater(120)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-06-27 16:56:14.754] [ibas-task|configuration updater(120)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'c2b31c06-20d8-44a2-bb34-17f47ed01859'
+[INFO] [2019-06-27 16:56:14.757] [ibas-task|configuration updater(120)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [1] filtering [0].
+[DEBUG] [2019-06-27 16:56:14.758] [ibas-task|sleeping(120)]
+daemon: end task [8712716017023052386 - configuration updater] 14th running and for [29] milliseconds.
+[INFO] [2019-06-27 16:56:14.758] [ibas-task|configuration updater(120)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-06-27 16:56:14.758] [ibas-task|configuration updater(120)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-06-27 16:56:14.770] [ibas-task|configuration updater(120)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-06-27 16:56:14.770] [ibas-task|configuration updater(120)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'89081a60-a1a4-4023-8d2a-6311ef323586'
+[INFO] [2019-06-27 16:56:14.772] [ibas-task|configuration updater(120)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [0] filtering [0].
+[DEBUG] [2019-06-27 16:56:14.772] [ibas-task|sleeping(120)]
+daemon: end task [7508800107513432498 - configuration updater] 14th running and for [43] milliseconds.
+[INFO] [2019-06-27 16:58:34.914] [http-nio-8081-exec-6(118)]
+repository: changed user [{user: 1|admin}].
+[INFO] [2019-06-27 16:58:34.926] [http-nio-8081-exec-6(118)]
+repository: writed file [metadata.xml|D:\ibasCloud\ibas.example\ibas.example.service\target\ibas.example.service-0.1.0\WEB-INF\data\example_files\55605152-9092-45c5-8328-98a008e251f7.xml].
+[DEBUG] [2019-06-27 16:59:14.899] [ibas-framework-daemon(119)]
+daemon: begin to run task [8712716017023052386 - configuration updater], 15th running.
+[DEBUG] [2019-06-27 16:59:14.899] [ibas-framework-daemon(119)]
+daemon: begin to run task [7508800107513432498 - configuration updater], 15th running.
+[INFO] [2019-06-27 16:59:14.899] [ibas-task|configuration updater(120)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-06-27 16:59:14.899] [ibas-task|configuration updater(120)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-06-27 16:59:14.921] [ibas-task|configuration updater(120)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-06-27 16:59:14.921] [ibas-task|configuration updater(120)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'c2b31c06-20d8-44a2-bb34-17f47ed01859'
+[INFO] [2019-06-27 16:59:14.923] [ibas-task|configuration updater(120)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [1] filtering [0].
+[DEBUG] [2019-06-27 16:59:14.923] [ibas-task|sleeping(120)]
+daemon: end task [8712716017023052386 - configuration updater] 15th running and for [24] milliseconds.
+[INFO] [2019-06-27 16:59:14.923] [ibas-task|configuration updater(120)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-06-27 16:59:14.923] [ibas-task|configuration updater(120)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-06-27 16:59:14.933] [ibas-task|configuration updater(120)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-06-27 16:59:14.933] [ibas-task|configuration updater(120)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'89081a60-a1a4-4023-8d2a-6311ef323586'
+[INFO] [2019-06-27 16:59:14.934] [ibas-task|configuration updater(120)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [0] filtering [0].
+[DEBUG] [2019-06-27 16:59:14.935] [ibas-task|sleeping(120)]
+daemon: end task [7508800107513432498 - configuration updater] 15th running and for [36] milliseconds.
+[INFO] [2019-06-27 17:00:26.294] [http-nio-8081-exec-7(121)]
+repository: changed user [{user: 1|admin}].
+[INFO] [2019-06-27 17:00:26.294] [http-nio-8081-exec-9(123)]
+repository: changed user [{user: 1|admin}].
+[INFO] [2019-06-27 17:00:26.300] [http-nio-8081-exec-7(121)]
+repository: writed file [metadata - ??????.xml|D:\ibasCloud\ibas.example\ibas.example.service\target\ibas.example.service-0.1.0\WEB-INF\data\example_files\9e901038-cc9e-4b16-a3ac-c734762e61a8.xml].
+[INFO] [2019-06-27 17:00:26.300] [http-nio-8081-exec-9(123)]
+repository: writed file [metadata.xml|D:\ibasCloud\ibas.example\ibas.example.service\target\ibas.example.service-0.1.0\WEB-INF\data\example_files\cbe24637-5bab-425a-b2cb-9ba2ccc597dc.xml].
+[DEBUG] [2019-06-27 17:02:15.078] [ibas-framework-daemon(119)]
+daemon: begin to run task [8712716017023052386 - configuration updater], 16th running.
+[DEBUG] [2019-06-27 17:02:15.078] [ibas-framework-daemon(119)]
+daemon: begin to run task [7508800107513432498 - configuration updater], 16th running.
+[INFO] [2019-06-27 17:02:15.078] [ibas-task|configuration updater(120)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-06-27 17:02:15.079] [ibas-task|configuration updater(120)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-06-27 17:02:15.113] [ibas-task|configuration updater(120)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-06-27 17:02:15.113] [ibas-task|configuration updater(120)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'c2b31c06-20d8-44a2-bb34-17f47ed01859'
+[INFO] [2019-06-27 17:02:15.115] [ibas-task|configuration updater(120)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [1] filtering [0].
+[DEBUG] [2019-06-27 17:02:15.116] [ibas-task|sleeping(120)]
+daemon: end task [8712716017023052386 - configuration updater] 16th running and for [38] milliseconds.
+[INFO] [2019-06-27 17:02:15.116] [ibas-task|configuration updater(120)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-06-27 17:02:15.116] [ibas-task|configuration updater(120)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-06-27 17:02:15.126] [ibas-task|configuration updater(120)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-06-27 17:02:15.126] [ibas-task|configuration updater(120)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'89081a60-a1a4-4023-8d2a-6311ef323586'
+[INFO] [2019-06-27 17:02:15.128] [ibas-task|configuration updater(120)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [0] filtering [0].
+[DEBUG] [2019-06-27 17:02:15.128] [ibas-task|sleeping(120)]
+daemon: end task [7508800107513432498 - configuration updater] 16th running and for [50] milliseconds.

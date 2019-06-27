@@ -1,6 +1,8 @@
 package org.colorcoding.ibas.example.service.rest;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.io.OutputStream;
 
 import javax.servlet.http.HttpServletResponse;
@@ -83,24 +85,41 @@ public class FileService extends FileRepositoryService {
     @GET
     @Path("{resource}")
     public void resource(@PathParam("resource") String resource, @QueryParam("token") String token,
-            @Context HttpServletResponse response) {
+                         @QueryParam("x") Integer x, @QueryParam("y") Integer y, @Context HttpServletResponse response) {
+        FileInputStream inputStream = null;
+        StringBuilder stringBuilder;
+        File file;
         try {
-            Criteria criteria = new Criteria();
-            ICondition condition = criteria.getConditions().create();
-            condition.setAlias(FileRepository.CRITERIA_CONDITION_ALIAS_FILE_NAME);
-            condition.setValue(resource);
-            // 获取文件
-            IOperationResult<FileData> operationResult = this.fetch(criteria, token);
-            if (operationResult.getError() != null) {
-                throw operationResult.getError();
-            }
-            FileData fileData = operationResult.getResultObjects().firstOrDefault();
-            if (fileData != null) {
+                stringBuilder = new StringBuilder();
+                stringBuilder.append(this.getRepository().getRepositoryFolder());
+                stringBuilder.append(File.separator);
+                stringBuilder.append(resource);
+                file = new File(stringBuilder.toString());
+                if (!file.exists() || !file.isFile()) {
+                    // 文件不存在
+                    throw new WebApplicationException(404);
+                }
+            if (file.isFile() && file.exists()) {
                 // 设置内容类型
-                response.setContentType(this.getContentType(fileData));
+                response.setContentType(this.getContentType(file.getName()));
+                if (file.getName().endsWith(".svg")) {
+                    response.setContentType("image/svg+xml");
+                }
                 // 写入响应输出流
                 OutputStream os = response.getOutputStream();
-                os.write(fileData.getFileBytes());
+                long fileSize = file.length();
+                if (fileSize > Integer.MAX_VALUE) {
+                    throw new IOException(I18N.prop("msg_bobas_invalid_data"));
+                }
+                inputStream = new FileInputStream(file);
+                byte[] buffer = new byte[(int) fileSize];
+                int offset = 0;
+                int numRead = 0;
+                while (offset < buffer.length
+                        && (numRead = inputStream.read(buffer, offset, buffer.length - offset)) >= 0) {
+                    offset += numRead;
+                }
+                os.write(buffer);
                 os.flush();
             } else {
                 // 文件不存在
@@ -110,6 +129,13 @@ public class FileService extends FileRepositoryService {
             throw e;
         } catch (Exception e) {
             throw new WebApplicationException(e);
+        } finally {
+            if (inputStream != null) {
+                try {
+                    inputStream.close();
+                } catch (Exception e2) {
+                }
+            }
         }
     }
 }

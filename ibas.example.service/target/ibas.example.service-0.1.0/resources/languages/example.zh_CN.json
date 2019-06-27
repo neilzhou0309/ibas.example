@@ -1,10 +1,24 @@
-{
-  "example": "${Domain.getDescription()}",
-  "example_icon": "",
-  "example_func_example": "例子",
-  "example_app_example_list": "例子列表",
-  "example_app_example_choose": "例子选择",
-  "example_app_example_view": "例子查看",
-  "example_app_example_edit": "例子编辑",
-  "example_closing_delimiter": "----结束----"
-}
+[
+  {
+    "example": "事例",
+    "example_icon": "sap-icon://example",
+    "example_func_example": "例子",
+    "example_app_example_list": "例子列表",
+    "example_app_example_choose": "例子选择",
+    "example_app_example_view": "例子查看",
+    "example_app_example_edit": "例子编辑",
+    "example_closing_delimiter": "----结束----"
+  },
+  {
+    "example_func_bydodata": "byd OData 事例",
+    "example_app_example_bydodata": "byd OData 事例"
+  },
+  {
+    "example_func_translation": "翻译 事例",
+    "example_app_example_translation": "翻译 事例"
+  },
+  {
+    "example_func_datastructrue": "生成byd说明文件 事例",
+    "example_app_example_datastructrue": "生成byd说明文件 事例"
+  }
+]
