@@ -33,7 +33,7 @@ namespace example {
                 this.register(new BydODataFunc());
                 this.register(new DataStructrueFunc());
                 this.register(new TranslationFunc());
-                this.register(new ExampleFunc);
+                // this.register(new ExampleFunc);
                 // 注册服务应用
                 // this.register(new ExampleChooseServiceMapping());
                 // this.register(new ExampleLinkServiceMapping());
