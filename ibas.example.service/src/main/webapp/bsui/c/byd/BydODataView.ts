@@ -12,17 +12,18 @@ namespace example {
             export class BydODataView extends ibas.View implements app.IBydODataView {
                 private LastID: string;
                 private searchValue: string;
-                private serviceName: string = "khsalesorder";
-                private serviceMethods: string = "SalesOrderCollection";
-                private bydServiceBasePath: string = "sap/byd/odata/cust/v1";
                 private sXsrfToken: string;
-                private sHost: string = "https://b1i.avacloud.com.cn/";
-                private sGetTokenModulePath: string = this.sHost + "sap/ap/ui/login";
-                private sUser: string = "administration05";
-                private sPassword: string = "Welcome05";
                 // 控件声明
                 private salesOrderTable: sap.ui.table.Table;
                 private page: sap.m.Page;
+                private dialog: sap.m.Dialog;
+                private sHostInput: sap.m.Input;
+                private sGetTokenModulePathInput: sap.m.Input;
+                private serviceNameInput: sap.m.Input;
+                private serviceMethodsInput: sap.m.Input;
+                private bydServiceBasePathInput: sap.m.Input;
+                private sUserInput: sap.m.Input;
+                private sPasswordInput: sap.m.Input;
                 /** 绘制视图 */
                 draw(): any {
                     let that: this = this;
@@ -83,6 +84,60 @@ namespace example {
                             }),
                         ]
                     });
+                    that.dialog = new sap.m.Dialog("", {
+                        title: "Byd 配置",
+                        contentWidth: "300px",
+                        contentHeight: "100%",
+                        type: sap.m.DialogType.Standard,
+                        state: sap.ui.core.ValueState.None,
+                        stretchOnPhone: true,
+                        horizontalScrolling: true,
+                        verticalScrolling: true,
+                        content: [
+                            new sap.ui.layout.form.SimpleForm("", {
+                                editable: true,
+                                content: [
+                                    new sap.m.Label("", { text: "byd账套OData服务地址" }),
+                                    this.sHostInput = new sap.m.Input("", {
+                                        value: "https://b1i.avacloud.com.cn/",
+                                    }),
+                                    new sap.m.Label("", { text: "OData服务路径" }),
+                                    this.bydServiceBasePathInput = new sap.m.Input("", {
+                                        value: "sap/byd/odata/cust/v1",
+                                    }),
+                                    new sap.m.Label("", { text: "OData服务名称" }),
+                                    this.serviceNameInput = new sap.m.Input("", {
+                                        value: "khsalesorder",
+                                    }),
+                                    new sap.m.Label("", { text: "OData服务方法" }),
+                                    this.serviceMethodsInput = new sap.m.Input("", {
+                                        value: "SalesOrderCollection",
+                                    }),
+                                    new sap.m.Label("", { text: "byd登录服务路径" }),
+                                    this.sGetTokenModulePathInput = new sap.m.Input("", {
+                                        value: "sap/ap/ui/login",
+                                    }),
+                                    new sap.m.Label("", { text: "byd用户名" }),
+                                    this.sUserInput = new sap.m.Input("", {
+                                        value: "administration05",
+                                    }),
+                                    new sap.m.Label("", { text: "byd用户密码" }),
+                                    this.sPasswordInput = new sap.m.Input("", {
+                                        value: "Welcome05",
+                                    }),
+                                ]
+                            })
+                        ],
+                        buttons: [
+                            new sap.m.Button("", {
+                                text: ibas.i18n.prop("shell_close"),
+                                type: sap.m.ButtonType.Transparent,
+                                press: function (): void {
+                                    that.dialog.close();
+                                }
+                            }),
+                        ],
+                    });
                     this.page = new sap.m.Page("", {
                         showHeader: false,
                         subHeader: new sap.m.Toolbar("", {
@@ -99,6 +154,13 @@ namespace example {
                         }),
                         footer: new sap.m.Toolbar("", {
                             content: [
+                                new sap.m.Button("", {
+                                    text: "配置",
+                                    type: sap.m.ButtonType.Transparent,
+                                    press: function (): void {
+                                        that.dialog.open();
+                                    }
+                                }),
                                 new sap.m.ToolbarSpacer(""),
                                 new sap.m.Button("", {
                                     text: "登录BYD",
@@ -166,7 +228,8 @@ namespace example {
                         type: "GET",
                         contentType: "application/json",
                         url: ibas.strings.format("{0}/{1}/{2}/{3}?{4}{5}",
-                            this.sHost, this.bydServiceBasePath, this.serviceName, this.serviceMethods, parameter, columnfields),
+                            this.sHostInput.getValue(), this.bydServiceBasePathInput.getValue(), this.serviceNameInput.getValue(),
+                            this.serviceMethodsInput.getValue(), parameter, columnfields),
                         dataType: "json",
                         headers: {
                             "authorization": authorizationCode,
@@ -214,7 +277,7 @@ namespace example {
                     let authorizationCode: string = this.getAuthorizationCode("administration05:Welcome5");
                     let JQryAjxSetting: JQueryAjaxSettings = {
                         type: "POST",
-                        url: this.sGetTokenModulePath,
+                        url: this.sHostInput.getValue() + this.sGetTokenModulePathInput.getValue(),
                         beforeSend: function (xhr: any): void {
                             xhr.setRequestHeader("authorization", authorizationCode);
                             xhr.setRequestHeader("x-sap-request-xsrf", "X");
@@ -235,15 +298,15 @@ namespace example {
                                 if (!ibas.objects.isNull(that.sXsrfToken)) {
                                     let JQryAjxSetting: JQueryAjaxSettings = {
                                         type: "POST",
-                                        url: that.sGetTokenModulePath,
+                                        url: this.sHostInput.getValue() + that.sGetTokenModulePathInput.getValue(),
                                         beforeSend: function (xhr: any): void {
                                             xhr.setRequestHeader("authorization", authorizationCode);
                                             xhr.setRequestHeader("x-sap-request-xsrf", "X");
                                             xhr.setRequestHeader("x-csrf-token", "fetch");
                                         },
                                         data: {
-                                            "sap-alias": that.sUser,
-                                            "sap-password": that.sPassword,
+                                            "sap-alias": that.sUserInput.getValue(),
+                                            "sap-password": that.sPasswordInput.getValue(),
                                             "sap-login-XSRF": that.sXsrfToken
                                         },
                                         success: function (data: any, textStatus: any, XMLHttpRequest: any): void {
@@ -318,7 +381,7 @@ namespace example {
                         type: "POST",
                         contentType: "application/json",
                         url: ibas.strings.format("{0}/{1}/{2}/{3}",
-                            this.sHost, this.bydServiceBasePath, this.serviceName, this.serviceMethods),
+                            this.sHostInput.getValue(), this.bydServiceBasePathInput.getValue(), this.serviceNameInput.getValue(), this.serviceMethodsInput.getValue()),
                         headers: {
                             "x-csrf-token": that.sXsrfToken,
                             "Content-Type": "application/json",

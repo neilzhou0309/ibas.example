@@ -1,0 +1,7 @@
+org\colorcoding\ibas\example\bo\example\Example.class
+org\colorcoding\ibas\example\repository\IBORepositoryExampleApp.class
+org\colorcoding\ibas\example\data\DataConvert.class
+org\colorcoding\ibas\example\repository\BORepositoryExample.class
+org\colorcoding\ibas\example\bo\example\IExample.class
+org\colorcoding\ibas\example\MyConfiguration.class
+org\colorcoding\ibas\example\repository\IBORepositoryExampleSvc.class

@@ -1,0 +1,5 @@
+org\colorcoding\ibas\example\service\rest\Resolver.class
+org\colorcoding\ibas\example\service\rest\FileService.class
+org\colorcoding\ibas\example\service\rest\JsonConfig.class
+org\colorcoding\ibas\example\service\soap\DataService.class
+org\colorcoding\ibas\example\service\rest\DataService.class
