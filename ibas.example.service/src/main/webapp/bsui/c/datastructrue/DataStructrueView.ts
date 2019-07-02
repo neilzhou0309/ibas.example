@@ -15,6 +15,7 @@ namespace example {
                 upLoadStructrueEvent: Function;
                 private metadataUrl: string;
                 private fileName: string;
+                private localServicePathInput: sap.m.Input;
                 /** 绘制视图 */
                 draw(): any {
                     let that: this = this;
@@ -54,6 +55,10 @@ namespace example {
                                         }, 10);
                                     },
                                 }),
+                                this.localServicePathInput = new sap.m.Input("", {
+                                    value: "http://localhost:8081/",
+                                    tooltip: "本地服务地址"
+                                }),
                                 new sap.m.ToolbarSpacer(""),
                                 new sap.m.Button("", {
                                     text: "读取数据结构",
@@ -81,6 +86,9 @@ namespace example {
                 readDataStructure(download: boolean): void {
                     let that: this = this;
                     this.metadataUrl = "http://localhost:8081/";
+                    if (!ibas.strings.isEmpty(this.localServicePathInput.getValue())) {
+                        this.metadataUrl = this.localServicePathInput.getValue();
+                    }
                     let oMockServer: any = (<any>sap.ui).requireSync("sap/ui/core/util/MockServer");
                     let MkService: sap.ui.core.util.MockServer = new oMockServer({
                         rootUri: this.metadataUrl,
@@ -106,10 +114,66 @@ namespace example {
                     oDataModel.getMetaModel().loaded().then(() => {
                         if (download) {
                             that.downLoadStructure(oDataModel.getMetaModel());
+                            that.downLoadBOExtendClass(oDataModel.getMetaModel());
                         } else {
                             that.openStructureDialog(oDataModel.getMetaModel());
                         }
+                        MkService.stop();
                     });
+                }
+                // 下载对象辅助类
+                downLoadBOExtendClass(mode: any): void {
+                    let entityTypes: any = mode.oMetadata.oMetadata.dataServices.schema[0].entityType;
+                    let boAttributestr: string = "";
+                    let entityType: any = entityTypes[0];
+                    boAttributestr += this.getBoAttribute(entityType);
+                    for (let item of entityType.navigationProperty) {
+                        for (let entity of entityTypes) {
+                            if (entity.name === item.name && item.name !== mode.oMetadata.oMetadata.dataServices.schema[0].entityType[0].name) {
+                                boAttributestr += this.getBoChildAttribute(entity);
+                                break;
+                            }
+                        }
+                    }
+                    boAttributestr = boAttributestr.substring(0, boAttributestr.lastIndexOf(","));
+                    // for (let entityType of entityTypes) {
+                    //     str += this.getBoAttribute(entityType);
+                    //     if (ibas.objects.isNull(entityType.navigationProperty)) {
+                    //         continue;
+                    //     }
+                    //     for (let item of entityType.navigationProperty) {
+                    //         for (let entity of entityTypes) {
+                    //             if (entity.name === item.name && item.name !== mode.oMetadata.oMetadata.dataServices.schema[0].entityType[0].name) {
+                    //                 str += this.getBoChildAttribute(entity);
+                    //                 break;
+                    //             }
+                    //         }
+                    //     }
+                    // }
+                    let boNamespace: string = entityType.name;
+                    if (ibas.strings.isEmpty(boNamespace)) {
+                        boNamespace = mode.oMetadata.oMetadata.dataServices.schema[0].entityContainer[0].name;
+                    }
+                    let blob: Blob = new Blob([ibas.strings.format(
+                        "namespace sap {\n    export namespace byd {\n        export namespace {0} " +
+                        "{\n            export class {1}Extend {\n                getBOAttributeString(): string{\n                    " +
+                        "return \"{2}\";\n                }\n            }\n        }\n    }\n}",
+                        boNamespace.toLocaleLowerCase(), entityType.name, boAttributestr)], { type: "text/plain;charset=utf-8" });
+                    ibas.files.save(blob, ibas.strings.format("{0}Extend.ts", entityType.name));
+                }
+                getBoAttribute(entity: any): string {
+                    let attributeStr: string = "";
+                    for (let item of entity.property) {
+                        attributeStr += ibas.strings.format("{0},", item.name);
+                    }
+                    return attributeStr;
+                }
+                getBoChildAttribute(entity: any): string {
+                    let attributeStr: string = "";
+                    for (let item of entity.property) {
+                        attributeStr += ibas.strings.format("{0}/{1},", entity.name, item.name);
+                    }
+                    return attributeStr;
                 }
                 // 打开接口数据结构显示dialog
                 openStructureDialog(mode: any): void {
@@ -140,31 +204,20 @@ namespace example {
                     // 解决下载不全
                     let downLoad: any = setInterval(() => {
                         if (downNum < length) {
-                            that.downLoadOneStructure(entityType[downNum], mode);
+                            that.downLoadBoStructure(entityType[downNum], mode);
                             downNum++;
                         } else {
                             clearInterval(downLoad);
                             that.page.setBusy(false);
                         }
                     }, 1000);
-                    // for (let entity of mode.oMetadata.oMetadata.dataServices.schema[0].entityType) {
-                    //     let attributeStr: string = "";
-                    //     for (let item of entity.property) {
-                    //         attributeStr += this.getBasisAttribute(item.name, item.type);
-                    //     }
-                    //     if (!ibas.objects.isNull(entity.navigationProperty)) {
-                    //         for (let item of entity.navigationProperty) {
-                    //             attributeStr += this.getChildObjectAttribute(item.name, mode.oMetadata.oMetadata.dataServices.schema[0].association);
-                    //         }
-                    //     }
-                    //     // tslint:disable-next-line:max-line-length
-                    //     let blob: Blob = new Blob([ibas.strings.format("declare namespace sap {\n    export namespace byd {\n        export namespace bo {\n            export class {0} {\n{1}            }\n        }\n    }\n}",
-                    //         entity.name, attributeStr)], { type: "text/plain;charset=utf-8" });
-                    //     ibas.files.save(blob, ibas.strings.format("{0}.d.ts", entity.name));
-                    // }
                 }
-                downLoadOneStructure(entity: any, mode: any): void {
+                downLoadBoStructure(entity: any, mode: any): void {
                     let attributeStr: string = "";
+                    let boNamespace: string = mode.oMetadata.oMetadata.dataServices.schema[0].entityType[0].name;
+                    if (ibas.strings.isEmpty(boNamespace)) {
+                        boNamespace = mode.oMetadata.oMetadata.dataServices.schema[0].entityContainer[0].name;
+                    }
                     for (let item of entity.property) {
                         attributeStr += this.getBasisAttribute(item.name, item.type);
                     }
@@ -173,9 +226,10 @@ namespace example {
                             attributeStr += this.getChildObjectAttribute(item.name, mode.oMetadata.oMetadata.dataServices.schema[0].association);
                         }
                     }
-                    // tslint:disable-next-line:max-line-length
-                    let blob: Blob = new Blob([ibas.strings.format("declare namespace sap {\n    export namespace byd {\n        export namespace bo {\n            export class {0} {\n{1}            }\n        }\n    }\n}",
-                        entity.name, attributeStr)], { type: "text/plain;charset=utf-8" });
+                    let blob: Blob = new Blob([ibas.strings.format(
+                        "declare namespace sap {\n    export namespace byd {\n        export namespace {0} " +
+                        "{\n            export class {1} {\n{2}            }\n        }\n    }\n}",
+                        boNamespace.toLocaleLowerCase(), entity.name, attributeStr)], { type: "text/plain;charset=utf-8" });
                     ibas.files.save(blob, ibas.strings.format("{0}.d.ts", entity.name));
                 }
                 // 获取基础属性

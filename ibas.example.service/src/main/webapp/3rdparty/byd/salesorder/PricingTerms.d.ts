@@ -1,6 +1,6 @@
 declare namespace sap {
     export namespace byd {
-        export namespace bo {
+        export namespace salesorder {
             export class PricingTerms {
                 ObjectID?: string;
                 ParentObjectID?: string;

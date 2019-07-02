@@ -346,7 +346,7 @@ namespace example {
                     let that: this = this;
                     that.page.setBusy(true);
                     // byd对象转json字符串
-                    let salesOrder: sap.byd.bo.SalesOrder = this.getBydSalesOrder();
+                    let salesOrder: sap.byd.salesorder.SalesOrder = this.getBydSalesOrder();
                     let objectJsonStr: string = JSON.stringify(salesOrder);
                     console.log("%c" + objectJsonStr, "color:blue;");
                     // json对象转json字符串
@@ -407,8 +407,8 @@ namespace example {
                 }
 
                 // 需要生成的byd类引用，没有需要注释
-                getBydSalesOrder(): sap.byd.bo.SalesOrder {
-                    let salesOrder: sap.byd.bo.SalesOrder = new Object();
+                getBydSalesOrder(): sap.byd.salesorder.SalesOrder {
+                    let salesOrder: sap.byd.salesorder.SalesOrder = new Object();
                     salesOrder.ExternalReference = "700";
                     salesOrder.Name = "neil Sales Order date:" + ibas.dates.today() + "  " + ibas.dates.now();
                     salesOrder.DataOriginTypeCode = "4";
@@ -416,13 +416,13 @@ namespace example {
                     salesOrder.PricingTerms.CurrencyCode = "EUR";
                     salesOrder.PricingTerms.GrossAmountIndicator = false;
                     salesOrder.Item = new Array<object>();
-                    let item: sap.byd.bo.Item = new Object();
+                    let item: sap.byd.salesorder.Item = new Object();
                     item.ID = "10";
                     item.ProcessingTypeCode = "TAN";
                     item.ItemProduct = new Object();
                     item.ItemProduct.ProductID = "P120101";
                     item.ItemScheduleLine = new Array<object>();
-                    let line: sap.byd.bo.ItemScheduleLine = new Object();
+                    let line: sap.byd.salesorder.ItemScheduleLine = new Object();
                     line.Quantity = "2";
                     line.unitCode = "EA";
                     item.ItemScheduleLine.push(line);

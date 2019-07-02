@@ -59,7 +59,16 @@ namespace example {
                             if (opRslt.resultCode !== 0) {
                                 throw new Error(opRslt.message);
                             }
-                            that.view.updateStructrue(opRslt.resultObjects.firstOrDefault().fileName);
+                            let fileData: any = opRslt.resultObjects.firstOrDefault();
+                            if (!ibas.objects.isNull(fileData) && fileData instanceof ibas.FileData) {
+                                that.view.updateStructrue(fileData.fileName);
+                            } else {
+                                let reslt: any = JSON.parse(fileData);
+                                fileData = reslt.ResultObjects[0];
+                                if (!ibas.objects.isNull(fileData)) {
+                                    that.view.updateStructrue(fileData.FileName);
+                                }
+                            }
                             ++that.progressCount;
                             if (that.progressCount === that.total) {
                                 that.busy(false);
