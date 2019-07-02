@@ -260,6 +260,7 @@ namespace example {
 
                 // 显示byd销售订单
                 showSalesOrderList(datas: ibas.ArrayList<any>): void {
+                    let sales: sap.byd.salesorder.SalesOrder = datas[0];
                     this.salesOrderTable.setBusy(false);
                     this.salesOrderTable.setModel(new sap.ui.model.json.JSONModel({ rows: datas }));
                     this.LastID = datas[datas.length - 1].ID;
@@ -380,6 +381,7 @@ namespace example {
                     let JQryAjxSetting: JQueryAjaxSettings = {
                         type: "POST",
                         contentType: "application/json",
+                        dataType: "json",
                         url: ibas.strings.format("{0}/{1}/{2}/{3}",
                             this.sHostInput.getValue(), this.bydServiceBasePathInput.getValue(), this.serviceNameInput.getValue(), this.serviceMethodsInput.getValue()),
                         headers: {

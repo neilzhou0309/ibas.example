@@ -12,7 +12,6 @@ namespace example {
             const LANGUAGE_MODULE_FILE_NAMINGRULES: string = "{0}.{1}.json";
             /** 列表视图-例子 */
             export class TranslationView extends ibas.View implements app.ITranslationView {
-
                 private vstroeServiceAddress: string = ibas.strings.format("{0}//{1}/{2}", window.location.protocol, window.location.host, "test/apps");
                 private sapTranslationServiceAddress: string = "https://sandbox.api.sap.com/translationhub/api/v1/translate";
                 private currentLanguageFile: any;
@@ -268,7 +267,8 @@ namespace example {
                 // 初始化目标语言选择控件
                 initTargetLanguages(): void {
                     this.targetLanguagesCombobox = new sap.m.MultiComboBox("", {
-                        showSecondaryValues: true
+                        showSecondaryValues: true,
+                        tooltip: "目标语言"
                     });
                     let map: Map<string, string> = new Map<string, string>();
                     map = openui5.utils.getEnumMap(emTargetLanguages);

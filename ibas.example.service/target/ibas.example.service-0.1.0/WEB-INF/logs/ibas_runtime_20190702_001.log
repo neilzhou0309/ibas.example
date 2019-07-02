@@ -4034,3 +4034,595 @@ sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'89081a60-a1a4-4023-8
 repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [0] filtering [0].
 [DEBUG] [2019-07-02 16:24:44.015] [ibas-task|sleeping(123)]
 daemon: end task [5961986062874873579 - configuration updater] 103th running and for [39] milliseconds.
+[DEBUG] [2019-07-02 16:27:43.688] [ibas-framework-daemon(122)]
+daemon: begin to run task [6303545745759451524 - configuration updater], 104th running.
+[INFO] [2019-07-02 16:27:43.688] [ibas-task|configuration updater(123)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-07-02 16:27:43.688] [ibas-task|configuration updater(123)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-07-02 16:27:43.697] [ibas-task|configuration updater(123)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-07-02 16:27:43.697] [ibas-task|configuration updater(123)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'c2b31c06-20d8-44a2-bb34-17f47ed01859'
+[INFO] [2019-07-02 16:27:43.699] [ibas-task|configuration updater(123)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [1] filtering [0].
+[DEBUG] [2019-07-02 16:27:43.699] [ibas-task|sleeping(123)]
+daemon: end task [6303545745759451524 - configuration updater] 104th running and for [11] milliseconds.
+[DEBUG] [2019-07-02 16:27:44.188] [ibas-framework-daemon(122)]
+daemon: begin to run task [5961986062874873579 - configuration updater], 104th running.
+[INFO] [2019-07-02 16:27:44.189] [ibas-task|configuration updater(123)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-07-02 16:27:44.189] [ibas-task|configuration updater(123)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-07-02 16:27:44.203] [ibas-task|configuration updater(123)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-07-02 16:27:44.203] [ibas-task|configuration updater(123)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'89081a60-a1a4-4023-8d2a-6311ef323586'
+[INFO] [2019-07-02 16:27:44.205] [ibas-task|configuration updater(123)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [0] filtering [0].
+[DEBUG] [2019-07-02 16:27:44.205] [ibas-task|sleeping(123)]
+daemon: end task [5961986062874873579 - configuration updater] 104th running and for [17] milliseconds.
+[INFO] [2019-07-02 16:29:07.725] [http-nio-8081-exec-1(112)]
+repository: changed user [{user: 1|admin}].
+[INFO] [2019-07-02 16:29:07.735] [http-nio-8081-exec-1(112)]
+repository: writed file [metadata.xml|D:\ibasCloud\ibas.example\ibas.example.service\target\ibas.example.service-0.1.0\WEB-INF\data\example_files\2479e3b4-c3d6-4747-b6f5-d17cff00048f.xml].
+[DEBUG] [2019-07-02 16:30:43.904] [ibas-framework-daemon(122)]
+daemon: begin to run task [6303545745759451524 - configuration updater], 105th running.
+[INFO] [2019-07-02 16:30:43.904] [ibas-task|configuration updater(123)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-07-02 16:30:43.904] [ibas-task|configuration updater(123)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-07-02 16:30:43.935] [ibas-task|configuration updater(123)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-07-02 16:30:43.936] [ibas-task|configuration updater(123)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'c2b31c06-20d8-44a2-bb34-17f47ed01859'
+[INFO] [2019-07-02 16:30:43.937] [ibas-task|configuration updater(123)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [1] filtering [0].
+[DEBUG] [2019-07-02 16:30:43.937] [ibas-task|sleeping(123)]
+daemon: end task [6303545745759451524 - configuration updater] 105th running and for [33] milliseconds.
+[DEBUG] [2019-07-02 16:30:44.404] [ibas-framework-daemon(122)]
+daemon: begin to run task [5961986062874873579 - configuration updater], 105th running.
+[INFO] [2019-07-02 16:30:44.404] [ibas-task|configuration updater(123)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-07-02 16:30:44.404] [ibas-task|configuration updater(123)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-07-02 16:30:44.412] [ibas-task|configuration updater(123)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-07-02 16:30:44.412] [ibas-task|configuration updater(123)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'89081a60-a1a4-4023-8d2a-6311ef323586'
+[INFO] [2019-07-02 16:30:44.413] [ibas-task|configuration updater(123)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [0] filtering [0].
+[DEBUG] [2019-07-02 16:30:44.413] [ibas-task|sleeping(123)]
+daemon: end task [5961986062874873579 - configuration updater] 105th running and for [9] milliseconds.
+[DEBUG] [2019-07-02 16:33:44.119] [ibas-framework-daemon(122)]
+daemon: begin to run task [6303545745759451524 - configuration updater], 106th running.
+[INFO] [2019-07-02 16:33:44.119] [ibas-task|configuration updater(123)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-07-02 16:33:44.119] [ibas-task|configuration updater(123)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-07-02 16:33:44.142] [ibas-task|configuration updater(123)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-07-02 16:33:44.142] [ibas-task|configuration updater(123)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'c2b31c06-20d8-44a2-bb34-17f47ed01859'
+[INFO] [2019-07-02 16:33:44.144] [ibas-task|configuration updater(123)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [1] filtering [0].
+[DEBUG] [2019-07-02 16:33:44.144] [ibas-task|sleeping(123)]
+daemon: end task [6303545745759451524 - configuration updater] 106th running and for [25] milliseconds.
+[DEBUG] [2019-07-02 16:33:44.620] [ibas-framework-daemon(122)]
+daemon: begin to run task [5961986062874873579 - configuration updater], 106th running.
+[INFO] [2019-07-02 16:33:44.625] [ibas-task|configuration updater(123)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-07-02 16:33:44.626] [ibas-task|configuration updater(123)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-07-02 16:33:44.652] [ibas-task|configuration updater(123)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-07-02 16:33:44.652] [ibas-task|configuration updater(123)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'89081a60-a1a4-4023-8d2a-6311ef323586'
+[INFO] [2019-07-02 16:33:44.655] [ibas-task|configuration updater(123)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [0] filtering [0].
+[DEBUG] [2019-07-02 16:33:44.655] [ibas-task|sleeping(123)]
+daemon: end task [5961986062874873579 - configuration updater] 106th running and for [35] milliseconds.
+[DEBUG] [2019-07-02 16:36:44.337] [ibas-framework-daemon(122)]
+daemon: begin to run task [6303545745759451524 - configuration updater], 107th running.
+[INFO] [2019-07-02 16:36:44.337] [ibas-task|configuration updater(123)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-07-02 16:36:44.338] [ibas-task|configuration updater(123)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-07-02 16:36:44.374] [ibas-task|configuration updater(123)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-07-02 16:36:44.374] [ibas-task|configuration updater(123)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'c2b31c06-20d8-44a2-bb34-17f47ed01859'
+[INFO] [2019-07-02 16:36:44.376] [ibas-task|configuration updater(123)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [1] filtering [0].
+[DEBUG] [2019-07-02 16:36:44.376] [ibas-task|sleeping(123)]
+daemon: end task [6303545745759451524 - configuration updater] 107th running and for [39] milliseconds.
+[DEBUG] [2019-07-02 16:36:44.838] [ibas-framework-daemon(122)]
+daemon: begin to run task [5961986062874873579 - configuration updater], 107th running.
+[INFO] [2019-07-02 16:36:44.840] [ibas-task|configuration updater(123)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-07-02 16:36:44.840] [ibas-task|configuration updater(123)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-07-02 16:36:44.873] [ibas-task|configuration updater(123)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-07-02 16:36:44.874] [ibas-task|configuration updater(123)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'89081a60-a1a4-4023-8d2a-6311ef323586'
+[INFO] [2019-07-02 16:36:44.879] [ibas-task|configuration updater(123)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [0] filtering [0].
+[DEBUG] [2019-07-02 16:36:44.879] [ibas-task|sleeping(123)]
+daemon: end task [5961986062874873579 - configuration updater] 107th running and for [41] milliseconds.
+[DEBUG] [2019-07-02 16:39:44.544] [ibas-framework-daemon(122)]
+daemon: begin to run task [6303545745759451524 - configuration updater], 108th running.
+[INFO] [2019-07-02 16:39:44.544] [ibas-task|configuration updater(123)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-07-02 16:39:44.544] [ibas-task|configuration updater(123)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-07-02 16:39:44.584] [ibas-task|configuration updater(123)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-07-02 16:39:44.584] [ibas-task|configuration updater(123)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'c2b31c06-20d8-44a2-bb34-17f47ed01859'
+[INFO] [2019-07-02 16:39:44.586] [ibas-task|configuration updater(123)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [1] filtering [0].
+[DEBUG] [2019-07-02 16:39:44.586] [ibas-task|sleeping(123)]
+daemon: end task [6303545745759451524 - configuration updater] 108th running and for [42] milliseconds.
+[DEBUG] [2019-07-02 16:39:45.045] [ibas-framework-daemon(122)]
+daemon: begin to run task [5961986062874873579 - configuration updater], 108th running.
+[INFO] [2019-07-02 16:39:45.050] [ibas-task|configuration updater(123)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-07-02 16:39:45.051] [ibas-task|configuration updater(123)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-07-02 16:39:45.087] [ibas-task|configuration updater(123)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-07-02 16:39:45.088] [ibas-task|configuration updater(123)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'89081a60-a1a4-4023-8d2a-6311ef323586'
+[INFO] [2019-07-02 16:39:45.093] [ibas-task|configuration updater(123)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [0] filtering [0].
+[DEBUG] [2019-07-02 16:39:45.094] [ibas-task|sleeping(123)]
+daemon: end task [5961986062874873579 - configuration updater] 108th running and for [49] milliseconds.
+[DEBUG] [2019-07-02 16:42:44.764] [ibas-framework-daemon(122)]
+daemon: begin to run task [6303545745759451524 - configuration updater], 109th running.
+[INFO] [2019-07-02 16:42:44.764] [ibas-task|configuration updater(123)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-07-02 16:42:44.764] [ibas-task|configuration updater(123)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-07-02 16:42:44.773] [ibas-task|configuration updater(123)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-07-02 16:42:44.773] [ibas-task|configuration updater(123)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'c2b31c06-20d8-44a2-bb34-17f47ed01859'
+[INFO] [2019-07-02 16:42:44.774] [ibas-task|configuration updater(123)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [1] filtering [0].
+[DEBUG] [2019-07-02 16:42:44.774] [ibas-task|sleeping(123)]
+daemon: end task [6303545745759451524 - configuration updater] 109th running and for [10] milliseconds.
+[DEBUG] [2019-07-02 16:42:45.264] [ibas-framework-daemon(122)]
+daemon: begin to run task [5961986062874873579 - configuration updater], 109th running.
+[INFO] [2019-07-02 16:42:45.266] [ibas-task|configuration updater(123)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-07-02 16:42:45.266] [ibas-task|configuration updater(123)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-07-02 16:42:45.302] [ibas-task|configuration updater(123)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-07-02 16:42:45.303] [ibas-task|configuration updater(123)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'89081a60-a1a4-4023-8d2a-6311ef323586'
+[INFO] [2019-07-02 16:42:45.306] [ibas-task|configuration updater(123)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [0] filtering [0].
+[DEBUG] [2019-07-02 16:42:45.306] [ibas-task|sleeping(123)]
+daemon: end task [5961986062874873579 - configuration updater] 109th running and for [42] milliseconds.
+[DEBUG] [2019-07-02 16:45:44.974] [ibas-framework-daemon(122)]
+daemon: begin to run task [6303545745759451524 - configuration updater], 110th running.
+[INFO] [2019-07-02 16:45:44.974] [ibas-task|configuration updater(123)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-07-02 16:45:44.974] [ibas-task|configuration updater(123)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-07-02 16:45:44.984] [ibas-task|configuration updater(123)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-07-02 16:45:44.984] [ibas-task|configuration updater(123)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'c2b31c06-20d8-44a2-bb34-17f47ed01859'
+[INFO] [2019-07-02 16:45:44.985] [ibas-task|configuration updater(123)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [1] filtering [0].
+[DEBUG] [2019-07-02 16:45:44.985] [ibas-task|sleeping(123)]
+daemon: end task [6303545745759451524 - configuration updater] 110th running and for [11] milliseconds.
+[DEBUG] [2019-07-02 16:45:45.474] [ibas-framework-daemon(122)]
+daemon: begin to run task [5961986062874873579 - configuration updater], 110th running.
+[INFO] [2019-07-02 16:45:45.475] [ibas-task|configuration updater(123)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-07-02 16:45:45.475] [ibas-task|configuration updater(123)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-07-02 16:45:45.492] [ibas-task|configuration updater(123)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-07-02 16:45:45.493] [ibas-task|configuration updater(123)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'89081a60-a1a4-4023-8d2a-6311ef323586'
+[INFO] [2019-07-02 16:45:45.496] [ibas-task|configuration updater(123)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [0] filtering [0].
+[DEBUG] [2019-07-02 16:45:45.496] [ibas-task|sleeping(123)]
+daemon: end task [5961986062874873579 - configuration updater] 110th running and for [22] milliseconds.
+[DEBUG] [2019-07-02 16:48:45.195] [ibas-framework-daemon(122)]
+daemon: begin to run task [6303545745759451524 - configuration updater], 111th running.
+[INFO] [2019-07-02 16:48:45.195] [ibas-task|configuration updater(123)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-07-02 16:48:45.195] [ibas-task|configuration updater(123)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-07-02 16:48:45.234] [ibas-task|configuration updater(123)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-07-02 16:48:45.234] [ibas-task|configuration updater(123)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'c2b31c06-20d8-44a2-bb34-17f47ed01859'
+[INFO] [2019-07-02 16:48:45.243] [ibas-task|configuration updater(123)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [1] filtering [0].
+[DEBUG] [2019-07-02 16:48:45.243] [ibas-task|sleeping(123)]
+daemon: end task [6303545745759451524 - configuration updater] 111th running and for [48] milliseconds.
+[DEBUG] [2019-07-02 16:48:45.695] [ibas-framework-daemon(122)]
+daemon: begin to run task [5961986062874873579 - configuration updater], 111th running.
+[INFO] [2019-07-02 16:48:45.697] [ibas-task|configuration updater(123)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-07-02 16:48:45.697] [ibas-task|configuration updater(123)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-07-02 16:48:45.726] [ibas-task|configuration updater(123)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-07-02 16:48:45.727] [ibas-task|configuration updater(123)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'89081a60-a1a4-4023-8d2a-6311ef323586'
+[INFO] [2019-07-02 16:48:45.729] [ibas-task|configuration updater(123)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [0] filtering [0].
+[DEBUG] [2019-07-02 16:48:45.729] [ibas-task|sleeping(123)]
+daemon: end task [5961986062874873579 - configuration updater] 111th running and for [34] milliseconds.
+[DEBUG] [2019-07-02 16:51:45.409] [ibas-framework-daemon(122)]
+daemon: begin to run task [6303545745759451524 - configuration updater], 112th running.
+[INFO] [2019-07-02 16:51:45.409] [ibas-task|configuration updater(123)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-07-02 16:51:45.409] [ibas-task|configuration updater(123)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-07-02 16:51:45.427] [ibas-task|configuration updater(123)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-07-02 16:51:45.427] [ibas-task|configuration updater(123)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'c2b31c06-20d8-44a2-bb34-17f47ed01859'
+[INFO] [2019-07-02 16:51:45.428] [ibas-task|configuration updater(123)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [1] filtering [0].
+[DEBUG] [2019-07-02 16:51:45.428] [ibas-task|sleeping(123)]
+daemon: end task [6303545745759451524 - configuration updater] 112th running and for [19] milliseconds.
+[DEBUG] [2019-07-02 16:51:45.910] [ibas-framework-daemon(122)]
+daemon: begin to run task [5961986062874873579 - configuration updater], 112th running.
+[INFO] [2019-07-02 16:51:45.911] [ibas-task|configuration updater(123)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-07-02 16:51:45.911] [ibas-task|configuration updater(123)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-07-02 16:51:45.932] [ibas-task|configuration updater(123)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-07-02 16:51:45.932] [ibas-task|configuration updater(123)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'89081a60-a1a4-4023-8d2a-6311ef323586'
+[INFO] [2019-07-02 16:51:45.934] [ibas-task|configuration updater(123)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [0] filtering [0].
+[DEBUG] [2019-07-02 16:51:45.934] [ibas-task|sleeping(123)]
+daemon: end task [5961986062874873579 - configuration updater] 112th running and for [24] milliseconds.
+[DEBUG] [2019-07-02 16:54:45.632] [ibas-framework-daemon(122)]
+daemon: begin to run task [6303545745759451524 - configuration updater], 113th running.
+[INFO] [2019-07-02 16:54:45.632] [ibas-task|configuration updater(123)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-07-02 16:54:45.632] [ibas-task|configuration updater(123)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-07-02 16:54:45.656] [ibas-task|configuration updater(123)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-07-02 16:54:45.657] [ibas-task|configuration updater(123)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'c2b31c06-20d8-44a2-bb34-17f47ed01859'
+[INFO] [2019-07-02 16:54:45.658] [ibas-task|configuration updater(123)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [1] filtering [0].
+[DEBUG] [2019-07-02 16:54:45.658] [ibas-task|sleeping(123)]
+daemon: end task [6303545745759451524 - configuration updater] 113th running and for [26] milliseconds.
+[DEBUG] [2019-07-02 16:54:46.132] [ibas-framework-daemon(122)]
+daemon: begin to run task [5961986062874873579 - configuration updater], 113th running.
+[INFO] [2019-07-02 16:54:46.134] [ibas-task|configuration updater(123)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-07-02 16:54:46.135] [ibas-task|configuration updater(123)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-07-02 16:54:46.168] [ibas-task|configuration updater(123)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-07-02 16:54:46.169] [ibas-task|configuration updater(123)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'89081a60-a1a4-4023-8d2a-6311ef323586'
+[INFO] [2019-07-02 16:54:46.176] [ibas-task|configuration updater(123)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [0] filtering [0].
+[DEBUG] [2019-07-02 16:54:46.176] [ibas-task|sleeping(123)]
+daemon: end task [5961986062874873579 - configuration updater] 113th running and for [44] milliseconds.
+[DEBUG] [2019-07-02 16:57:45.851] [ibas-framework-daemon(122)]
+daemon: begin to run task [6303545745759451524 - configuration updater], 114th running.
+[INFO] [2019-07-02 16:57:45.851] [ibas-task|configuration updater(123)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-07-02 16:57:45.851] [ibas-task|configuration updater(123)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-07-02 16:57:45.892] [ibas-task|configuration updater(123)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-07-02 16:57:45.892] [ibas-task|configuration updater(123)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'c2b31c06-20d8-44a2-bb34-17f47ed01859'
+[INFO] [2019-07-02 16:57:45.900] [ibas-task|configuration updater(123)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [1] filtering [0].
+[DEBUG] [2019-07-02 16:57:45.900] [ibas-task|sleeping(123)]
+daemon: end task [6303545745759451524 - configuration updater] 114th running and for [49] milliseconds.
+[DEBUG] [2019-07-02 16:57:46.352] [ibas-framework-daemon(122)]
+daemon: begin to run task [5961986062874873579 - configuration updater], 114th running.
+[INFO] [2019-07-02 16:57:46.353] [ibas-task|configuration updater(123)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-07-02 16:57:46.353] [ibas-task|configuration updater(123)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-07-02 16:57:46.387] [ibas-task|configuration updater(123)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-07-02 16:57:46.387] [ibas-task|configuration updater(123)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'89081a60-a1a4-4023-8d2a-6311ef323586'
+[INFO] [2019-07-02 16:57:46.390] [ibas-task|configuration updater(123)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [0] filtering [0].
+[DEBUG] [2019-07-02 16:57:46.390] [ibas-task|sleeping(123)]
+daemon: end task [5961986062874873579 - configuration updater] 114th running and for [38] milliseconds.
+[DEBUG] [2019-07-02 17:00:46.067] [ibas-framework-daemon(122)]
+daemon: begin to run task [6303545745759451524 - configuration updater], 115th running.
+[INFO] [2019-07-02 17:00:46.067] [ibas-task|configuration updater(123)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-07-02 17:00:46.067] [ibas-task|configuration updater(123)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-07-02 17:00:46.108] [ibas-task|configuration updater(123)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-07-02 17:00:46.108] [ibas-task|configuration updater(123)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'c2b31c06-20d8-44a2-bb34-17f47ed01859'
+[INFO] [2019-07-02 17:00:46.116] [ibas-task|configuration updater(123)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [1] filtering [0].
+[DEBUG] [2019-07-02 17:00:46.116] [ibas-task|sleeping(123)]
+daemon: end task [6303545745759451524 - configuration updater] 115th running and for [49] milliseconds.
+[DEBUG] [2019-07-02 17:00:46.567] [ibas-framework-daemon(122)]
+daemon: begin to run task [5961986062874873579 - configuration updater], 115th running.
+[INFO] [2019-07-02 17:00:46.569] [ibas-task|configuration updater(123)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-07-02 17:00:46.569] [ibas-task|configuration updater(123)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-07-02 17:00:46.595] [ibas-task|configuration updater(123)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-07-02 17:00:46.595] [ibas-task|configuration updater(123)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'89081a60-a1a4-4023-8d2a-6311ef323586'
+[INFO] [2019-07-02 17:00:46.597] [ibas-task|configuration updater(123)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [0] filtering [0].
+[DEBUG] [2019-07-02 17:00:46.597] [ibas-task|sleeping(123)]
+daemon: end task [5961986062874873579 - configuration updater] 115th running and for [30] milliseconds.
+[DEBUG] [2019-07-02 17:03:46.285] [ibas-framework-daemon(122)]
+daemon: begin to run task [6303545745759451524 - configuration updater], 116th running.
+[INFO] [2019-07-02 17:03:46.285] [ibas-task|configuration updater(123)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-07-02 17:03:46.285] [ibas-task|configuration updater(123)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-07-02 17:03:46.295] [ibas-task|configuration updater(123)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-07-02 17:03:46.295] [ibas-task|configuration updater(123)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'c2b31c06-20d8-44a2-bb34-17f47ed01859'
+[INFO] [2019-07-02 17:03:46.296] [ibas-task|configuration updater(123)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [1] filtering [0].
+[DEBUG] [2019-07-02 17:03:46.296] [ibas-task|sleeping(123)]
+daemon: end task [6303545745759451524 - configuration updater] 116th running and for [11] milliseconds.
+[DEBUG] [2019-07-02 17:03:46.786] [ibas-framework-daemon(122)]
+daemon: begin to run task [5961986062874873579 - configuration updater], 116th running.
+[INFO] [2019-07-02 17:03:46.786] [ibas-task|configuration updater(123)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-07-02 17:03:46.787] [ibas-task|configuration updater(123)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-07-02 17:03:46.798] [ibas-task|configuration updater(123)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-07-02 17:03:46.798] [ibas-task|configuration updater(123)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'89081a60-a1a4-4023-8d2a-6311ef323586'
+[INFO] [2019-07-02 17:03:46.800] [ibas-task|configuration updater(123)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [0] filtering [0].
+[DEBUG] [2019-07-02 17:03:46.800] [ibas-task|sleeping(123)]
+daemon: end task [5961986062874873579 - configuration updater] 116th running and for [14] milliseconds.
+[DEBUG] [2019-07-02 17:06:46.493] [ibas-framework-daemon(122)]
+daemon: begin to run task [6303545745759451524 - configuration updater], 117th running.
+[INFO] [2019-07-02 17:06:46.493] [ibas-task|configuration updater(123)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-07-02 17:06:46.493] [ibas-task|configuration updater(123)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-07-02 17:06:46.532] [ibas-task|configuration updater(123)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-07-02 17:06:46.533] [ibas-task|configuration updater(123)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'c2b31c06-20d8-44a2-bb34-17f47ed01859'
+[INFO] [2019-07-02 17:06:46.534] [ibas-task|configuration updater(123)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [1] filtering [0].
+[DEBUG] [2019-07-02 17:06:46.535] [ibas-task|sleeping(123)]
+daemon: end task [6303545745759451524 - configuration updater] 117th running and for [42] milliseconds.
+[DEBUG] [2019-07-02 17:06:46.994] [ibas-framework-daemon(122)]
+daemon: begin to run task [5961986062874873579 - configuration updater], 117th running.
+[INFO] [2019-07-02 17:06:46.996] [ibas-task|configuration updater(123)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-07-02 17:06:46.996] [ibas-task|configuration updater(123)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-07-02 17:06:47.024] [ibas-task|configuration updater(123)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-07-02 17:06:47.025] [ibas-task|configuration updater(123)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'89081a60-a1a4-4023-8d2a-6311ef323586'
+[INFO] [2019-07-02 17:06:47.028] [ibas-task|configuration updater(123)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [0] filtering [0].
+[DEBUG] [2019-07-02 17:06:47.028] [ibas-task|sleeping(123)]
+daemon: end task [5961986062874873579 - configuration updater] 117th running and for [34] milliseconds.
+[DEBUG] [2019-07-02 17:09:46.698] [ibas-framework-daemon(122)]
+daemon: begin to run task [6303545745759451524 - configuration updater], 118th running.
+[INFO] [2019-07-02 17:09:46.698] [ibas-task|configuration updater(123)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-07-02 17:09:46.698] [ibas-task|configuration updater(123)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-07-02 17:09:46.737] [ibas-task|configuration updater(123)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-07-02 17:09:46.738] [ibas-task|configuration updater(123)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'c2b31c06-20d8-44a2-bb34-17f47ed01859'
+[INFO] [2019-07-02 17:09:46.749] [ibas-task|configuration updater(123)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [1] filtering [0].
+[DEBUG] [2019-07-02 17:09:46.749] [ibas-task|sleeping(123)]
+daemon: end task [6303545745759451524 - configuration updater] 118th running and for [51] milliseconds.
+[DEBUG] [2019-07-02 17:09:47.198] [ibas-framework-daemon(122)]
+daemon: begin to run task [5961986062874873579 - configuration updater], 118th running.
+[INFO] [2019-07-02 17:09:47.199] [ibas-task|configuration updater(123)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-07-02 17:09:47.199] [ibas-task|configuration updater(123)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-07-02 17:09:47.210] [ibas-task|configuration updater(123)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-07-02 17:09:47.210] [ibas-task|configuration updater(123)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'89081a60-a1a4-4023-8d2a-6311ef323586'
+[INFO] [2019-07-02 17:09:47.211] [ibas-task|configuration updater(123)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [0] filtering [0].
+[DEBUG] [2019-07-02 17:09:47.211] [ibas-task|sleeping(123)]
+daemon: end task [5961986062874873579 - configuration updater] 118th running and for [13] milliseconds.
+[DEBUG] [2019-07-02 17:12:46.911] [ibas-framework-daemon(122)]
+daemon: begin to run task [6303545745759451524 - configuration updater], 119th running.
+[INFO] [2019-07-02 17:12:46.911] [ibas-task|configuration updater(123)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-07-02 17:12:46.911] [ibas-task|configuration updater(123)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-07-02 17:12:46.944] [ibas-task|configuration updater(123)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-07-02 17:12:46.945] [ibas-task|configuration updater(123)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'c2b31c06-20d8-44a2-bb34-17f47ed01859'
+[INFO] [2019-07-02 17:12:46.951] [ibas-task|configuration updater(123)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [1] filtering [0].
+[DEBUG] [2019-07-02 17:12:46.951] [ibas-task|sleeping(123)]
+daemon: end task [6303545745759451524 - configuration updater] 119th running and for [40] milliseconds.
+[DEBUG] [2019-07-02 17:12:47.412] [ibas-framework-daemon(122)]
+daemon: begin to run task [5961986062874873579 - configuration updater], 119th running.
+[INFO] [2019-07-02 17:12:47.412] [ibas-task|configuration updater(123)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-07-02 17:12:47.412] [ibas-task|configuration updater(123)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-07-02 17:12:47.421] [ibas-task|configuration updater(123)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-07-02 17:12:47.421] [ibas-task|configuration updater(123)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'89081a60-a1a4-4023-8d2a-6311ef323586'
+[INFO] [2019-07-02 17:12:47.422] [ibas-task|configuration updater(123)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [0] filtering [0].
+[DEBUG] [2019-07-02 17:12:47.422] [ibas-task|sleeping(123)]
+daemon: end task [5961986062874873579 - configuration updater] 119th running and for [10] milliseconds.
+[DEBUG] [2019-07-02 17:15:47.117] [ibas-framework-daemon(122)]
+daemon: begin to run task [6303545745759451524 - configuration updater], 120th running.
+[INFO] [2019-07-02 17:15:47.117] [ibas-task|configuration updater(123)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-07-02 17:15:47.117] [ibas-task|configuration updater(123)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-07-02 17:15:47.147] [ibas-task|configuration updater(123)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-07-02 17:15:47.148] [ibas-task|configuration updater(123)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'c2b31c06-20d8-44a2-bb34-17f47ed01859'
+[INFO] [2019-07-02 17:15:47.150] [ibas-task|configuration updater(123)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [1] filtering [0].
+[DEBUG] [2019-07-02 17:15:47.150] [ibas-task|sleeping(123)]
+daemon: end task [6303545745759451524 - configuration updater] 120th running and for [33] milliseconds.
+[DEBUG] [2019-07-02 17:15:47.618] [ibas-framework-daemon(122)]
+daemon: begin to run task [5961986062874873579 - configuration updater], 120th running.
+[INFO] [2019-07-02 17:15:47.620] [ibas-task|configuration updater(123)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-07-02 17:15:47.621] [ibas-task|configuration updater(123)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-07-02 17:15:47.658] [ibas-task|configuration updater(123)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-07-02 17:15:47.658] [ibas-task|configuration updater(123)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'89081a60-a1a4-4023-8d2a-6311ef323586'
+[INFO] [2019-07-02 17:15:47.664] [ibas-task|configuration updater(123)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [0] filtering [0].
+[DEBUG] [2019-07-02 17:15:47.664] [ibas-task|sleeping(123)]
+daemon: end task [5961986062874873579 - configuration updater] 120th running and for [46] milliseconds.
+[DEBUG] [2019-07-02 17:18:47.328] [ibas-framework-daemon(122)]
+daemon: begin to run task [6303545745759451524 - configuration updater], 121th running.
+[INFO] [2019-07-02 17:18:47.328] [ibas-task|configuration updater(123)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-07-02 17:18:47.328] [ibas-task|configuration updater(123)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-07-02 17:18:47.342] [ibas-task|configuration updater(123)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-07-02 17:18:47.342] [ibas-task|configuration updater(123)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'c2b31c06-20d8-44a2-bb34-17f47ed01859'
+[INFO] [2019-07-02 17:18:47.342] [ibas-task|configuration updater(123)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [1] filtering [0].
+[DEBUG] [2019-07-02 17:18:47.343] [ibas-task|sleeping(123)]
+daemon: end task [6303545745759451524 - configuration updater] 121th running and for [15] milliseconds.
+[DEBUG] [2019-07-02 17:18:47.829] [ibas-framework-daemon(122)]
+daemon: begin to run task [5961986062874873579 - configuration updater], 121th running.
+[INFO] [2019-07-02 17:18:47.831] [ibas-task|configuration updater(123)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-07-02 17:18:47.832] [ibas-task|configuration updater(123)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-07-02 17:18:47.862] [ibas-task|configuration updater(123)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-07-02 17:18:47.862] [ibas-task|configuration updater(123)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'89081a60-a1a4-4023-8d2a-6311ef323586'
+[INFO] [2019-07-02 17:18:47.866] [ibas-task|configuration updater(123)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [0] filtering [0].
+[DEBUG] [2019-07-02 17:18:47.866] [ibas-task|sleeping(123)]
+daemon: end task [5961986062874873579 - configuration updater] 121th running and for [37] milliseconds.
+[DEBUG] [2019-07-02 17:21:47.530] [ibas-framework-daemon(122)]
+daemon: begin to run task [6303545745759451524 - configuration updater], 122th running.
+[INFO] [2019-07-02 17:21:47.530] [ibas-task|configuration updater(123)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-07-02 17:21:47.530] [ibas-task|configuration updater(123)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-07-02 17:21:47.551] [ibas-task|configuration updater(123)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-07-02 17:21:47.551] [ibas-task|configuration updater(123)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'c2b31c06-20d8-44a2-bb34-17f47ed01859'
+[INFO] [2019-07-02 17:21:47.555] [ibas-task|configuration updater(123)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [1] filtering [0].
+[DEBUG] [2019-07-02 17:21:47.555] [ibas-task|sleeping(123)]
+daemon: end task [6303545745759451524 - configuration updater] 122th running and for [25] milliseconds.
+[DEBUG] [2019-07-02 17:21:48.031] [ibas-framework-daemon(122)]
+daemon: begin to run task [5961986062874873579 - configuration updater], 122th running.
+[INFO] [2019-07-02 17:21:48.032] [ibas-task|configuration updater(123)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-07-02 17:21:48.032] [ibas-task|configuration updater(123)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-07-02 17:21:48.041] [ibas-task|configuration updater(123)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-07-02 17:21:48.041] [ibas-task|configuration updater(123)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'89081a60-a1a4-4023-8d2a-6311ef323586'
+[INFO] [2019-07-02 17:21:48.042] [ibas-task|configuration updater(123)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [0] filtering [0].
+[DEBUG] [2019-07-02 17:21:48.042] [ibas-task|sleeping(123)]
+daemon: end task [5961986062874873579 - configuration updater] 122th running and for [11] milliseconds.
+[DEBUG] [2019-07-02 17:24:47.732] [ibas-framework-daemon(122)]
+daemon: begin to run task [6303545745759451524 - configuration updater], 123th running.
+[INFO] [2019-07-02 17:24:47.732] [ibas-task|configuration updater(123)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-07-02 17:24:47.732] [ibas-task|configuration updater(123)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-07-02 17:24:47.741] [ibas-task|configuration updater(123)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-07-02 17:24:47.742] [ibas-task|configuration updater(123)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'c2b31c06-20d8-44a2-bb34-17f47ed01859'
+[INFO] [2019-07-02 17:24:47.743] [ibas-task|configuration updater(123)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [1] filtering [0].
+[DEBUG] [2019-07-02 17:24:47.743] [ibas-task|sleeping(123)]
+daemon: end task [6303545745759451524 - configuration updater] 123th running and for [11] milliseconds.
+[DEBUG] [2019-07-02 17:24:48.232] [ibas-framework-daemon(122)]
+daemon: begin to run task [5961986062874873579 - configuration updater], 123th running.
+[INFO] [2019-07-02 17:24:48.232] [ibas-task|configuration updater(123)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-07-02 17:24:48.232] [ibas-task|configuration updater(123)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-07-02 17:24:48.241] [ibas-task|configuration updater(123)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-07-02 17:24:48.241] [ibas-task|configuration updater(123)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'89081a60-a1a4-4023-8d2a-6311ef323586'
+[INFO] [2019-07-02 17:24:48.243] [ibas-task|configuration updater(123)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [0] filtering [0].
+[DEBUG] [2019-07-02 17:24:48.243] [ibas-task|sleeping(123)]
+daemon: end task [5961986062874873579 - configuration updater] 123th running and for [11] milliseconds.
+[DEBUG] [2019-07-02 17:27:47.930] [ibas-framework-daemon(122)]
+daemon: begin to run task [6303545745759451524 - configuration updater], 124th running.
+[INFO] [2019-07-02 17:27:47.930] [ibas-task|configuration updater(123)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-07-02 17:27:47.930] [ibas-task|configuration updater(123)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-07-02 17:27:47.969] [ibas-task|configuration updater(123)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-07-02 17:27:47.970] [ibas-task|configuration updater(123)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'c2b31c06-20d8-44a2-bb34-17f47ed01859'
+[INFO] [2019-07-02 17:27:47.972] [ibas-task|configuration updater(123)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [1] filtering [0].
+[DEBUG] [2019-07-02 17:27:47.973] [ibas-task|sleeping(123)]
+daemon: end task [6303545745759451524 - configuration updater] 124th running and for [43] milliseconds.
+[DEBUG] [2019-07-02 17:27:48.430] [ibas-framework-daemon(122)]
+daemon: begin to run task [5961986062874873579 - configuration updater], 124th running.
+[INFO] [2019-07-02 17:27:48.433] [ibas-task|configuration updater(123)]
+repository: changed user [{SYSTEM_USER}].
+[INFO] [2019-07-02 17:27:48.433] [ibas-task|configuration updater(123)]
+repository: fetching [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] in master repository.
+[INFO] [2019-07-02 17:27:48.471] [ibas-task|configuration updater(123)]
+connection: user [sa] connected [localhost|ibas_cloud].
+[DEBUG] [2019-07-02 17:27:48.472] [ibas-task|configuration updater(123)]
+sql: SELECT * FROM "AVA_SYS_CONFIG" WHERE "ConfigGroup" = N'89081a60-a1a4-4023-8d2a-6311ef323586'
+[INFO] [2019-07-02 17:27:48.478] [ibas-task|configuration updater(123)]
+repository: fetch [org.colorcoding.ibas.initialfantasy.bo.application.ApplicationConfig] [1] times, result [0] filtering [0].
+[DEBUG] [2019-07-02 17:27:48.478] [ibas-task|sleeping(123)]
+daemon: end task [5961986062874873579 - configuration updater] 124th running and for [48] milliseconds.
