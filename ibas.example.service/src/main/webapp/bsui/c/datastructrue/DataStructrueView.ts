@@ -136,6 +136,9 @@ namespace example {
                         }
                     }
                     boAttributestr = boAttributestr.substring(0, boAttributestr.lastIndexOf(","));
+                    let reg: any = new RegExp(",", "g");
+                    let regStr: string = boAttributestr.replace(reg, ",\" +\n                        \"");
+                    // #region 生成每一层对象查询属性
                     // for (let entityType of entityTypes) {
                     //     str += this.getBoAttribute(entityType);
                     //     if (ibas.objects.isNull(entityType.navigationProperty)) {
@@ -150,6 +153,7 @@ namespace example {
                     //         }
                     //     }
                     // }
+                    // #endregion
                     let boNamespace: string = entityType.name;
                     if (ibas.strings.isEmpty(boNamespace)) {
                         boNamespace = mode.oMetadata.oMetadata.dataServices.schema[0].entityContainer[0].name;
@@ -157,8 +161,9 @@ namespace example {
                     let blob: Blob = new Blob([ibas.strings.format(
                         "namespace sap {\n    export namespace byd {\n        export namespace {0} " +
                         "{\n            export class {1}Extend {\n                getBOAttributeString(): string{\n                    " +
-                        "return \"{2}\";\n                }\n            }\n        }\n    }\n}",
-                        boNamespace.toLocaleLowerCase(), entityType.name, boAttributestr)], { type: "text/plain;charset=utf-8" });
+                        "return \"{2}\"\;\n                }\n                getBOChildAttributeString(): string{\n                    " +
+                        "return \"\";\n                }\n            }\n        }\n    }\n}",
+                        boNamespace.toLocaleLowerCase(), entityType.name, regStr)], { type: "text/plain;charset=utf-8" });
                     ibas.files.save(blob, ibas.strings.format("{0}Extend.ts", entityType.name));
                 }
                 getBoAttribute(entity: any): string {
