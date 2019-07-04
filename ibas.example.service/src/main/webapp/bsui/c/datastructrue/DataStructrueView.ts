@@ -160,8 +160,8 @@ namespace example {
                     }
                     let blob: Blob = new Blob([ibas.strings.format(
                         "namespace sap {\n    export namespace byd {\n        export namespace {0} " +
-                        "{\n            export class {1}Extend {\n                getBOAttributeString(): string{\n                    " +
-                        "return \"{2}\"\;\n                }\n                getBOChildAttributeString(): string{\n                    " +
+                        "{\n            export class {1}Extend {\n                getBOAttributeString(): string {\n                    " +
+                        "return \"{2}\"\;\n                }\n                getBOChildAttributeString(): string {\n                    " +
                         "return \"\";\n                }\n            }\n        }\n    }\n}",
                         boNamespace.toLocaleLowerCase(), entityType.name, regStr)], { type: "text/plain;charset=utf-8" });
                     ibas.files.save(blob, ibas.strings.format("{0}Extend.ts", entityType.name));
