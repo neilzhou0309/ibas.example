@@ -31,162 +31,162 @@ namespace example {
                             new sap.extension.table.DataColumn("", {
                                 label: ibas.i18n.prop("bo_example_code"),
                                 template: new sap.extension.m.Text("", {
-            }).bindProperty("bindingValue", {
-                path: "code",
-                type: new sap.extension.data.Alphanumeric()
-            }),
+                                }).bindProperty("bindingValue", {
+                                    path: "code",
+                                    type: new sap.extension.data.Alphanumeric()
+                                }),
                             }),
                             new sap.extension.table.DataColumn("", {
                                 label: ibas.i18n.prop("bo_example_name"),
                                 template: new sap.extension.m.Text("", {
-            }).bindProperty("bindingValue", {
-                path: "name",
-                type: new sap.extension.data.Alphanumeric()
-            }),
+                                }).bindProperty("bindingValue", {
+                                    path: "name",
+                                    type: new sap.extension.data.Alphanumeric()
+                                }),
                             }),
                             new sap.extension.table.DataColumn("", {
                                 label: ibas.i18n.prop("bo_example_docentry"),
                                 template: new sap.extension.m.Text("", {
-            }).bindProperty("bindingValue", {
-                path: "docEntry",
-                type: new sap.extension.data.Numeric()
-            }),
+                                }).bindProperty("bindingValue", {
+                                    path: "docEntry",
+                                    type: new sap.extension.data.Numeric()
+                                }),
                             }),
                             new sap.extension.table.DataColumn("", {
                                 label: ibas.i18n.prop("bo_example_objectcode"),
                                 template: new sap.extension.m.Text("", {
-            }).bindProperty("bindingValue", {
-                path: "objectCode",
-                type: new sap.extension.data.Alphanumeric()
-            }),
+                                }).bindProperty("bindingValue", {
+                                    path: "objectCode",
+                                    type: new sap.extension.data.Alphanumeric()
+                                }),
                             }),
                             new sap.extension.table.DataColumn("", {
                                 label: ibas.i18n.prop("bo_example_series"),
                                 template: new sap.extension.m.Text("", {
-            }).bindProperty("bindingValue", {
-                path: "series",
-                type: new sap.extension.data.Numeric()
-            }),
+                                }).bindProperty("bindingValue", {
+                                    path: "series",
+                                    type: new sap.extension.data.Numeric()
+                                }),
                             }),
                             new sap.extension.table.DataColumn("", {
                                 label: ibas.i18n.prop("bo_example_loginst"),
                                 template: new sap.extension.m.Text("", {
-            }).bindProperty("bindingValue", {
-                path: "logInst",
-                type: new sap.extension.data.Numeric()
-            }),
+                                }).bindProperty("bindingValue", {
+                                    path: "logInst",
+                                    type: new sap.extension.data.Numeric()
+                                }),
                             }),
                             new sap.extension.table.DataColumn("", {
                                 label: ibas.i18n.prop("bo_example_datasource"),
                                 template: new sap.extension.m.Text("", {
-            }).bindProperty("bindingValue", {
-                path: "dataSource",
-                type: new sap.extension.data.Alphanumeric()
-            }),
+                                }).bindProperty("bindingValue", {
+                                    path: "dataSource",
+                                    type: new sap.extension.data.Alphanumeric()
+                                }),
                             }),
                             new sap.extension.table.DataColumn("", {
                                 label: ibas.i18n.prop("bo_example_createdate"),
                                 template: new sap.extension.m.Text("", {
-            }).bindProperty("bindingValue", {
-                path: "createDate",
-                type: new sap.extension.data.Date()
-            }),
+                                }).bindProperty("bindingValue", {
+                                    path: "createDate",
+                                    type: new sap.extension.data.Date()
+                                }),
                             }),
                             new sap.extension.table.DataColumn("", {
                                 label: ibas.i18n.prop("bo_example_createtime"),
                                 template: new sap.extension.m.Text("", {
-            }).bindProperty("bindingValue", {
-                path: "createTime",
-                type: new sap.extension.data.Time()
-            }),
+                                }).bindProperty("bindingValue", {
+                                    path: "createTime",
+                                    type: new sap.extension.data.Time()
+                                }),
                             }),
                             new sap.extension.table.DataColumn("", {
                                 label: ibas.i18n.prop("bo_example_updatedate"),
                                 template: new sap.extension.m.Text("", {
-            }).bindProperty("bindingValue", {
-                path: "updateDate",
-                type: new sap.extension.data.Date()
-            }),
+                                }).bindProperty("bindingValue", {
+                                    path: "updateDate",
+                                    type: new sap.extension.data.Date()
+                                }),
                             }),
                             new sap.extension.table.DataColumn("", {
                                 label: ibas.i18n.prop("bo_example_updatetime"),
                                 template: new sap.extension.m.Text("", {
-            }).bindProperty("bindingValue", {
-                path: "updateTime",
-                type: new sap.extension.data.Time()
-            }),
+                                }).bindProperty("bindingValue", {
+                                    path: "updateTime",
+                                    type: new sap.extension.data.Time()
+                                }),
                             }),
                             new sap.extension.table.DataColumn("", {
                                 label: ibas.i18n.prop("bo_example_createusersign"),
                                 template: new sap.extension.m.Text("", {
-            }).bindProperty("bindingValue", {
-                path: "createUserSign",
-                type: new sap.extension.data.Numeric()
-            }),
+                                }).bindProperty("bindingValue", {
+                                    path: "createUserSign",
+                                    type: new sap.extension.data.Numeric()
+                                }),
                             }),
                             new sap.extension.table.DataColumn("", {
                                 label: ibas.i18n.prop("bo_example_updateusersign"),
                                 template: new sap.extension.m.Text("", {
-            }).bindProperty("bindingValue", {
-                path: "updateUserSign",
-                type: new sap.extension.data.Numeric()
-            }),
+                                }).bindProperty("bindingValue", {
+                                    path: "updateUserSign",
+                                    type: new sap.extension.data.Numeric()
+                                }),
                             }),
                             new sap.extension.table.DataColumn("", {
                                 label: ibas.i18n.prop("bo_example_createactionid"),
                                 template: new sap.extension.m.Text("", {
-            }).bindProperty("bindingValue", {
-                path: "createActionId",
-                type: new sap.extension.data.Alphanumeric()
-            }),
+                                }).bindProperty("bindingValue", {
+                                    path: "createActionId",
+                                    type: new sap.extension.data.Alphanumeric()
+                                }),
                             }),
                             new sap.extension.table.DataColumn("", {
                                 label: ibas.i18n.prop("bo_example_updateactionid"),
                                 template: new sap.extension.m.Text("", {
-            }).bindProperty("bindingValue", {
-                path: "updateActionId",
-                type: new sap.extension.data.Alphanumeric()
-            }),
+                                }).bindProperty("bindingValue", {
+                                    path: "updateActionId",
+                                    type: new sap.extension.data.Alphanumeric()
+                                }),
                             }),
                             new sap.extension.table.DataColumn("", {
                                 label: ibas.i18n.prop("bo_example_dataowner"),
                                 template: new sap.extension.m.Text("", {
-            }).bindProperty("bindingValue", {
-                path: "dataOwner",
-                type: new sap.extension.data.Numeric()
-            }),
+                                }).bindProperty("bindingValue", {
+                                    path: "dataOwner",
+                                    type: new sap.extension.data.Numeric()
+                                }),
                             }),
                             new sap.extension.table.DataColumn("", {
                                 label: ibas.i18n.prop("bo_example_teammembers"),
                                 template: new sap.extension.m.Text("", {
-            }).bindProperty("bindingValue", {
-                path: "teamMembers",
-                type: new sap.extension.data.Alphanumeric()
-            }),
+                                }).bindProperty("bindingValue", {
+                                    path: "teamMembers",
+                                    type: new sap.extension.data.Alphanumeric()
+                                }),
                             }),
                             new sap.extension.table.DataColumn("", {
                                 label: ibas.i18n.prop("bo_example_organization"),
                                 template: new sap.extension.m.Text("", {
-            }).bindProperty("bindingValue", {
-                path: "organization",
-                type: new sap.extension.data.Alphanumeric()
-            }),
+                                }).bindProperty("bindingValue", {
+                                    path: "organization",
+                                    type: new sap.extension.data.Alphanumeric()
+                                }),
                             }),
                             new sap.extension.table.DataColumn("", {
                                 label: ibas.i18n.prop("bo_example_activated"),
                                 template: new sap.extension.m.Text("", {
-            }).bindProperty("bindingValue", {
-                path: "activated",
-                type: new sap.extension.data.YesNo(true)
-            }),
+                                }).bindProperty("bindingValue", {
+                                    path: "activated",
+                                    type: new sap.extension.data.YesNo(true)
+                                }),
                             }),
                             new sap.extension.table.DataColumn("", {
                                 label: ibas.i18n.prop("bo_example_remarks"),
                                 template: new sap.extension.m.Text("", {
-            }).bindProperty("bindingValue", {
-                path: "remarks",
-                type: new sap.extension.data.Alphanumeric()
-            }),
+                                }).bindProperty("bindingValue", {
+                                    path: "remarks",
+                                    type: new sap.extension.data.Alphanumeric()
+                                }),
                             }),
                         ],
                         nextDataSet(event: sap.ui.base.Event): void {

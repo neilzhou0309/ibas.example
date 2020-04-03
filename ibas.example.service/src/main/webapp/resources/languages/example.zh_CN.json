@@ -22,6 +22,10 @@
     "example_app_example_datastructrue": "生成byd说明文件 事例"
   },
   {
+    "example_app_example_tablefactory": "table Factory 事例",
+    "example_func_tablefactory": "table Factory 事例"
+  },
+  {
     "example_em_targetlanguages_zh": "中文",
     "example_em_targetlanguages_en": "英文",
     "example_em_targetlanguages_de": "德文",

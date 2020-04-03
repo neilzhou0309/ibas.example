@@ -18,6 +18,12 @@ namespace example {
         export const BO_REPOSITORY_EXAMPLE: string = ibas.strings.format(ibas.MODULE_REPOSITORY_NAME_TEMPLATE, CONSOLE_NAME);
         /** 业务对象编码-例子 */
         export const BO_CODE_EXAMPLE: string = "AVA_EX_EXAMPLE";
+        export enum emTableRowsType {
+            INPUTTYPE,
+            TEXTTYPE,
+            SELECTTYPE,
+            BUTTONTYPE
+        }
     }
 
     export namespace app {

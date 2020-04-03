@@ -159,7 +159,7 @@ namespace example {
                         boNamespace = mode.oMetadata.oMetadata.dataServices.schema[0].entityContainer[0].name;
                     }
                     let blob: Blob = new Blob([ibas.strings.format(
-                        "namespace sap {\n    export namespace byd {\n        export namespace {0} " +
+                        "export namespace sap {\n    export namespace byd {\n        export namespace {0} " +
                         "{\n            export class {1}Extend {\n                getBOAttributeString(): string {\n                    " +
                         "return \"{2}\"\;\n                }\n                getBOChildAttributeString(): string {\n                    " +
                         "return \"\";\n                }\n            }\n        }\n    }\n}",

@@ -10,6 +10,7 @@
 /// <reference path="./byd/index.ts" />
 /// <reference path="./translation/index.ts" />
 /// <reference path="./datastructrue/index.ts" />
+/// <reference path="./tablefactory/index.ts" />
 namespace example {
     export namespace ui {
         /** 视图导航 */
@@ -41,6 +42,9 @@ namespace example {
                         break;
                     case app.DataStructrueApp.APPLICATION_ID:
                         view = new c.DataStructrueView();
+                        break;
+                    case app.TableFactoryApp.APPLICATION_ID:
+                        view = new c.TableFactoryView();
                         break;
                     default:
                         break;
