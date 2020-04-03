@@ -11,6 +11,7 @@
 /// <reference path="./translation/index.ts" />
 /// <reference path="./datastructrue/index.ts" />
 /// <reference path="./tablefactory/index.ts" />
+/// <reference path="./planningcalendar/index.ts" />
 namespace example {
     export namespace ui {
         /** 视图导航 */
@@ -45,6 +46,9 @@ namespace example {
                         break;
                     case app.TableFactoryApp.APPLICATION_ID:
                         view = new c.TableFactoryView();
+                        break;
+                    case app.PlanningCalendarApp.APPLICATION_ID:
+                        view = new c.PlanningCalendarView();
                         break;
                     default:
                         break;

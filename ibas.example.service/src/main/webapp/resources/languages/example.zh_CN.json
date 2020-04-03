@@ -32,5 +32,8 @@
     "example_em_targetlanguages_nl": "荷兰语",
     "example_em_targetlanguages_fr": "法文",
     "example_em_targetlanguages_ja": "日文"
+  },
+  {
+    "example_app_planningcalendar_view": "planningCalendar事例"
   }
 ]

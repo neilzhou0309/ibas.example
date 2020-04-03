@@ -11,6 +11,7 @@
 /// <reference path="./translation/index.ts" />
 /// <reference path="./datastructrue/index.ts" />
 /// <reference path="./tablefactory/index.ts" />
+/// <reference path="./planningcalendar/index.ts" />
 namespace example {
     export namespace app {
         /** 属性-导航 */
@@ -35,6 +36,7 @@ namespace example {
                 this.register(new DataStructrueFunc());
                 this.register(new TranslationFunc());
                 this.register(new TableFactoryFunc());
+                this.register(new PlanningCalendarFunc());
                 // this.register(new ExampleFunc);
                 // 注册服务应用
                 // this.register(new ExampleChooseServiceMapping());
