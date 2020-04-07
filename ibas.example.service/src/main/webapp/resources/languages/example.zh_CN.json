@@ -2,28 +2,16 @@
   {
     "example": "事例",
     "example_icon": "sap-icon://example",
-    "example_func_example": "例子",
-    "example_app_example_list": "例子列表",
-    "example_app_example_choose": "例子选择",
-    "example_app_example_view": "例子查看",
-    "example_app_example_edit": "例子编辑",
+    "example_func_bydodata": "byd OData",
+    "example_app_example_bydodata": "byd OData",
+    "example_func_translation": "翻译",
+    "example_app_example_translation": "翻译",
+    "example_func_datastructrue": "生成byd说明文件",
+    "example_app_example_datastructrue": "生成byd说明文件",
+    "example_app_example_tablefactory": "table Factory",
+    "example_func_tablefactory": "table Factory",
+    "example_app_planningcalendar_view": "planningCalendar",
     "example_closing_delimiter": "----结束----"
-  },
-  {
-    "example_func_bydodata": "byd OData 事例",
-    "example_app_example_bydodata": "byd OData 事例"
-  },
-  {
-    "example_func_translation": "翻译 事例",
-    "example_app_example_translation": "翻译 事例"
-  },
-  {
-    "example_func_datastructrue": "生成byd说明文件 事例",
-    "example_app_example_datastructrue": "生成byd说明文件 事例"
-  },
-  {
-    "example_app_example_tablefactory": "table Factory 事例",
-    "example_func_tablefactory": "table Factory 事例"
   },
   {
     "example_em_targetlanguages_zh": "中文",
@@ -32,8 +20,5 @@
     "example_em_targetlanguages_nl": "荷兰语",
     "example_em_targetlanguages_fr": "法文",
     "example_em_targetlanguages_ja": "日文"
-  },
-  {
-    "example_app_planningcalendar_view": "planningCalendar事例"
   }
 ]

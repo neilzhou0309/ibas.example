@@ -526,7 +526,7 @@ namespace example {
 
                 showGridListDemo(): void {
                     let gridList: sap.f.GridList = new sap.f.GridList("", {
-
+                        width: "100%"
                     });
                     gridList.bindAggregation("items", {
                         templateShareable: false,
@@ -546,7 +546,7 @@ namespace example {
                         title: this.title,
                         type: sap.m.DialogType.Standard,
                         state: sap.ui.core.ValueState.None,
-                        horizontalScrolling: true,
+                        horizontalScrolling: false,
                         verticalScrolling: true,
                         showHeader: false,
                         content: [
@@ -564,19 +564,9 @@ namespace example {
                         ]
                     });
                     let datas: ibas.ArrayList<string> = new ibas.ArrayList<string>();
-                    datas.add("1");
-                    datas.add("1");
-                    datas.add("1");
-                    datas.add("1");
-                    datas.add("1");
-                    datas.add("1");
-                    datas.add("1");
-                    datas.add("1");
-                    datas.add("1");
-                    datas.add("1");
-                    datas.add("1");
-                    datas.add("1");
-                    datas.add("1");
+                    for (let n: number = 0; n < 100; n++) {
+                        datas.add("1");
+                    }
                     dialog.setModel(new sap.ui.model.json.JSONModel({ rows: datas }));
                     dialog.open();
                 }

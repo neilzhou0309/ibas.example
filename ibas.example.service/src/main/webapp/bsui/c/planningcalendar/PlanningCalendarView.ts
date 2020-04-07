@@ -27,10 +27,18 @@ namespace example {
                     this.usersPlanningData = this.getData();
                     this.pCalendar = new sap.m.PlanningCalendar("", {
                         viewKey: "D",
+                        showDayNamesLine: true,
                         startDate: {
                             path: "startDate"
                         },
                         toolbarContent: [
+                            new sap.m.ToggleButton("", {
+                                icon: "sap-icon://decrease-line-height",
+                                type: sap.m.ButtonType.Transparent,
+                                press: function (): void {
+                                    that.pCalendar.setShowDayNamesLine(!that.pCalendar.getShowDayNamesLine());
+                                }
+                            }),
                             new sap.m.ToggleButton("", {
                                 icon: "sap-icon://legend",
                                 type: sap.m.ButtonType.Transparent,
@@ -72,8 +80,8 @@ namespace example {
                                 intervalType: sap.ui.unified.CalendarIntervalType.Month,
                                 description: "月",
                                 intervalsS: 1,
-                                intervalsM: 1,
-                                intervalsL: 1,
+                                intervalsM: 3,
+                                intervalsL: 3,
                                 showSubIntervals: true
                             })
                         ],
@@ -95,7 +103,7 @@ namespace example {
                         },
                         appointmentsVisualization: sap.ui.unified.CalendarAppointmentVisualization.Filled,
                         showEmptyIntervalHeaders: false,
-                        showIntervalHeaders: false,
+                        showIntervalHeaders: true,
                         showWeekNumbers: true,
                         appointmentSelect: function (oEvent: any): void {
                             let appointement: any = oEvent.getParameter("appointment");
@@ -209,10 +217,9 @@ namespace example {
                             },
                         })
                     });
-                    // this.pCalendar.setModel(new sap.ui.model.json.JSONModel(this.usersPlanningData));
-                    // this.pCalendar.bindObject("/");
                     this.sideContent = new sap.ui.layout.DynamicSideContent("", {
                         sideContentVisibility: "AlwaysShow",
+                        sideContentFallDown: sap.ui.layout.SideContentFallDown.OnMinimumWidth,
                         showSideContent: false,
                         containerQuery: true,
                         mainContent: [
@@ -621,6 +628,14 @@ namespace example {
                     appointment.tentative = true;
                     appointment.pic = "sap-icon://sap-ui5";
                     appointment.title = "工作会议";
+                    appointment.type = sap.ui.unified.CalendarDayType.Type02;
+                    user.appointments.add(appointment);
+                    appointment = new Appointment();
+                    appointment.start = new Date(2020, 3, 8, 16, 0);
+                    appointment.end = new Date(2020, 3, 8, 21, 30);
+                    appointment.tentative = true;
+                    appointment.pic = "sap-icon://sap-ui5";
+                    appointment.title = "售前会议";
                     appointment.type = sap.ui.unified.CalendarDayType.Type02;
                     user.appointments.add(appointment);
                     header = new Header();
