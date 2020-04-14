@@ -25,6 +25,7 @@ namespace example {
                     jQuery.sap.require("sap.m.SinglePlanningCalendarMonthView");
                     this.mainContainer = new sap.m.NavContainer("");
                     this.usersPlanningData = this.getData();
+                    let showPlanningLegendBtn: sap.m.ToggleButton;
                     this.pCalendar = new sap.m.PlanningCalendar("", {
                         viewKey: "D",
                         showDayNamesLine: true,
@@ -39,7 +40,7 @@ namespace example {
                                     that.pCalendar.setShowDayNamesLine(!that.pCalendar.getShowDayNamesLine());
                                 }
                             }),
-                            new sap.m.ToggleButton("", {
+                            showPlanningLegendBtn = new sap.m.ToggleButton("", {
                                 icon: "sap-icon://legend",
                                 type: sap.m.ButtonType.Transparent,
                                 press: function (): void {
@@ -123,6 +124,7 @@ namespace example {
                             icon: "{pic}",
                             title: "{name}",
                             text: "{role}",
+                            selected: true,
                             enableAppointmentsDragAndDrop: true,
                             enableAppointmentsResize: true,
                             enableAppointmentsCreate: true,
@@ -252,11 +254,22 @@ namespace example {
                     this.sideContent.setModel(new sap.ui.model.json.JSONModel(this.usersPlanningData));
                     this.sideContent.bindObject("/");
                     this.sideContent.addStyleClass("sapUiDSCExplored sapUiContentPadding");
+
                     this.mainContainer.addPage(this.page = new sap.m.Page("", {
                         showHeader: false,
                         content: [
                             this.sideContent
-                        ]
+                        ],
+                        footer: new sap.m.Toolbar("", {
+                            content: [
+                                new sap.m.Button("", {
+                                    text: "Show Planning legend",
+                                    press: function (): void {
+                                        (<any>showPlanningLegendBtn).firePress();
+                                    }
+                                })
+                            ]
+                        })
                     }));
                     this.loadUserAppointmentPage();
                     return this.mainContainer;
@@ -412,6 +425,12 @@ namespace example {
                             createAppointment.end = parameters.endDate;
                             let userData: User = this.getModel().getData();
                             that.showAppointmentDialog(userData, createAppointment, true);
+                        },
+                        viewChange: function (oEvent: any): void {
+                            let event: any = oEvent;
+                        },
+                        startDateChange: function (oEvent: any): void {
+                            let startDate: Date = oEvent.getParameter("date");
                         }
                     });
                     this.spCalendar.addStyleClass("sapUiSmallMarginTop");
@@ -491,7 +510,8 @@ namespace example {
                                         path: "title",
                                     }),
                                     new sap.m.Label("", { text: "说明" }),
-                                    new sap.m.Input("", {
+                                    new sap.m.TextArea("", {
+                                        rows: 3
                                     }).bindProperty("value", {
                                         path: "info",
                                     }),
@@ -507,6 +527,19 @@ namespace example {
                                     }).bindProperty("dateValue", {
                                         path: "end",
                                     }),
+                                    new sap.m.Label("", { text: "图标" }),
+                                    // 创建任务类型编辑表
+                                    new sap.extension.m.IconInput("", {
+                                    }).bindProperty("bindingValue", {
+                                        path: "pic",
+                                    }),
+                                    new sap.m.Label("", { text: "任务类型" }),
+                                    // 创建任务类型编辑表
+                                    new sap.extension.m.EnumSelect("", {
+                                        enumType: sap.ui.unified.CalendarDayType
+                                    }).bindProperty("bindingValue", {
+                                        path: "type",
+                                    })
                                 ]
                             })
                         ],
@@ -517,8 +550,12 @@ namespace example {
                                 visible: isCreate ? false : true,
                                 press: function (): void {
                                     userData.appointments.remove(createAppointment);
-                                    that.pCalendar.getModel().refresh(false);
-                                    that.spCalendar.getModel().refresh(false);
+                                    if (!ibas.objects.isNull(that.pCalendar.getModel())) {
+                                        that.pCalendar.getModel().refresh(false);
+                                    }
+                                    if (!ibas.objects.isNull(that.spCalendar.getModel())) {
+                                        that.spCalendar.getModel().refresh(false);
+                                    }
                                     dialog.close();
                                 }
                             }),
@@ -529,8 +566,12 @@ namespace example {
                                     if (isCreate) {
                                         userData.appointments.add(createAppointment);
                                     }
-                                    that.pCalendar.getModel().refresh(false);
-                                    that.spCalendar.getModel().refresh(false);
+                                    if (!ibas.objects.isNull(that.pCalendar.getModel())) {
+                                        that.pCalendar.getModel().refresh(false);
+                                    }
+                                    if (!ibas.objects.isNull(that.spCalendar.getModel())) {
+                                        that.spCalendar.getModel().refresh(false);
+                                    }
                                     dialog.close();
                                 }
                             }),
@@ -555,8 +596,12 @@ namespace example {
                 // 获取绑定数据
                 getData(): UsersPlanning {
                     let usersPlanning: UsersPlanning = new UsersPlanning();
+                    let date: Date = new Date();
+                    let year: number = date.getFullYear();
+                    let month: number = date.getMonth();
+                    let day: number = date.getDate();
                     usersPlanning.users = new ibas.ArrayList<User>();
-                    usersPlanning.startDate = new Date(2020, 3, 5, 6, 0);
+                    usersPlanning.startDate = new Date(year, month, day, 6, 0);
                     usersPlanning.title = "开发部人员工作安排";
                     let user: User = new User();
                     user.appointments = new ibas.ArrayList<Appointment>();
@@ -574,16 +619,16 @@ namespace example {
                         type: sap.ui.unified.CalendarDayType.Type20,
                     });
                     let appointment: Appointment = new Appointment();
-                    appointment.start = new Date(2020, 3, 5, 8, 0);
-                    appointment.end = new Date(2020, 3, 5, 9, 30);
+                    appointment.start = new Date(year, month, day, 8, 0);
+                    appointment.end = new Date(year, month, day, 9, 30);
                     appointment.tentative = true;
                     appointment.pic = "sap-icon://sap-ui5";
                     appointment.title = "会议";
                     appointment.type = sap.ui.unified.CalendarDayType.Type01;
                     user.appointments.add(appointment);
                     appointment = new Appointment();
-                    appointment.start = new Date(2020, 3, 5, 15, 0);
-                    appointment.end = new Date(2020, 3, 5, 18, 30);
+                    appointment.start = new Date(year, month, day, 15, 0);
+                    appointment.end = new Date(year, month, day, 18, 30);
                     appointment.tentative = true;
                     appointment.pic = "sap-icon://sap-ui5";
                     appointment.title = "工作会议";
@@ -592,8 +637,8 @@ namespace example {
                     user.appointments.add(appointment);
                     let header: Header = new Header();
                     header.pic = "sap-icon://add";
-                    header.start = new Date(2020, 3, 5, 8, 0);
-                    header.end = new Date(2020, 3, 5, 12, 0);
+                    header.start = new Date(year, month, day, 8, 0);
+                    header.end = new Date(year, month, day, 12, 0);
                     header.title = "上午研发会员/产品会议";
                     header.type = sap.ui.unified.CalendarDayType.Type20;
                     user.headers.add(header);
@@ -615,24 +660,24 @@ namespace example {
                         type: sap.ui.unified.CalendarDayType.Type20,
                     });
                     appointment = new Appointment();
-                    appointment.start = new Date(2020, 3, 5, 11, 0);
-                    appointment.end = new Date(2020, 3, 5, 14, 30);
+                    appointment.start = new Date(year, month, day, 11, 0);
+                    appointment.end = new Date(year, month, day, 14, 30);
                     appointment.tentative = true;
                     appointment.pic = "sap-icon://sap-ui5";
                     appointment.title = "产品会议";
                     appointment.type = sap.ui.unified.CalendarDayType.Type02;
                     user.appointments.add(appointment);
                     appointment = new Appointment();
-                    appointment.start = new Date(2020, 3, 5, 16, 0);
-                    appointment.end = new Date(2020, 3, 5, 21, 30);
+                    appointment.start = new Date(year, month, day, 16, 0);
+                    appointment.end = new Date(year, month, day, 21, 30);
                     appointment.tentative = true;
                     appointment.pic = "sap-icon://sap-ui5";
                     appointment.title = "工作会议";
                     appointment.type = sap.ui.unified.CalendarDayType.Type02;
                     user.appointments.add(appointment);
                     appointment = new Appointment();
-                    appointment.start = new Date(2020, 3, 8, 16, 0);
-                    appointment.end = new Date(2020, 3, 8, 21, 30);
+                    appointment.start = new Date(year, month, day, 16, 0);
+                    appointment.end = new Date(year, month, day, 21, 30);
                     appointment.tentative = true;
                     appointment.pic = "sap-icon://sap-ui5";
                     appointment.title = "售前会议";
@@ -640,8 +685,8 @@ namespace example {
                     user.appointments.add(appointment);
                     header = new Header();
                     header.pic = "sap-icon://add";
-                    header.start = new Date(2020, 3, 5, 8, 0);
-                    header.end = new Date(2020, 3, 5, 12, 0);
+                    header.start = new Date(year, month, day, 8, 0);
+                    header.end = new Date(year, month, day, 12, 0);
                     header.title = "上午产品会议";
                     header.type = sap.ui.unified.CalendarDayType.Type20;
                     user.headers.add(header);
@@ -670,6 +715,7 @@ namespace example {
                     return usersPlanning;
                 }
             }
+            // 全部用户任务
             export class UsersPlanning {
                 title: string;
                 startDate: Date;
@@ -677,15 +723,18 @@ namespace example {
                 legendItems: ibas.ArrayList<Legend>;
                 legendAppointmentItems: ibas.ArrayList<LegendAppointment>;
             }
+            // 日历类型说明
             export class Legend {
                 text: string;
                 type: sap.ui.unified.CalendarDayType;
                 color: string;
             }
+            // 任务说明
             export class LegendAppointment {
                 text: string;
                 type: sap.ui.unified.CalendarDayType;
             }
+            // 用户
             export class User {
                 pic: string;
                 name: string;
@@ -695,6 +744,7 @@ namespace example {
                 legendItems: ibas.ArrayList<Legend>;
                 legendAppointmentItems: ibas.ArrayList<LegendAppointment>;
             }
+            // 任务
             export class Appointment {
                 start: Date;
                 end: Date;
@@ -704,6 +754,7 @@ namespace example {
                 type: sap.ui.unified.CalendarDayType;
                 tentative: boolean;
             }
+            // 标题
             export class Header {
                 start: Date;
                 end: Date;
