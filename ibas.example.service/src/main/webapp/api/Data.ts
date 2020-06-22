@@ -24,6 +24,17 @@ namespace example {
             SELECTTYPE,
             BUTTONTYPE
         }
+        /** 分析维度 */
+        export enum emAnalysisDimension {
+            /** 粉丝 */
+            FANS = 0,
+            /** 会员 */
+            MEMBER = 1,
+            /** 单据 */
+            DOCUMENT = 2,
+            /** 商品 */
+            COMMODITY = 3
+        }
     }
 
     export namespace app {

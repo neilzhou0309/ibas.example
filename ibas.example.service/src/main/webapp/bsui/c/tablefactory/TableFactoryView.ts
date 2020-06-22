@@ -430,6 +430,13 @@ namespace example {
                                         that.showTreeTable();
                                     }
                                 }),
+                                new sap.m.Button("", {
+                                    text: "报表",
+                                    type: sap.m.ButtonType.Transparent,
+                                    press: function (): void {
+                                        that.showReport();
+                                    }
+                                }),
                                 new sap.m.ToolbarSpacer(""),
                                 that.typeSelect = new sap.extension.m.EnumSelect("", {
                                     enumType: bo.emTableRowsType,
@@ -469,6 +476,7 @@ namespace example {
                                         that.showList(that.bindingList);
                                     }
                                 }),
+
                             ]
                         }),
                         content: [
@@ -501,7 +509,35 @@ namespace example {
                     this.id = this.page.getId();
                     return this.page;
                 }
-
+                showReport(): void {
+                    let dialog: sap.m.Dialog = new sap.m.Dialog("", {
+                        title: this.title,
+                        contentWidth: "80%",
+                        contentHeight: "100%",
+                        type: sap.m.DialogType.Standard,
+                        state: sap.ui.core.ValueState.None,
+                        horizontalScrolling: true,
+                        verticalScrolling: true,
+                        showHeader: false,
+                        content: [
+                            new sap.extension.examples.ChartGroupGrid("", {
+                                group: bo.emAnalysisDimension.MEMBER
+                            })
+                        ],
+                        buttons: [
+                            new sap.m.Button("", {
+                                text: ibas.i18n.prop("shell_exit"),
+                                type: sap.m.ButtonType.Transparent,
+                                icon: "sap-icon://inspect-down",
+                                press: function (): void {
+                                    dialog.close();
+                                }
+                            }),
+                        ]
+                    });
+                    dialog.addStyleClass("sapUiSizeCompact");
+                    dialog.open();
+                }
                 showDialog(data: any): void {
                     let dialog: sap.m.Dialog = new sap.m.Dialog("", {
                         title: this.title,

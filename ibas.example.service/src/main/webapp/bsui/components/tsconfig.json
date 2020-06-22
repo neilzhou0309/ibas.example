@@ -1,0 +1,6 @@
+{
+  "extends": "../c/tsconfig.json",
+  "files": [
+    "../c/Navigation.ts"
+  ]
+}

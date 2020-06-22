@@ -1,0 +1,108 @@
+.fullScreanHeight {
+    height: 100%;
+}
+
+.wordBreakNormal .sapMObjStatusText {
+    word-break: normal;
+}
+
+/** 选择框容器 */
+
+.asVboxCheckBoxContainer {
+    margin: 1rem;
+    width: 100%;
+}
+
+.asVboxCheckBoxContainer .sapMHBox {
+    /** 会员标签 */
+    display: table-cell;
+    width: 100%;
+    padding: 10px 20px;
+    padding-bottom: 0px;
+}
+
+.asVboxCheckBoxContainer .sapMHBox>div {
+    display: inline-table;
+    height: 40px;
+    border-radius: 1000px;
+    padding: 0;
+    margin: 0.7rem;
+}
+
+.asVboxCheckBoxContainer .sapMHBox>div>* {
+    height: 40px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.asVboxCheckBoxContainer .sapMHBox>div .sapMCb {
+    /** 选择框 */
+    padding: 0 1.45rem;
+    border-radius: 1000px;
+    background: rgba(239, 239, 239, 0.7);
+}
+
+.asVboxCheckBoxContainer .sapMHBox>div .sapMCb[aria-checked="true"] {
+    background: rgba(210, 210, 210, 0.7);
+}
+
+.asVboxCheckBoxContainer .sapMHBox>div .sapMCb .sapMCbBg {
+    left: auto;
+    right: 0.05rem;
+    top: -0.15rem;
+    border-radius: 0.3rem;
+}
+
+.asVboxCheckBoxContainer .sapMHBox>div .sapMCb .sapMCbLabel {
+    margin-bottom: 0rem;
+}
+
+.asVboxCheckBoxContainer .sapMTB {
+    /** 工具条 */
+    border-bottom: 0;
+}
+
+.asVboxCheckBoxContainer .sapMTB .sapMTitle {
+    border-left: 3px solid #000;
+    padding-left: 12px;
+}
+
+.asVboxCheckBoxContainer .sapMTB .sapMTitle span {
+    /** 标题加粗 */
+    font-weight: bold;
+}
+
+/** TabContainer隐藏关闭按钮 */
+
+.asTabContainerNoCloseButton .sapMTabStripItem.sapMTabStripItemSelected {
+    padding-right: 0.5rem !important;
+}
+
+.asTabContainerNoCloseButton .sapMTSItemCloseBtnCnt {
+    display: none !important;
+}
+
+/** 分析描述Popover半透明,规则描述变色 */
+
+.asDescPopover .sapMPopoverScroll {
+    opacity: 0.5
+}
+
+.asDescPopover .asRuleDesc {
+    margin-right: 0.5rem;
+    font-weight: bold;
+}
+
+.asDescPopover .asRuleDesc:after {
+    content: ":";
+}
+
+.asCardTitleInput .sapMInputBaseContentWrapper {
+    /* input 去除上下右边线，去掉选中后虚线，加粗左边线 */
+    outline: none;
+    /* border-left: 1px solid ; */
+    border-top-width: inherit;
+    border-left-width: inherit;
+    border-right-width: inherit;
+    border-bottom-width: inherit;  
+}

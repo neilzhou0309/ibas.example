@@ -11,14 +11,14 @@
     "example_app_example_tablefactory": "table Factory",
     "example_func_tablefactory": "table Factory",
     "example_app_planningcalendar_view": "planningCalendar",
-    "example_closing_delimiter": "----结束----"
-  },
-  {
     "example_em_targetlanguages_zh": "中文",
     "example_em_targetlanguages_en": "英文",
     "example_em_targetlanguages_de": "德文",
     "example_em_targetlanguages_nl": "荷兰语",
     "example_em_targetlanguages_fr": "法文",
-    "example_em_targetlanguages_ja": "日文"
+    "example_em_targetlanguages_ja": "日文",
+    "example_chartcomponents_not_data_source": "此报表无数据源",
+    "example_chartcomponents_employeesalarystatus": "薪资状态",
+    "example_chartcomponents_employeesalarystatus_title": "员工薪资状态"
   }
 ]

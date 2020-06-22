@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns:ApplicationConfig xmlns:ns="http://colorcoding.org/ibas/initialfantasy/bo">
+    <ConfigGroup>89081a60-a1a4-4023-8d2a-6311ef323586</ConfigGroup>
+    <ConfigKey>employeesalarystatus</ConfigKey>
+    <ConfigDescription>员工薪资状况报表(报表ID)</ConfigDescription>
+    <ConfigValue>1</ConfigValue>
+</ns:ApplicationConfig>

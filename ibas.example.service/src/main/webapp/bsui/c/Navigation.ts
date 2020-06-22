@@ -12,6 +12,7 @@
 /// <reference path="./datastructrue/index.ts" />
 /// <reference path="./tablefactory/index.ts" />
 /// <reference path="./planningcalendar/index.ts" />
+/// <reference path="../components/index.ts" />
 namespace example {
     export namespace ui {
         /** 视图导航 */
