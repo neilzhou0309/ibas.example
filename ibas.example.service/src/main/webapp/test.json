@@ -1,816 +1,61 @@
 {
-    "targetLanguages": [
-        "en"
-    ],
-    "sourceLanguage": "zh",
-    "enableMT": true,
-    "enableTranslationQualityEstimation": true,
-    "domain": "BC",
-    "companyMLTRId": "string",
     "units": [
         {
-            "key": "bo_document",
-            "value": "文档",
-            "maxLength": "100"
-        },
-        {
-            "key": "bo_document_objectkey",
-            "value": "编号",
-            "maxLength": "100"
-        },
-        {
-            "key": "bo_document_objectcode",
-            "value": "类型",
-            "maxLength": "100"
-        },
-        {
-            "key": "bo_document_loginst",
-            "value": "实例号（版本）",
-            "maxLength": "100"
-        },
-        {
-            "key": "bo_document_series",
-            "value": "编号系列",
-            "maxLength": "100"
-        },
-        {
-            "key": "bo_document_datasource",
-            "value": "数据源",
-            "maxLength": "100"
-        },
-        {
-            "key": "bo_document_createdate",
-            "value": "创建日期",
-            "maxLength": "100"
-        },
-        {
-            "key": "bo_document_createtime",
-            "value": "创建时间",
-            "maxLength": "100"
-        },
-        {
-            "key": "bo_document_updatedate",
-            "value": "修改日期",
-            "maxLength": "100"
-        },
-        {
-            "key": "bo_document_updatetime",
-            "value": "修改时间",
-            "maxLength": "100"
-        },
-        {
-            "key": "bo_document_createusersign",
-            "value": "创建用户",
-            "maxLength": "100"
-        },
-        {
-            "key": "bo_document_updateusersign",
-            "value": "修改用户",
-            "maxLength": "100"
-        },
-        {
-            "key": "bo_document_createactionid",
-            "value": "创建动作标识",
-            "maxLength": "100"
-        },
-        {
-            "key": "bo_document_updateactionid",
-            "value": "更新动作标识",
-            "maxLength": "100"
-        },
-        {
-            "key": "bo_document_dataowner",
-            "value": "数据所有者",
-            "maxLength": "100"
-        },
-        {
-            "key": "bo_document_teammembers",
-            "value": "团队成员",
-            "maxLength": "100"
-        },
-        {
-            "key": "bo_document_organization",
-            "value": "数据所属组织",
-            "maxLength": "100"
-        },
-        {
-            "key": "bo_document_approvalstatus",
-            "value": "审批状态",
-            "maxLength": "100"
-        },
-        {
-            "key": "bo_document_activated",
-            "value": "已激活的",
-            "maxLength": "100"
-        },
-        {
-            "key": "bo_document_sign",
-            "value": "文件标识",
-            "maxLength": "100"
-        },
-        {
-            "key": "bo_document_name",
-            "value": "文件名称",
-            "maxLength": "100"
-        },
-        {
-            "key": "bo_document_version",
-            "value": "版本",
-            "maxLength": "100"
-        },
-        {
-            "key": "bo_document_tags",
-            "value": "标签",
-            "maxLength": "100"
-        },
-        {
-            "key": "bo_document_bokeys",
-            "value": "业务对象标识",
-            "maxLength": "100"
-        },
-        {
-            "key": "bo_document_reference1",
-            "value": "参考1",
-            "maxLength": "100"
-        },
-        {
-            "key": "bo_document_reference2",
-            "value": "参考2",
-            "maxLength": "100"
-        },
-        {
-            "key": "bo_document_closing_delimiter",
-            "value": "----结束----",
-            "maxLength": "100"
-        }
-    ]
-}
-
-{
-    "units": [
-        {
-            "domain": "BC",
-            "key": "bo_customer_bank",
-            "value": "开户银行",
+            "domain": "1A",
+            "key": "businesspartner_title_values",
+            "value": "Value Information",
             "translations": [
                 {
-                    "language": "en",
-                    "value": "House bank",
-                    "translationProvider": 0,
-                    "qualityIndex": 100
-                }
-            ]
-        },
-        {
-            "domain": "BC",
-            "key": "bo_customer_faxnumber",
-            "value": "传真号",
-            "translations": [
-                {
-                    "language": "en",
-                    "value": "Fax Number",
-                    "translationProvider": 0,
-                    "qualityIndex": 93
-                }
-            ]
-        },
-        {
-            "domain": "BC",
-            "key": "bo_customer_bankaccount",
-            "value": "银行账户",
-            "translations": [
-                {
-                    "language": "en",
-                    "value": "Bank acct",
-                    "translationProvider": 0,
-                    "qualityIndex": 57
-                }
-            ]
-        },
-        {
-            "domain": "BC",
-            "key": "bo_customer_mobilephone",
-            "value": "移动电话",
-            "translations": [
-                {
-                    "language": "en",
-                    "value": "Cell Phone",
-                    "translationProvider": 0,
-                    "qualityIndex": 25
-                }
-            ]
-        },
-        {
-            "domain": "FI",
-            "key": "bo_customer_taxid",
-            "value": "国税编号",
-            "translations": [
-                {
-                    "language": "en",
-                    "value": "Federal Tax ID",
-                    "translationProvider": 0,
-                    "qualityIndex": 99
-                }
-            ]
-        },
-        {
-            "domain": "BC",
-            "key": "bo_contactperson_updateusersign",
-            "value": "修改用户",
-            "translations": [
-                {
-                    "language": "en",
-                    "value": "Change user",
-                    "translationProvider": 0,
-                    "qualityIndex": 33
-                }
-            ]
-        },
-        {
-            "domain": "BC",
-            "key": "bo_contactperson_createusersign",
-            "value": "创建用户",
-            "translations": [
-                {
-                    "language": "en",
-                    "value": "Create User(s)",
-                    "translationProvider": 0,
-                    "qualityIndex": 40
-                }
-            ]
-        },
-        {
-            "domain": "BC",
-            "key": "bo_contactperson_datasource",
-            "value": "数据源",
-            "translations": [
-                {
-                    "language": "en",
-                    "value": "Data Source",
-                    "translationProvider": 0,
-                    "qualityIndex": 82
-                }
-            ]
-        },
-        {
-            "domain": "BC",
-            "key": "bo_customer",
-            "value": "客户",
-            "translations": [
-                {
-                    "language": "en",
-                    "value": "Customer",
-                    "translationProvider": 0,
-                    "qualityIndex": 94
-                }
-            ]
-        },
-        {
-            "domain": "BC",
-            "key": "bo_contactperson_updatetime",
-            "value": "修改时间",
-            "translations": [
-                {
-                    "language": "en",
-                    "value": "Modified at",
-                    "translationProvider": 0,
-                    "qualityIndex": 53
-                }
-            ]
-        },
-        {
-            "domain": "BC",
-            "key": "bo_customer_code",
-            "value": "编码",
-            "translations": [
-                {
-                    "language": "en",
-                    "value": "Encoding",
-                    "translationProvider": 0,
-                    "qualityIndex": 55
-                }
-            ]
-        },
-        {
-            "domain": "BC",
-            "key": "bo_contactperson_updatedate",
-            "value": "修改日期",
-            "translations": [
-                {
-                    "language": "en",
-                    "value": "Modification Date",
-                    "translationProvider": 0,
-                    "qualityIndex": 45
-                }
-            ]
-        },
-        {
-            "domain": "BC",
-            "key": "bo_contactperson_createtime",
-            "value": "创建时间",
-            "translations": [
-                {
-                    "language": "en",
-                    "value": "Created At",
-                    "translationProvider": 0,
-                    "qualityIndex": 45
-                }
-            ]
-        },
-        {
-            "domain": "BC",
-            "key": "bo_contactperson_createdate",
-            "value": "创建日期",
-            "translations": [
-                {
-                    "language": "en",
-                    "value": "Created On",
-                    "translationProvider": 0,
-                    "qualityIndex": 52
-                }
-            ]
-        },
-        {
-            "domain": "BC",
-            "key": "bo_customer_name",
-            "value": "名称",
-            "translations": [
-                {
-                    "language": "en",
-                    "value": "Name",
-                    "translationProvider": 0,
-                    "qualityIndex": 100
-                }
-            ]
-        },
-        {
-            "key": "bo_contactperson_createactionid",
-            "value": "创建动作标识",
-            "translations": [
-                {
-                    "language": "en",
-                    "value": "Create Action ID",
-                    "translationProvider": 1,
-                    "qualityIndex": 25
-                }
-            ]
-        },
-        {
-            "key": "bo_contactperson_series",
-            "value": "服务系列",
-            "translations": [
-                {
-                    "language": "en",
-                    "value": "Service Family",
-                    "translationProvider": 1,
-                    "qualityIndex": 25
-                }
-            ]
-        },
-        {
-            "domain": "BC",
-            "key": "bo_contactperson_objectcode",
-            "value": "对象类型",
-            "translations": [
-                {
-                    "language": "en",
-                    "value": "Object Type",
-                    "translationProvider": 0,
-                    "qualityIndex": 85
-                }
-            ]
-        },
-        {
-            "domain": "BC",
-            "key": "bo_customer_sign",
-            "value": "标识",
-            "translations": [
-                {
-                    "language": "en",
-                    "value": "ID",
-                    "translationProvider": 0,
-                    "qualityIndex": 98
-                }
-            ]
-        },
-        {
-            "domain": "BC",
-            "key": "bo_contactperson_objectkey",
-            "value": "对象编号",
-            "translations": [
-                {
-                    "language": "en",
-                    "value": "Object Number",
-                    "translationProvider": 0,
-                    "qualityIndex": 23
-                }
-            ]
-        },
-        {
-            "domain": "BC",
-            "key": "bo_customer_group",
-            "value": "组代码",
-            "translations": [
-                {
-                    "language": "en",
-                    "value": "Group key",
-                    "translationProvider": 0,
-                    "qualityIndex": 86
-                }
-            ]
-        },
-        {
-            "domain": "BC",
-            "key": "bo_contactperson_mail",
-            "value": "电子邮件",
-            "translations": [
-                {
-                    "language": "en",
-                    "value": "E-Mail",
-                    "translationProvider": 0,
-                    "qualityIndex": 77
-                }
-            ]
-        },
-        {
-            "domain": "FI",
-            "key": "bo_contactperson_remark2",
-            "value": "备注 2",
-            "translations": [
-                {
-                    "language": "en",
-                    "value": "Remark 2",
-                    "translationProvider": 0,
-                    "qualityIndex": 76
-                }
-            ]
-        },
-        {
-            "domain": "FI",
-            "key": "bo_contactperson_remark1",
-            "value": "备注 1",
-            "translations": [
-                {
-                    "language": "en",
-                    "value": "Remark 1",
-                    "translationProvider": 0,
-                    "qualityIndex": 91
-                }
-            ]
-        },
-        {
-            "domain": "BC",
-            "key": "bo_customer_activated",
-            "value": "激活",
-            "translations": [
-                {
-                    "language": "en",
-                    "value": "Activate",
-                    "translationProvider": 0,
-                    "qualityIndex": 96
-                }
-            ]
-        },
-        {
-            "domain": "BC",
-            "key": "bo_contactperson_fax",
-            "value": "传真",
-            "translations": [
-                {
-                    "language": "en",
-                    "value": "Fax",
-                    "translationProvider": 0,
-                    "qualityIndex": 97
-                }
-            ]
-        },
-        {
-            "domain": "BC",
-            "key": "bo_customer_companyprivate",
-            "value": "公司/个人",
-            "translations": [
-                {
-                    "language": "en",
-                    "value": "Company/Person",
-                    "translationProvider": 0,
-                    "qualityIndex": 79
-                }
-            ]
-        },
-        {
-            "domain": "BC",
-            "key": "bo_contactperson_mobilephone",
-            "value": "移动电话",
-            "translations": [
-                {
-                    "language": "en",
-                    "value": "Cell Phone",
-                    "translationProvider": 0,
-                    "qualityIndex": 25
-                }
-            ]
-        },
-        {
-            "domain": "BC",
-            "key": "bo_customer_contactperson",
-            "value": "联系人",
-            "translations": [
-                {
-                    "language": "en",
-                    "value": "Contact Person",
-                    "translationProvider": 0,
-                    "qualityIndex": 76
-                }
-            ]
-        },
-        {
-            "domain": "BC",
-            "key": "bo_contactperson_telephone2",
-            "value": "电话 2",
-            "translations": [
-                {
-                    "language": "en",
-                    "value": "Telephone 2",
-                    "translationProvider": 0,
-                    "qualityIndex": 100
-                }
-            ]
-        },
-        {
-            "domain": "BC",
-            "key": "bo_contactperson_telephone1",
-            "value": "电话 1",
-            "translations": [
-                {
-                    "language": "en",
-                    "value": "Telephone 1",
-                    "translationProvider": 0,
-                    "qualityIndex": 100
-                }
-            ]
-        },
-        {
-            "domain": "BC",
-            "key": "bo_contactperson_address",
-            "value": "地址",
-            "translations": [
-                {
-                    "language": "en",
-                    "value": "Address",
-                    "translationProvider": 0,
-                    "qualityIndex": 98
-                }
-            ]
-        },
-        {
-            "domain": "BC",
-            "key": "bo_contactperson_position",
-            "value": "职位",
-            "translations": [
-                {
-                    "language": "en",
-                    "value": "Position",
-                    "translationProvider": 0,
-                    "qualityIndex": 91
-                }
-            ]
-        },
-        {
-            "domain": "HY",
-            "key": "bo_customer_billaddress",
-            "value": "账单地址",
-            "translations": [
-                {
-                    "language": "en",
-                    "value": "Billing Address",
-                    "translationProvider": 0,
-                    "qualityIndex": 96
-                }
-            ]
-        },
-        {
-            "domain": "BC",
-            "key": "bo_contactperson_gender",
-            "value": "性别",
-            "translations": [
-                {
-                    "language": "en",
-                    "value": "Gender",
-                    "translationProvider": 0,
-                    "qualityIndex": 59
-                }
-            ]
-        },
-        {
-            "domain": "B2",
-            "key": "bo_customer_shipaddress",
-            "value": "送货地址",
-            "translations": [
-                {
-                    "language": "en",
-                    "value": "Shipping Address",
-                    "translationProvider": 0,
-                    "qualityIndex": 29
-                }
-            ]
-        },
-        {
-            "domain": "BC",
-            "key": "bo_customer_registrationaddress",
-            "value": "注册地址",
-            "translations": [
-                {
-                    "language": "en",
-                    "value": "Registered address",
-                    "translationProvider": 0,
-                    "qualityIndex": 100
-                }
-            ]
-        },
-        {
-            "domain": "BC",
-            "key": "bo_contactperson_activated",
-            "value": "有效的",
-            "translations": [
-                {
-                    "language": "en",
-                    "value": "valid",
-                    "translationProvider": 0,
-                    "qualityIndex": 100
-                }
-            ]
-        },
-        {
-            "domain": "BC",
-            "key": "bo_contactperson_name",
-            "value": "名称",
-            "translations": [
-                {
-                    "language": "en",
-                    "value": "Name",
-                    "translationProvider": 0,
-                    "qualityIndex": 100
-                }
-            ]
-        },
-        {
-            "domain": "BC",
-            "key": "bo_customer_telephone1",
-            "value": "电话 1",
-            "translations": [
-                {
-                    "language": "en",
-                    "value": "Telephone 1",
-                    "translationProvider": 0,
-                    "qualityIndex": 100
-                }
-            ]
-        },
-        {
-            "domain": "BC",
-            "key": "bo_contactperson_businesspartner",
-            "value": "业务伙伴",
-            "translations": [
-                {
-                    "language": "en",
-                    "value": "Business Partner",
-                    "translationProvider": 0,
-                    "qualityIndex": 91
-                }
-            ]
-        },
-        {
-            "domain": "BC",
-            "key": "bo_customer_telephone2",
-            "value": "电话 2",
-            "translations": [
-                {
-                    "language": "en",
-                    "value": "Telephone 2",
-                    "translationProvider": 0,
-                    "qualityIndex": 100
-                }
-            ]
-        },
-        {
-            "domain": "BC",
-            "key": "bo_contactperson",
-            "value": "业务伙伴联系人",
-            "translations": [
-                {
-                    "language": "en",
-                    "value": "Business Partner Contact",
-                    "translationProvider": 0,
-                    "qualityIndex": 50
-                }
-            ]
-        },
-        {
-            "domain": "AW",
-            "key": "bo_customer_invoiceaddress",
-            "value": "发票地址",
-            "translations": [
-                {
-                    "language": "en",
-                    "value": "Billing Address",
+                    "language": "de",
+                    "value": "Wertinformationen",
                     "translationProvider": 0,
                     "qualityIndex": 88
                 }
             ]
         },
         {
-            "key": "bo_contactperson_ownertype",
-            "value": "归属类型",
+            "key": "businesspartner_app_businesspartnerassetjournal_edit",
+            "value": "Business Partner Asset Transaction Edit",
             "translations": [
                 {
-                    "language": "en",
-                    "value": "Attributive Type",
+                    "language": "de",
+                    "value": "Geschäftspartner: Anlagenbewegung bearbeiten",
                     "translationProvider": 1,
                     "qualityIndex": 25
                 }
             ]
         },
         {
-            "domain": "IS",
-            "key": "bo_businesspartnergroup_dataowner",
-            "value": "数据所有者",
+            "key": "businesspartner_app_businesspartnerassetjournal_choose",
+            "value": "Selection of Business Partner Asset Transactions",
             "translations": [
                 {
-                    "language": "en",
-                    "value": "Data Owner",
-                    "translationProvider": 0,
-                    "qualityIndex": 100
-                }
-            ]
-        },
-        {
-            "key": "bo_businesspartnergroup_organization",
-            "value": "数据所属组织",
-            "translations": [
-                {
-                    "language": "en",
-                    "value": "Data to which the data belongs",
+                    "language": "de",
+                    "value": "Selektion von Geschäftspartner-Anlagenbewegungen",
                     "translationProvider": 1,
                     "qualityIndex": 25
                 }
             ]
         },
         {
-            "key": "bo_contactperson_updateactionid",
-            "value": "更新动作标识",
+            "key": "businesspartner_closing_delimiter",
+            "value": "----End----",
             "translations": [
                 {
-                    "language": "en",
-                    "value": "Update Action ID",
+                    "language": "de",
+                    "value": "----Ende----",
                     "translationProvider": 1,
                     "qualityIndex": 25
                 }
             ]
         },
         {
-            "domain": "BC",
-            "key": "bo_customer_pricelist",
-            "value": "价格清单",
+            "key": "businesspartner_app_businesspartnerassetjournal_view",
+            "value": "Business Partner Asset Transactions View",
             "translations": [
                 {
-                    "language": "en",
-                    "value": "Price Lists",
-                    "translationProvider": 0,
-                    "qualityIndex": 82
-                }
-            ]
-        },
-        {
-            "key": "bo_customer_invoicetelephone",
-            "value": "发票电话",
-            "translations": [
-                {
-                    "language": "en",
-                    "value": "Invoice Phone",
-                    "translationProvider": 1,
-                    "qualityIndex": 25
-                }
-            ]
-        },
-        {
-            "key": "bo_businesspartnergroup_closing_delimiter",
-            "value": "----结束----",
-            "translations": [
-                {
-                    "language": "en",
-                    "value": "----End----",
-                    "translationProvider": 1,
-                    "qualityIndex": 25
-                }
-            ]
-        },
-        {
-            "key": "bo_businesspartnergroup_updateactionid",
-            "value": "更新动作标识",
-            "translations": [
-                {
-                    "language": "en",
-                    "value": "Update Action ID",
+                    "language": "de",
+                    "value": "Sicht Geschäftspartneranlagenvorgänge",
                     "translationProvider": 1,
                     "qualityIndex": 25
                 }
@@ -818,37 +63,36 @@
         },
         {
             "domain": "BC",
-            "key": "bo_customer_currency",
-            "value": "货币",
+            "key": "businesspartner",
+            "value": "Business Partner",
             "translations": [
                 {
-                    "language": "en",
-                    "value": "Currency",
+                    "language": "de",
+                    "value": "Geschäftspartner",
                     "translationProvider": 0,
-                    "qualityIndex": 97
+                    "qualityIndex": 98
                 }
             ]
         },
         {
-            "domain": "BC",
-            "key": "bo_businesspartnergroup_updateusersign",
-            "value": "修改用户",
+            "key": "businesspartner_app_businesspartnerassetjournal_list",
+            "value": "List of Business Partner Asset Transactions",
             "translations": [
                 {
-                    "language": "en",
-                    "value": "Change user",
-                    "translationProvider": 0,
-                    "qualityIndex": 33
+                    "language": "de",
+                    "value": "Liste der Geschäftspartner-Anlagenbewegungen",
+                    "translationProvider": 1,
+                    "qualityIndex": 25
                 }
             ]
         },
         {
-            "key": "bo_contactperson_closing_delimiter",
-            "value": "----结束----",
+            "key": "businesspartner_app_businesspartnerasset_list",
+            "value": "List of business partner assets",
             "translations": [
                 {
-                    "language": "en",
-                    "value": "----End----",
+                    "language": "de",
+                    "value": "Liste der Geschäftspartneranlagen",
                     "translationProvider": 1,
                     "qualityIndex": 25
                 }
@@ -856,50 +100,124 @@
         },
         {
             "domain": "BC",
-            "key": "bo_businesspartnergroup_createusersign",
-            "value": "创建用户",
+            "key": "businesspartner_func_businesspartnergroup",
+            "value": "Business partner group",
             "translations": [
                 {
-                    "language": "en",
-                    "value": "Create User(s)",
+                    "language": "de",
+                    "value": "Geschäftspartnergruppe",
                     "translationProvider": 0,
-                    "qualityIndex": 40
+                    "qualityIndex": 73
                 }
             ]
         },
         {
             "domain": "BC",
-            "key": "bo_businesspartnergroup_datasource",
-            "value": "数据源",
+            "key": "businesspartner_title_general",
+            "value": "General Information",
             "translations": [
                 {
-                    "language": "en",
-                    "value": "Data Source",
+                    "language": "de",
+                    "value": "Allgemeine Informationen",
                     "translationProvider": 0,
-                    "qualityIndex": 82
+                    "qualityIndex": 87
                 }
             ]
         },
         {
             "domain": "BC",
-            "key": "bo_customer_warehouse",
-            "value": "仓库",
+            "key": "businesspartner_title_contact",
+            "value": "Contact Information",
             "translations": [
                 {
-                    "language": "en",
-                    "value": "Warehouse",
+                    "language": "de",
+                    "value": "Kontaktinformation",
                     "translationProvider": 0,
-                    "qualityIndex": 100
+                    "qualityIndex": 54
                 }
             ]
         },
         {
-            "key": "bo_contactperson_loginst",
-            "value": "实例号（版本）",
+            "domain": "B2",
+            "key": "businesspartner_title_invoices",
+            "value": "Billing Info",
             "translations": [
                 {
-                    "language": "en",
-                    "value": "Instance Number (Version)",
+                    "language": "de",
+                    "value": "Fakturierungsinformationen",
+                    "translationProvider": 0,
+                    "qualityIndex": 77
+                }
+            ]
+        },
+        {
+            "domain": "DF",
+            "key": "businesspartner_app_supplier_view",
+            "value": "Supplier View",
+            "translations": [
+                {
+                    "language": "de",
+                    "value": "Versorgersicht",
+                    "translationProvider": 0,
+                    "qualityIndex": 15
+                }
+            ]
+        },
+        {
+            "key": "businesspartner_func_businesspartnerasset",
+            "value": "Business Partner Assets",
+            "translations": [
+                {
+                    "language": "de",
+                    "value": "Geschäftspartneranlagen",
+                    "translationProvider": 1,
+                    "qualityIndex": 25
+                }
+            ]
+        },
+        {
+            "key": "businesspartner_app_contactperson_list",
+            "value": "List of Business Partner Contacts",
+            "translations": [
+                {
+                    "language": "de",
+                    "value": "Liste der Geschäftspartnerkontakte",
+                    "translationProvider": 1,
+                    "qualityIndex": 25
+                }
+            ]
+        },
+        {
+            "key": "businesspartner_func_businesspartnerassetjournal",
+            "value": "Business Partner Asset Transactions",
+            "translations": [
+                {
+                    "language": "de",
+                    "value": "Geschäftspartner: Anlagenbewegungen",
+                    "translationProvider": 1,
+                    "qualityIndex": 25
+                }
+            ]
+        },
+        {
+            "key": "businesspartner_app_businesspartnerasset_edit",
+            "value": "Business Partner Asset Edit",
+            "translations": [
+                {
+                    "language": "de",
+                    "value": "Geschäftspartner Anlage bearbeiten",
+                    "translationProvider": 1,
+                    "qualityIndex": 25
+                }
+            ]
+        },
+        {
+            "key": "businesspartner_app_businesspartnerasset_view",
+            "value": "Business Partner Asset View",
+            "translations": [
+                {
+                    "language": "de",
+                    "value": "Sicht Geschäftspartner Anlage",
                     "translationProvider": 1,
                     "qualityIndex": 25
                 }
@@ -907,31 +225,400 @@
         },
         {
             "domain": "BC",
-            "key": "bo_customer_validdate",
-            "value": "生效日期",
+            "key": "businesspartner_func_supplier",
+            "value": "Vendor",
             "translations": [
                 {
-                    "language": "en",
-                    "value": "Valid From Date",
+                    "language": "de",
+                    "value": "Lieferant",
+                    "translationProvider": 0,
+                    "qualityIndex": 72
+                }
+            ]
+        },
+        {
+            "domain": "BC",
+            "key": "businesspartner_app_supplier_list",
+            "value": "Vendor lists",
+            "translations": [
+                {
+                    "language": "de",
+                    "value": "Materialdisposition",
+                    "translationProvider": 0,
+                    "qualityIndex": 60
+                }
+            ]
+        },
+        {
+            "domain": "EP",
+            "key": "businesspartner_app_supplier_choose",
+            "value": "Supplier Selection",
+            "translations": [
+                {
+                    "language": "de",
+                    "value": "Auswahl von Lieferanten",
+                    "translationProvider": 0,
+                    "qualityIndex": 73
+                }
+            ]
+        },
+        {
+            "key": "businesspartner_app_customer_edit",
+            "value": "Customer Edit",
+            "translations": [
+                {
+                    "language": "de",
+                    "value": "Kunde bearbeiten",
+                    "translationProvider": 1,
+                    "qualityIndex": 25
+                }
+            ]
+        },
+        {
+            "domain": "PM",
+            "key": "businesspartner_app_customer_view",
+            "value": "Customer view",
+            "translations": [
+                {
+                    "language": "de",
+                    "value": "Kundensicht",
+                    "translationProvider": 0,
+                    "qualityIndex": 80
+                }
+            ]
+        },
+        {
+            "domain": "BC",
+            "key": "businesspartner_app_customer_choose",
+            "value": "Customer Selection",
+            "translations": [
+                {
+                    "language": "de",
+                    "value": "Auswahl Debitor",
+                    "translationProvider": 0,
+                    "qualityIndex": 34
+                }
+            ]
+        },
+        {
+            "domain": "BC",
+            "key": "businesspartner_app_customer_list",
+            "value": "List of Customers",
+            "translations": [
+                {
+                    "language": "de",
+                    "value": "Liste von Flugkunden",
+                    "translationProvider": 0,
+                    "qualityIndex": 60
+                }
+            ]
+        },
+        {
+            "domain": "BC",
+            "key": "businesspartner_func_customer",
+            "value": "Customer",
+            "translations": [
+                {
+                    "language": "de",
+                    "value": "Kunde",
+                    "translationProvider": 0,
+                    "qualityIndex": 98
+                }
+            ]
+        },
+        {
+            "key": "businesspartner_app_businesspartnergroup_view",
+            "value": "Business Partner Group View",
+            "translations": [
+                {
+                    "language": "de",
+                    "value": "Sicht Geschäftspartnergruppe",
+                    "translationProvider": 1,
+                    "qualityIndex": 25
+                }
+            ]
+        },
+        {
+            "key": "businesspartner_app_businesspartnergroup_choose",
+            "value": "Business Partner Group Selection",
+            "translations": [
+                {
+                    "language": "de",
+                    "value": "Auswahl der Geschäftspartnergruppe",
+                    "translationProvider": 1,
+                    "qualityIndex": 25
+                }
+            ]
+        },
+        {
+            "key": "businesspartner_app_businesspartnergroup_edit",
+            "value": "BP Group Edit",
+            "translations": [
+                {
+                    "language": "de",
+                    "value": "GP-Gruppe bearbeiten",
+                    "translationProvider": 1,
+                    "qualityIndex": 25
+                }
+            ]
+        },
+        {
+            "domain": "BC",
+            "key": "businesspartner_title_others",
+            "value": "Additional information",
+            "translations": [
+                {
+                    "language": "de",
+                    "value": "Zusatzinformationen",
+                    "translationProvider": 0,
+                    "qualityIndex": 75
+                }
+            ]
+        },
+        {
+            "domain": "FI",
+            "key": "businesspartner_func_assetitem",
+            "value": "Asset Item",
+            "translations": [
+                {
+                    "language": "de",
+                    "value": "Anlagenartikel",
                     "translationProvider": 0,
                     "qualityIndex": 44
                 }
             ]
         },
         {
-            "domain": "BC",
-            "key": "bo_businesspartnergroup_loginst",
-            "value": "版本",
+            "key": "businesspartner_app_businesspartnergroup_list",
+            "value": "List of Business Partner Groups",
             "translations": [
                 {
-                    "language": "en",
-                    "value": "Version",
-                    "translationProvider": 0,
-                    "qualityIndex": 97
+                    "language": "de",
+                    "value": "Liste der Geschäftspartnergruppen",
+                    "translationProvider": 1,
+                    "qualityIndex": 25
+                }
+            ]
+        },
+        {
+            "key": "businesspartner_icon",
+            "value": "sap-icon://customer-and-supplier",
+            "translations": [
+                {
+                    "language": "de",
+                    "value": "sap-icon://Kunde und Lieferant",
+                    "translationProvider": 1,
+                    "qualityIndex": 25
                 }
             ]
         },
         {
             "domain": "BC",
-            "key": "bo_customer_invaliddate",
-            "value":"失…
+            "key": "businesspartner_func_address",
+            "value": "Business Partner Address",
+            "translations": [
+                {
+                    "language": "de",
+                    "value": "Adresse des Geschäftspartners",
+                    "translationProvider": 0,
+                    "qualityIndex": 58
+                }
+            ]
+        },
+        {
+            "key": "businesspartner_app_supplier_edit",
+            "value": "Vendor Edit",
+            "translations": [
+                {
+                    "language": "de",
+                    "value": "Lieferantenbearbeitung",
+                    "translationProvider": 1,
+                    "qualityIndex": 25
+                }
+            ]
+        },
+        {
+            "key": "businesspartner_app_businesspartnerasset_choose",
+            "value": "Selection of Business Partner Assets",
+            "translations": [
+                {
+                    "language": "de",
+                    "value": "Selektion der Geschäftspartner Anlagen",
+                    "translationProvider": 1,
+                    "qualityIndex": 25
+                }
+            ]
+        },
+        {
+            "key": "businesspartner_app_address_view",
+            "value": "Business Partner Address View",
+            "translations": [
+                {
+                    "language": "de",
+                    "value": "Sicht Geschäftspartneradresse",
+                    "translationProvider": 1,
+                    "qualityIndex": 25
+                }
+            ]
+        },
+        {
+            "key": "businesspartner_app_address_list",
+            "value": "Business Partner Address List",
+            "translations": [
+                {
+                    "language": "de",
+                    "value": "Geschäftspartneradressliste",
+                    "translationProvider": 1,
+                    "qualityIndex": 25
+                }
+            ]
+        },
+        {
+            "key": "businesspartner_app_assetitem_list",
+            "value": "Asset Item List",
+            "translations": [
+                {
+                    "language": "de",
+                    "value": "Anlagenpositionsliste",
+                    "translationProvider": 1,
+                    "qualityIndex": 25
+                }
+            ]
+        },
+        {
+            "key": "businesspartner_app_address_edit",
+            "value": "Business Partner Address Edit",
+            "translations": [
+                {
+                    "language": "de",
+                    "value": "Geschäftspartneradresse bearbeiten",
+                    "translationProvider": 1,
+                    "qualityIndex": 25
+                }
+            ]
+        },
+        {
+            "key": "businesspartner_app_address_choose",
+            "value": "Business Partner Address Selection",
+            "translations": [
+                {
+                    "language": "de",
+                    "value": "Geschäftspartneradressenauswahl",
+                    "translationProvider": 1,
+                    "qualityIndex": 25
+                }
+            ]
+        },
+        {
+            "key": "businesspartner_app_contactperson_edit",
+            "value": "Business Partner Contact Edit",
+            "translations": [
+                {
+                    "language": "de",
+                    "value": "Ansprechpartner beim Geschäftspartner bearbeiten",
+                    "translationProvider": 1,
+                    "qualityIndex": 25
+                }
+            ]
+        },
+        {
+            "domain": "BC",
+            "key": "businesspartner_func_contactperson",
+            "value": "Business Partner Contact",
+            "translations": [
+                {
+                    "language": "de",
+                    "value": "Geschäftspartnerkontakt",
+                    "translationProvider": 0,
+                    "qualityIndex": 88
+                }
+            ]
+        },
+        {
+            "key": "businesspartner_app_assetitem_choose",
+            "value": "Asset Item Selection",
+            "translations": [
+                {
+                    "language": "de",
+                    "value": "Auswahl Aktivposten",
+                    "translationProvider": 1,
+                    "qualityIndex": 25
+                }
+            ]
+        },
+        {
+            "domain": "CF",
+            "key": "businesspartner_new_businesspartnerassetjournal",
+            "value": "Create new transaction",
+            "translations": [
+                {
+                    "language": "de",
+                    "value": "Neues Geschäft anlegen",
+                    "translationProvider": 0,
+                    "qualityIndex": 88
+                }
+            ]
+        },
+        {
+            "key": "businesspartner_app_contactperson_choose",
+            "value": "Selection of Business Partner Contacts",
+            "translations": [
+                {
+                    "language": "de",
+                    "value": "Auswahl von Geschäftspartnerkontakten",
+                    "translationProvider": 1,
+                    "qualityIndex": 25
+                }
+            ]
+        },
+        {
+            "domain": "CT",
+            "key": "businesspartner_view_businesspartnerassetjournal",
+            "value": "View Transactions",
+            "translations": [
+                {
+                    "language": "de",
+                    "value": "Transaktionen anzeigen",
+                    "translationProvider": 0,
+                    "qualityIndex": 60
+                }
+            ]
+        },
+        {
+            "key": "businesspartner_app_assetitem_view",
+            "value": "Asset Item View",
+            "translations": [
+                {
+                    "language": "de",
+                    "value": "Anlagenpositionssicht",
+                    "translationProvider": 1,
+                    "qualityIndex": 25
+                }
+            ]
+        },
+        {
+            "key": "businesspartner_app_assetitem_edit",
+            "value": "Asset Item Edit",
+            "translations": [
+                {
+                    "language": "de",
+                    "value": "Aktivitätsposition bearbeiten",
+                    "translationProvider": 1,
+                    "qualityIndex": 25
+                }
+            ]
+        },
+        {
+            "key": "businesspartner_app_contactperson_view",
+            "value": "Business Partner Contacts View",
+            "translations": [
+                {
+                    "language": "de",
+                    "value": "Sicht Ansprechpartner für Geschäftspartner",
+                    "translationProvider": 1,
+                    "qualityIndex": 25
+                }
+            ]
+        }
+    ]
+}

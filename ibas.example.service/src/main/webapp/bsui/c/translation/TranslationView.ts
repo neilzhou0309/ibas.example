@@ -151,7 +151,8 @@ namespace example {
                             // window.console.timeEnd("test");
                             let list: ibas.ArrayList<any> = new ibas.ArrayList<any>();
                             let langLists: ibas.ArrayList<any> = new ibas.ArrayList<any>();
-                            let jsonData: any = JSON.parse(this.responseText);
+                            let jsonStr: string = that.formatJsonStr(this.responseText);
+                            let jsonData: any = JSON.parse(jsonStr);
                             if (!ibas.objects.isNull(jsonData)) {
                                 for (let item of jsonData.units) {
                                     // sap翻译接口中文翻译其它语言不全，需要用英语翻译
@@ -232,6 +233,29 @@ namespace example {
                     xhr.setRequestHeader("APIKey", "uWPLYP1X7Yq9RmM2rE5LHiHhtyY8tm7k");
                     // xhr.setRequestHeader("Authorization", this.getAuthorizationCode("neil.zhou@avatech.com.cn:zhou_0311"));
                     xhr.send(data);
+                }
+                formatJsonStr(jsonStr: string): string {
+                    let newResponseText: string = jsonStr;
+                    // 以","拆分
+                    let arr1: string[] = newResponseText.split("\",\"");
+                    // 过滤以"value":开单项
+                    let arr2: string[] = arr1.filter(c => {
+                        return c.startsWith("value\":");
+                    });
+                    // 遍历以"value":开单项
+                    for (let item of arr2) {
+                        // 以":"拆分
+                        let arr3: string[] = item.split("\":\"");
+                        // 如果结果集大于0
+                        if (arr3.length > 0) {
+                            let newItem: string = arr3[1];
+                            // 去除所有"后补齐最后一位"
+                            newItem = newItem.replace(new RegExp("\"", "gm"), "");
+                            // 替换原字符串值
+                            newResponseText = newResponseText.replace(arr3[1], newItem);
+                        }
+                    }
+                    return newResponseText;
                 }
                 // 显示翻译后结果
                 showTranslationResults(datas: ibas.ArrayList<any>): void {

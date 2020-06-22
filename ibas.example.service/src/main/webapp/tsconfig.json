@@ -12,7 +12,11 @@
     "./3rdparty/ibas/index.d.ts",
     "./3rdparty/shell/index.d.ts",
     "./3rdparty/openui5/index.d.ts",
-    "./3rdparty/byd/salesorder/index.d.ts"
+    "./3rdparty/byd/salesorder/index.d.ts",
+    "./3rdparty/pdm/index.d.ts",
+    "./3rdparty/businesspartner/index.d.ts",
+    "./3rdparty/materials/index.d.ts",
+    "./3rdparty/sales/index.d.ts"
   ],
   "files": [
     "./bsapp/Console.ts"

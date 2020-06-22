@@ -14,6 +14,7 @@ namespace example {
             }
             /** 列表视图-例子 */
             export class TableFactoryView extends ibas.View implements app.ITranslationView {
+                callPdmEvent: Function;
                 private page: sap.m.Page;
                 private table: sap.m.Table;
                 private bindingList: ibas.ArrayList<TableFactorySource>;
@@ -415,6 +416,20 @@ namespace example {
                                         that.showContrastDialog();
                                     }
                                 }),
+                                new sap.m.Button("", {
+                                    text: "调用pdm",
+                                    type: sap.m.ButtonType.Transparent,
+                                    press: function (): void {
+                                        that.fireViewEvents(that.callPdmEvent);
+                                    }
+                                }),
+                                new sap.m.Button("", {
+                                    text: "tree",
+                                    type: sap.m.ButtonType.Transparent,
+                                    press: function (): void {
+                                        that.showTreeTable();
+                                    }
+                                }),
                                 new sap.m.ToolbarSpacer(""),
                                 that.typeSelect = new sap.extension.m.EnumSelect("", {
                                     enumType: bo.emTableRowsType,
@@ -750,10 +765,283 @@ namespace example {
                     carousel.setModel(new sap.ui.model.json.JSONModel({ rows: orders }));
                     dialog.open();
                 }
+                showDateTable(table: ibas.DataTable): void {
+                    let tableResult: sap.ui.table.Table = new sap.ui.table.Table("", {
+                        enableSelectAll: true,
+                        selectionBehavior: sap.ui.table.SelectionBehavior.Row,
+                        visibleRowCount: ibas.config.get(openui5.utils.CONFIG_ITEM_LIST_TABLE_VISIBLE_ROW_COUNT, 15),
+                        visibleRowCountMode: sap.ui.table.VisibleRowCountMode.Interactive,
+                        editable: false,
+                        rows: "{/rows}",
+                    });
+                    for (let index: number = 0; index < table.columns.length; index++) {
+                        let col: ibas.DataTableColumn = table.columns[index];
+                        if (ibas.strings.isEmpty(col.description)) {
+                            col.description = ibas.i18n.prop(col.name);
+                            if (col.description.startsWith("[") && col.description.endsWith("]")) {
+                                col.description = col.name;
+                            }
+                        } else {
+                            let value: string = col.description;
+                            col.description = ibas.i18n.prop(col.description);
+                            if (col.description.startsWith("[") && col.description.endsWith("]")) {
+                                col.description = value;
+                            }
+                        }
+                        if (col.definedDataType() === ibas.emTableDataType.DATE) {
+                            tableResult.addColumn(
+                                new sap.ui.table.Column("", {
+                                    label: ibas.strings.isEmpty(col.description) ? col.name : col.description,
+                                    width: "100px",
+                                    autoResizable: true,
+                                    sortProperty: index.toString(),
+                                    filterProperty: index.toString(),
+                                    template: new sap.m.Text("", {
+                                        wrapping: false
+                                    }).bindProperty("text", {
+                                        path: index.toString(),
+                                        formatter(data: any): any {
+                                            return ibas.dates.toString(data);
+                                        }
+                                    })
+                                })
+                            );
+                        } else {
+                            tableResult.addColumn(
+                                new sap.ui.table.Column("", {
+                                    label: ibas.strings.isEmpty(col.description) ? col.name : col.description,
+                                    width: "100px",
+                                    autoResizable: true,
+                                    sortProperty: index.toString(),
+                                    filterProperty: index.toString(),
+                                    template: new sap.m.Text("", {
+                                        wrapping: false
+                                    }).bindProperty("text", {
+                                        path: index.toString(),
+                                    })
+                                })
+                            );
+                        }
+                    }
+                    let dialog: sap.m.Dialog = new sap.m.Dialog("", {
+                        contentWidth: "80%",
+                        contentHeight: "80%",
+                        title: this.title,
+                        type: sap.m.DialogType.Standard,
+                        state: sap.ui.core.ValueState.None,
+                        horizontalScrolling: false,
+                        verticalScrolling: true,
+                        showHeader: false,
+                        content: [
+                            tableResult
+                        ],
+                        buttons: [
+                            new sap.m.Button("", {
+                                text: ibas.i18n.prop("shell_exit"),
+                                type: sap.m.ButtonType.Transparent,
+                                icon: "sap-icon://inspect-down",
+                                press: function (): void {
+                                    dialog.close();
+                                }
+                            }),
+                        ]
+                    });
+                    tableResult.setModel(new sap.ui.model.json.JSONModel({ rows: table.convert({ format: true, nameAs: "index" }) }));
+                    dialog.open();
+                }
+                showTreeTable(): void {
+                    let datas: any = [
+                        {
+                            "NodeID": 1,
+                            "HierarchyLevel": 0,
+                            "Description": "1",
+                            "ParentNodeID": null,
+                            "DrillState": "expanded"
+                        },
+                        {
+                            "NodeID": 2,
+                            "HierarchyLevel": 0,
+                            "Description": "2",
+                            "ParentNodeID": null,
+                            "DrillState": "expanded"
+                        },
+                        {
+                            "NodeID": 3,
+                            "HierarchyLevel": 0,
+                            "Description": "3",
+                            "ParentNodeID": null,
+                            "DrillState": "expanded"
+                        },
+                        {
+                            "NodeID": 4,
+                            "HierarchyLevel": 1,
+                            "Description": "1.1",
+                            "ParentNodeID": 1,
+                            "DrillState": "leaf"
+                        },
+                        {
+                            "NodeID": 5,
+                            "HierarchyLevel": 1,
+                            "Description": "1.2",
+                            "ParentNodeID": 1,
+                            "DrillState": "expanded"
+                        },
+                        {
+                            "NodeID": 6,
+                            "HierarchyLevel": 2,
+                            "Description": "1.2.1",
+                            "ParentNodeID": 5,
+                            "DrillState": "leaf"
+                        },
+                        {
+                            "NodeID": 7,
+                            "HierarchyLevel": 2,
+                            "Description": "1.2.2",
+                            "ParentNodeID": 5,
+                            "DrillState": "leaf"
+                        },
+                        {
+                            "NodeID": 8,
+                            "HierarchyLevel": 1,
+                            "Description": "2.1",
+                            "ParentNodeID": 2,
+                            "DrillState": "leaf"
+                        },
+                        {
+                            "NodeID": 9,
+                            "HierarchyLevel": 1,
+                            "Description": "2.2",
+                            "ParentNodeID": 2,
+                            "DrillState": "leaf"
+                        },
+                        {
+                            "NodeID": 10,
+                            "HierarchyLevel": 1,
+                            "Description": "2.3",
+                            "ParentNodeID": 2,
+                            "DrillState": "leaf"
+                        },
+                        {
+                            "NodeID": 11,
+                            "HierarchyLevel": 1,
+                            "Description": "3.1",
+                            "ParentNodeID": 3,
+                            "DrillState": "expanded"
+                        },
+                        {
+                            "NodeID": 12,
+                            "HierarchyLevel": 2,
+                            "Description": "3.1.1",
+                            "ParentNodeID": 11,
+                            "DrillState": "expanded"
+                        },
+                        {
+                            "NodeID": 13,
+                            "HierarchyLevel": 3,
+                            "Description": "3.1.1.1",
+                            "ParentNodeID": 12,
+                            "DrillState": "leaf"
+                        },
+                        {
+                            "NodeID": 14,
+                            "HierarchyLevel": 3,
+                            "Description": "3.1.1.2",
+                            "ParentNodeID": 12,
+                            "DrillState": "leaf"
+                        },
+                        {
+                            "NodeID": 15,
+                            "HierarchyLevel": 3,
+                            "Description": "3.1.1.3",
+                            "ParentNodeID": 12,
+                            "DrillState": "leaf"
+                        },
+                        {
+                            "NodeID": 16,
+                            "HierarchyLevel": 3,
+                            "Description": "3.1.1.4",
+                            "ParentNodeID": 12,
+                            "DrillState": "leaf"
+                        }
+                    ];
+                    let treeTable: sap.ui.table.TreeTable = new sap.ui.table.TreeTable("", {
+                        selectionMode: "Single",
+                        enableColumnReordering: false,
+                        expandFirstLevel: false,
+                        rows: {
+                            path: "/rows",
+                            parameters: {
+                                countMode: "Inline",
+                                treeAnnotationProperties: {
+                                    hierarchyLevelFor: "HierarchyLevel",
+                                    hierarchyNodeFor: "NodeID",
+                                    hierarchyParentNodeFor: "ParentNodeID",
+                                    hierarchyDrillStateFor: "DrillState"
+                                }
+                            }
+                        },
+                        columns: [
+                            new sap.ui.table.Column("", {
+                                label: "Description",
+                                template: new sap.m.Text("", {
+                                    text: "{Description}",
+                                    wrapping: false
+                                })
+                            }),
+                            new sap.ui.table.Column("", {
+                                label: "HierarchyLevel",
+                                template: new sap.m.Text("", {
+                                    text: "{HierarchyLevel}",
+                                    wrapping: false
+                                })
+                            }),
+                            new sap.ui.table.Column("", {
+                                label: "NodeID",
+                                template: new sap.m.Text("", {
+                                    text: "{NodeID}",
+                                    wrapping: false
+                                })
+                            }),
+                            new sap.ui.table.Column("", {
+                                label: "ParentNodeID",
+                                template: new sap.m.Text("", {
+                                    text: "{ParentNodeID}",
+                                    wrapping: false
+                                })
+                            }),
+                        ]
+                    });
+                    treeTable.setModel(new sap.ui.model.json.JSONModel({ rows: datas }));
+                    let dialog: sap.m.Dialog = new sap.m.Dialog("", {
+                        contentWidth: "80%",
+                        contentHeight: "80%",
+                        title: this.title,
+                        type: sap.m.DialogType.Standard,
+                        state: sap.ui.core.ValueState.None,
+                        horizontalScrolling: false,
+                        verticalScrolling: true,
+                        showHeader: false,
+                        content: [
+                            treeTable
+                        ],
+                        buttons: [
+                            new sap.m.Button("", {
+                                text: ibas.i18n.prop("shell_exit"),
+                                type: sap.m.ButtonType.Transparent,
+                                icon: "sap-icon://inspect-down",
+                                press: function (): void {
+                                    dialog.close();
+                                }
+                            }),
+                        ]
+                    });
+                    dialog.open();
+                }
             }
         }
     }
 }
+
 namespace sap {
     export namespace extension {
         export namespace m1 {
